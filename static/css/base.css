@@ -161,54 +161,30 @@ html {
 
 
 @media only screen and (max-width: 1235px) {
-    .filter1 {
-        height: 250px !important;
-        width: 180px !important;
-    }
-
-    .filter2 {
-        height: 250px !important;
-        width: 220px !important;
-    }
-
+    .filter1,
+    .filter2,
     .filter3 {
-        height: 250px !important;
-        width: 200px !important;
+        margin: 1% !important;
+       
     }
+
 }
 
 @media only screen and (max-width: 850px) {
-    .filter1 {
-        height: 150px !important;
-        width: 250px !important;
-        margin: 20px;
-    }
-
-    .filter2 {
-        height: 150px !important;
-        width: 250px !important;
-        margin: 20px;
-    }
-
+    .filter1,
+    .filter2,
     .filter3 {
+        top: 0px !important;
         height: 150px !important;
-        width: 560px !important;
+        width: 250px !important;
         margin: 20px;
     }
+
 }
 
 @media only screen and (max-width: 805px) {
-    .filter1 {
-        height: 150px !important;
-        width: 200px !important;
-    }
-
-    .filter2 {
-        top: 30%;
-        height: 150px !important;
-        width: 200px !important;
-    }
-
+    .filter1,
+    .filter2,
     .filter3 {
         height: 150px !important;
         width: 200px !important;
@@ -216,25 +192,14 @@ html {
 }
 
 @media only screen and (max-width: 710px) {
-    .filter1 {
-        height: 150px !important;
-        width: 250px !important;
-        margin: 20px;
-    }
-
-    .filter2 {
-        top: 0%;
-        height: 150px !important;
-        width: 250px !important;
-        margin: 20px;
-    }
-
+    .filter1,
+    .filter2,
     .filter3 {
         height: 150px !important;
         width: 250px !important;
         margin: 20px;
     }
-
+    
     #ruler {
         padding-left: 0px;
     }
@@ -242,21 +207,7 @@ html {
 
 @media only screen and (max-width: 430px) {
     .filter1 {
-        height: 50px !important;
-        width: 160px !important;
-        margin: 0px;
-    }
-
-    .filter2 {
-        height: 50px !important;
-        width: 160px !important;
-        margin: 0px;
-    }
-
-    .filter3 {
-        height: 50px !important;
-        width: 160px !important;
-        margin: 0px;
+        height: 250px !important;
     }
 
 }
