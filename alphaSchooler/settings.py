@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['aSchooler.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
-                'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu77.gitpod.io',
+                'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu78.gitpod.io',
                 'https://*.*.gitpod.io', 'http://127.0.0.1:8000/',
                 'http://127.0.0.1:8001/'
                         ]
@@ -51,7 +51,9 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'crispy_forms',
     'home',
+    'products',
 ]
 
 MIDDLEWARE = [
