@@ -9,7 +9,7 @@
           "price": 3.99,
           "category": 6,
           "rating": 4.6,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "/media/product_img/products(1).jpg",
           "image": "products(1).jpg"
        }
     },
@@ -23,7 +23,7 @@
           "price": 1.99,
           "category": 7,
           "rating": 4.6,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "/media/product_img/products(2).jpg",
           "image": "products(2).jpg"
        }
     },
@@ -37,7 +37,7 @@
           "price": 5.99,
           "category": 4,
           "rating": 4.7,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1230201417013175M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "",
           "image": "products(3).jpg"
        }
     },
@@ -51,7 +51,7 @@
           "price": 9.99,
           "category": 7,
           "rating": 3,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "",
           "image": "products(4).jpg"
        }
     },
@@ -61,11 +61,11 @@
        "fields": {
           "sku": "pp5002111605",
           "name": "Simply Information Holder",
-          "description": "A set of diaries for your daily routine and office work. Nice range of colors. Many sections to separate information. ",
+          "description": "",
           "price": 32.99,
           "category": 6,
           "rating": 5,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "",
           "image": "products(5).jpg"
        }
     },
@@ -75,11 +75,11 @@
        "fields": {
           "sku": "pp5002260206",
           "name": "The Foundry Supply Pencil Case",
-          "description": "Comfortable to carry in any bag or purse. Compact and easy to use on daily bases. ",
+          "description": "",
           "price": 10.99,
           "category": 2,
           "rating": 4.7,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "",
           "image": "products(6).jpg"
        }
     },
@@ -93,7 +93,7 @@
           "price": 59,
           "category": 7,
           "rating": 4.4,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "",
           "image": "products(7).jpg"
        }
     },
@@ -107,7 +107,7 @@
           "price": 6.99,
           "category": 7,
           "rating": 4.5,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(8).jpg"
        }
     },
@@ -121,7 +121,7 @@
           "price": 9.99,
           "category": 7,
           "rating": 4.7,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1020201517025390M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(9).jpg"
        }
     },
@@ -135,7 +135,7 @@
           "price": 33.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0418201317011949M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(10).jpg"
        }
     },
@@ -149,7 +149,7 @@
           "price": 2.99,
           "category": 7,
           "rating": 3,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/0900631B81B0C2D9M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(11).jpg"
        }
     },
@@ -163,7 +163,7 @@
           "price": 19.99,
           "category": 4,
           "rating": 4.6,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0510201317010521M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(12).jpg"
        }
     },
@@ -177,7 +177,7 @@
           "price": 2,
           "category": 7,
           "rating": 3.2,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0430201405053680M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(13).jpg"
        }
     },
@@ -191,7 +191,7 @@
           "price": 26.99,
           "category": 5,
           "rating": 4.7,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/0900631B81C9387BM.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(14).jpg"
        }
     },
@@ -205,7 +205,7 @@
           "price": 8.99,
           "category": 7,
           "rating": 4.8,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1029201317111469M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "",
           "image": "products(15).jpg"
        }
     },
@@ -219,7 +219,7 @@
           "price": 5.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0918201520303373C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "",
           "image": "products(16).jpg"
        }
     },
@@ -233,7 +233,7 @@
           "price": 3.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP1119201520340305C.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(17).jpg"
        }
     },
@@ -247,7 +247,7 @@
           "price": 59.99,
           "category": 4,
           "rating": 4.8,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072274M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(18).jpg"
        }
     },
@@ -261,7 +261,7 @@
           "price": 0.99,
           "category": 7,
           "rating": 5,
-          "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072924M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
+          "image_url": "",
           "image": "products(19).jpg"
        }
     },
@@ -864,7 +864,7 @@
           "category": 7,
           "rating": 5,
           "image_url": "http://s7d2.scene7.com/is/image/JCPenney/DP0401201517030651M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image": "products(62).png"
+          "image": "products(62).jpg"
        }
     },
     {

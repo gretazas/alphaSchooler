@@ -6,6 +6,17 @@ a {
     cursor: pointer !important;
 }
 
+#product_img {
+    width: 240px; /* you can use % */
+    height: auto;
+}
+
+#content_img {
+    display: flex;
+    align-items: flex-end;
+}
+/* Ruler on the left page side */
+
 .ruler {
     position: absolute;
     height: 70%;
