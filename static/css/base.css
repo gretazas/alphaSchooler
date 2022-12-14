@@ -2,6 +2,10 @@ html {
     height: 100px;
 }
 
+a {
+    cursor: pointer !important;
+}
+
 .ruler {
     position: absolute;
     height: 70%;
