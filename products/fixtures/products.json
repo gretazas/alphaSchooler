@@ -37,7 +37,7 @@
           "price": 5.99,
           "category": 4,
           "rating": 4.7,
-          "image_url": "",
+          "image_url": "/media/product_img/products(3).jpg",
           "image": "products(3).jpg"
        }
     },
@@ -51,7 +51,7 @@
           "price": 9.99,
           "category": 7,
           "rating": 3,
-          "image_url": "",
+          "image_url": "/media/product_img/products(4).jpg",
           "image": "products(4).jpg"
        }
     },
@@ -65,7 +65,7 @@
           "price": 32.99,
           "category": 6,
           "rating": 5,
-          "image_url": "",
+          "image_url": "/media/product_img/products(5).jpg",
           "image": "products(5).jpg"
        }
     },
@@ -79,7 +79,7 @@
           "price": 10.99,
           "category": 2,
           "rating": 4.7,
-          "image_url": "",
+          "image_url": "/media/product_img/products(6).jpg",
           "image": "products(6).jpg"
        }
     },
@@ -93,7 +93,7 @@
           "price": 59,
           "category": 7,
           "rating": 4.4,
-          "image_url": "",
+          "image_url": "/media/product_img/products(7).jpg",
           "image": "products(7).jpg"
        }
     },
@@ -107,7 +107,7 @@
           "price": 6.99,
           "category": 7,
           "rating": 4.5,
-          "image_url": "",
+          "image_url": "/media/product_img/products(8).jpg",
           "image": "products(8).jpg"
        }
     },
@@ -121,7 +121,7 @@
           "price": 9.99,
           "category": 7,
           "rating": 4.7,
-          "image_url": "",
+          "image_url": "/media/product_img/products(9).jpg",
           "image": "products(9).jpg"
        }
     },
@@ -135,7 +135,7 @@
           "price": 33.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "",
+          "image_url": "/media/product_img/products(10).jpg",
           "image": "products(10).jpg"
        }
     },
@@ -149,7 +149,7 @@
           "price": 2.99,
           "category": 7,
           "rating": 3,
-          "image_url": "",
+          "image_url": "/media/product_img/products(11).jpg",
           "image": "products(11).jpg"
        }
     },
@@ -163,7 +163,7 @@
           "price": 19.99,
           "category": 4,
           "rating": 4.6,
-          "image_url": "",
+          "image_url": "/media/product_img/products(12).jpg",
           "image": "products(12).jpg"
        }
     },
@@ -177,7 +177,7 @@
           "price": 2,
           "category": 7,
           "rating": 3.2,
-          "image_url": "",
+          "image_url": "/media/product_img/products(13).jpg",
           "image": "products(13).jpg"
        }
     },
@@ -191,7 +191,7 @@
           "price": 26.99,
           "category": 5,
           "rating": 4.7,
-          "image_url": "",
+          "image_url": "/media/product_img/products(14).jpg",
           "image": "products(14).jpg"
        }
     },
@@ -205,7 +205,7 @@
           "price": 8.99,
           "category": 7,
           "rating": 4.8,
-          "image_url": "",
+          "image_url": "/media/product_img/products(15).jpg",
           "image": "products(15).jpg"
        }
     },
@@ -219,7 +219,7 @@
           "price": 5.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "",
+          "image_url": "/media/product_img/products(16).jpg",
           "image": "products(16).jpg"
        }
     },
@@ -233,7 +233,7 @@
           "price": 3.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "",
+          "image_url": "/media/product_img/products(17).jpg",
           "image": "products(17).jpg"
        }
     },
@@ -247,7 +247,7 @@
           "price": 59.99,
           "category": 4,
           "rating": 4.8,
-          "image_url": "",
+          "image_url": "/media/product_img/products(18).jpg",
           "image": "products(18).jpg"
        }
     },
@@ -261,7 +261,7 @@
           "price": 0.99,
           "category": 7,
           "rating": 5,
-          "image_url": "",
+          "image_url": "/media/product_img/products(19).jpg",
           "image": "products(19).jpg"
        }
     },
@@ -275,7 +275,7 @@
           "price": 0.99,
           "category": 1,
           "rating": 4.7,
-          "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0821201317103183M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+          "image_url": "/media/product_img/products(20).jpg",
           "image": "products(20).jpg"
        }
     },

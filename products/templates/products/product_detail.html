@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+   <div class="container header-container">
+       <div class="row">
+           <div class="col"></div>
+       </div>
+   </div>
+{% endblock %}
+{% block content %}
+    <div class="row overlay m-5">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 m-5">
+            {% if product.image %}
+            <a href="" class="card-img-top img-fluid">
+                <img src="/media/product_img/products({{ product.pk }}).jpg" alt="{{ product.name }}">
+            </a>
+            {% else %}
+            <a href="">
+                <!-- <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"> -->
+            </a>
+            {% endif %}
+            <span class="mx-5">
+                <button type="button" class="btn btn-light">-</button>
+                <button type="button" class="col-6 btn btn-dark">Quantity</button>
+                <button type="button" class="btn btn-light">+</button>
+            </span>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 mx-5">
+            <div class="card h-100 border-0 m-5">
+                <div class="card-body pb-0 m-5">
+                    <p class="mx-5">{{ product.name }}</p>
+                
+                    <div class="pt-0 border-0 text-left m-5">
+                        <div class="row">
+                            <div class="col">
+                                <p class="lead mb-0 text-left font-weight-bold" ><span style="color:rgb(16, 138, 138);">€</span>{{ product.price }}</p>
+                                {% if product.category %}
+                                <p class="small mt-1 mb-0">
+                                    <a class="text-muted" href="">
+                                        <i class="fas fa-tag mr-1" style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(9, 88, 88);"></i>{{ product.category.presentable_name }}
+                                    </a>
+                                </p>
+                                {% endif %}
+                                {% if product.rating %}
+                                    <small class="text-muted mb-5"><i class="fas fa-star mr-1" style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>{{ product.rating }} / 5</small>
+                                {% else %}
+                                    <small class="text-muted mb-5">No Rating</small>
+                                {% endif %}
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a href="">Edit</a> |
+                                        <a class="text-danger" href="">Delete</a>
+                                    </small>
+                                {% endif %}
+                                <p class="mt-5">{{ product.description }}</p>
+                            </div>
+                        </div><button type="button" class="btn btn-warning">Add To Bag</button>
+                    </div>
+                </div><button type="button" class="btn btn-warning">Go Back To Shopping</button>
+            </div>
+        </div>
+   </div>
+{% endblock %}
