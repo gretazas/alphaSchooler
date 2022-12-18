@@ -7,8 +7,8 @@ assignees: gretazas
 
 ---
 
-**As a **
+**As a**
 
 **I can**
 
-**So that **
+**So that I can**
