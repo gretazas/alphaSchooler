@@ -15,6 +15,15 @@ a {
     display: flex;
     align-items: flex-end;
 }
+
+#img {
+    max-width: 550px;
+    margin: 60px;
+}
+
+.font-weight-btn {
+    font-weight: bold;
+}
 /* Ruler on the left page side */
 
 .ruler {
@@ -30,6 +39,7 @@ a {
     width: 14px;
     height: 5%;
    }
+   
    /* Rule`s centimeters */
 
    .ruler .cm:after {
@@ -185,6 +195,23 @@ a {
 
 }
 
+@media only screen and (max-width: 992px) {
+    #img {
+        display: flex;
+        align-self: center;
+        max-width: 600px;
+        margin: 60px;
+    }
+
+    #info-card {
+        left: 20%;
+    }
+
+    #shopping-button {
+        left: 20px;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     .filter1,
     .filter2,
@@ -195,6 +222,9 @@ a {
         margin: 20px;
     }
 
+    #img {
+        max-width: 500px;
+    }
 }
 
 @media only screen and (max-width: 805px) {
@@ -218,11 +248,34 @@ a {
     #ruler {
         padding-left: 0px;
     }
+
+    #img {
+        max-width: 400px;
+    }
+
+    .qty_input  {
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    #img {
+        max-width: 350px;
+        margin-right: 5%;
+    }
 }
 
 @media only screen and (max-width: 430px) {
     .filter1 {
         height: 250px !important;
+    }
+
+    #img {
+        max-width: 250px;
+    }
+
+    #btn-qnty {
+        max-width: 55%;
     }
 
 }
