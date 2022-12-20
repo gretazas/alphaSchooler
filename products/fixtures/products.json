@@ -1636,5 +1636,75 @@
           "image_url": "/media/product_img/products(117).jpg",
           "image": "products(117)jpg"
        }
-    }
+    },
+    {
+      "pk": 118,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5006200155",
+         "name": "Arilan Henley Pencil Case",
+         "description": "Set of pencils and craft tools. A topper and rubber are included. Ready to go pack all in one pencil case. Relax and grab this pencil case for yourself or your child to get ready for school forward full stream. ",
+         "price": 29.99,
+         "category": 9,
+         "rating": 5,
+         "image_url": "/media/product_img/products(109).jpg",
+         "image": "products(109).jpg"
+      }
+   },
+   {
+      "pk": 119,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5005510265",
+         "name": "Aritean Pencils and Crayons",
+         "description": "Pencil set of 48 colorful pencils. All the colors you need for your art project, sketch or drawing. Express a world of colors to your canvas. ",
+         "price": 50.99,
+         "category": 9,
+         "rating": 4.7,
+         "image_url": "/media/product_img/products(68).jpg",
+         "image": "products(68).jpg"
+      }
+   },
+   {
+      "pk": 120,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5005140282",
+         "name": "Keuract Pencils",
+         "description": "Primary color pencils. Great for arts, scetches, drawings. Imported.",
+         "price": 6.99,
+         "category": 9,
+         "rating": 4,
+         "image_url": "/media/product_img/products(59).jpg",
+         "image": "products(59).jpg"
+      }
+   },
+   {
+      "pk": 121,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5001730010",
+         "name": "Royal Colorfull Pencil Set",
+         "description": "Colorfull pencil set of 12 includes primary colors and more. Suitable for arts and crafts",
+         "price": 5.99,
+         "category": 9,
+         "rating": 4.7,
+         "image_url": "/media/product_img/products(3).jpg",
+         "image": "products(3).jpg"
+      }
+   },
+   {
+      "pk": 122,
+      "model": "products.product",
+      "fields": {
+         "sku": "pp5003950574",
+         "name": "Royal Velvet Pencil-case",
+         "description": "These pencil cases are nice to hold. Great organization for your pencils and toppers to hold. Fits up to 50 items of stationary elements.",
+         "price": 21.99,
+         "category": 2,
+         "rating": 9,
+         "image_url": "/media/product_img/products(37).jpg",
+         "image": "products(37).jpg"
+      }
+   }
  ]
