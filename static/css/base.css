@@ -16,14 +16,31 @@ a {
     align-items: flex-end;
 }
 
+/* Image in detail page */
 #img {
     max-width: 550px;
     margin: 60px;
 }
 
+/* Detail page button- strong */
 .font-weight-btn {
     font-weight: bold;
 }
+
+/* Push main container with all filters to the right */
+#main-card {
+    left: 30px;
+}
+
+/* Center filter containers in the main page on screens 430px and less */
+.lefty {
+    left: 70px;
+}
+
+.lefty-1 {
+    left: 130px;
+}
+
 /* Ruler on the left page side */
 
 .ruler {
@@ -196,6 +213,7 @@ a {
 }
 
 @media only screen and (max-width: 992px) {
+    /* Image in detail page */
     #img {
         display: flex;
         align-self: center;
@@ -210,6 +228,22 @@ a {
     #shopping-button {
         left: 20px;
     }
+
+    #greetings-navbar {
+        top: 30px;
+    }
+
+    .ruler {
+        top: 150px;
+    }
+    /* .dark-bar {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        align-content: flex-end;
+        navbar-dark bg-dark d-flex justify-content-center px-1 align-content-end 
+    }*/
 }
 
 @media only screen and (max-width: 850px) {
@@ -222,6 +256,7 @@ a {
         margin: 20px;
     }
 
+    /* Image in detail page */
     #img {
         max-width: 500px;
     }
@@ -249,6 +284,7 @@ a {
         padding-left: 0px;
     }
 
+    /* Image in detail page */
     #img {
         max-width: 400px;
     }
@@ -259,23 +295,36 @@ a {
 }
 
 @media only screen and (max-width: 530px) {
+    /* Image in detail page */
     #img {
         max-width: 350px;
         margin-right: 5%;
     }
+
+    .logo-font {
+        margin: 10px !important;
+    }
+
 }
 
 @media only screen and (max-width: 430px) {
+    /* Filter containers in main page */
     .filter1 {
         height: 250px !important;
     }
 
+    /* Image in detail page */
     #img {
         max-width: 250px;
     }
 
+    /* Quantitybutton */
     #btn-qnty {
         max-width: 55%;
+    }
+
+    .logo-font {
+        margin: 0 !important;
     }
 
 }
