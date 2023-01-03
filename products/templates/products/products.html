@@ -13,10 +13,23 @@
        <div class="row">
            <div class="col text-center mt-3">
                {% for c in current_categories %}
-                   <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                       <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.presentable_name }}</span>
-                   </a>
+                <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                    <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.presentable_name }}</span>
+                </a>
                {% endfor %}
+
+                <ul class="navbar-nav w-auto mx-auto navbar-right flex-row-reverse">
+                    <li class="nav-item dropdown">
+                        <a class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sort Products by...
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                            <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                        </div>
+                    </li>
+                </ul> 
            </div>
        </div>
 

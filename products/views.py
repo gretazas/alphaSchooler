@@ -1,11 +1,13 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Product
+from .models import Product, Category
 
 
 def all_products(request):
     """ Show all products """
     products = Product.objects.all()
     categories = None
+    sort = None
+    direction = None
 
     if request.GET:
         if 'category' in request.GET:
@@ -13,8 +15,25 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'current_categories': categories,
+        'current_sorting': current_sorting,
         'products': products
     }
 
