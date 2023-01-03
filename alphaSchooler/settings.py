@@ -26,9 +26,10 @@ SECRET_KEY = 'django-insecure-mva_cm3jdz!&^&nawn=wq+cndlyn(@5shxfn5d^y79lak4_ne7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aSchooler.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
+                'https://aschooler.herokuapp.com/'
                 'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu78.gitpod.io',
                 'https://*.*.gitpod.io', 'http://127.0.0.1:8000/',
                 'http://127.0.0.1:8001/'
