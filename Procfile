@@ -1,2 +1,2 @@
-web:gunicorn
+web: gunicorn alphaSchooler.wsgi
 
