@@ -9,10 +9,13 @@ def bag_contents(request):
     total = 0
     product_count = 0
     collected_points = 0
+    use_points = 0
+    collected_points_total = settings.COLLECTED_POINTS
+    
 
 # Delivery
     if total < settings.FREE_DELIVERY_THRESHOLD:
-        delivery = total * Decimil(settings.STANDART_DELIVERY_PERCENTAGE / 100)
+        delivery = total * Decimal(settings.STANDART_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD * total
     else:
         dekivery = 0
@@ -33,7 +36,6 @@ def bag_contents(request):
     else:
         collected_points_total = collected_points_total + total
 
-
     context = {
         'bag_items': bag_items,
         'total': total,
@@ -44,6 +46,5 @@ def bag_contents(request):
         'grand_total': grand_total,
         'collected_points': collected_points,
         'collected_points_total': settings.COLLECTED_POINTS,
-
     }
     return context
