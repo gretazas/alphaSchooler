@@ -53,7 +53,7 @@
         <nav 
             class="navbar navbar-light bg-light bg-white ml-auto navbar-expand-lg">
             <div class="col-12 col-lg-7 my-auto py-1 py-lg-0 container-fluid">
-                <a href="" class="nav-link main-logo-link">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     
                     <h2 class="logo-font text-black mx-5"><img class="mx-1 shadow" src="/media/Greek_lc_alpha.svg.png" style="height:20px; width:20px;">Schooler</h2>
                 </a>
@@ -71,7 +71,7 @@
                 <ul class="list-inline list-unstyled text-center navbar-nav">
 
                     <li class="nav-item">
-                        <a class="text-black nav-link" href="#" id="user-options" , data-toggle="collapse" and
+                        <a class="text-black nav-link" href="#", data-toggle="collapse"
                             data-target="#thetarget" aria-haspopup="true" aria-expanded="false">
                             <div class="text-right">
                                 <div><i class="fas fa-search fa-lg"></i></div>
@@ -104,7 +104,7 @@
                     </li>
 
                     <li class="list-inline-item">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                        <a class="text-black nav-link" href="#" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-comment fa-lg"></i></div>
@@ -114,8 +114,7 @@
                     </li>
 
                     <li class="list-inline-item">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="text-black nav-link dropdown-item" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-cart-shopping"></i></div>
                                 <p class="my-0">Cart</p>
