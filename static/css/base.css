@@ -47,6 +47,13 @@ a {
     left: 130px;
 }
 
+/* Ruler make sticky */
+
+#sticky {
+    position: fixed;
+    left: 0px;
+}
+
 /* Ruler on the left page side */
 
 .ruler {
