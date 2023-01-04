@@ -23,3 +23,7 @@ handleTabletChange(mediaQuery);
 mediaQuery.addEventListener("change", () => {
     this.handleTabletChange();
 });
+
+$('.btt-link').click(function(e){
+    window.scrollTo(0, 0)
+})

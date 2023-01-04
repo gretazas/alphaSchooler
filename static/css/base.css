@@ -6,10 +6,16 @@ a {
     cursor: pointer !important;
 }
 
+/* In products page */
+
+/* Img */
+
 #product_img {
-    width: 240px; /* you can use % */
+    width: 240px;
     height: auto;
 }
+
+/* Img + info */
 
 #content_img {
     display: flex;
@@ -200,6 +206,15 @@ a {
     top: 90%;
    }
    
+   /* Back to top button in products page*/
+
+   .btt-button {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+   }
 
 
 @media only screen and (max-width: 1235px) {
