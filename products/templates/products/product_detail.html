@@ -79,8 +79,9 @@
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                    <button type="button" class="btn btn-warning" style="background-color: rgb(236, 197, 139);">
-                        Add To Bag</button>
+                            <button type="submit" class="btn btn-warning" style="background-color: rgb(236, 197, 139);">
+                                Add To Bag
+                            </button>
                         </div>
                     </form>
                 </div>

@@ -33,10 +33,10 @@ DEBUG = True
 ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
-                'https://aschooler.herokuapp.com/'
-                'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu78.gitpod.io',
-                'https://*.*.gitpod.io', 'http://127.0.0.1:8000/',
-                'http://127.0.0.1:8001/'
+                'https://aschooler.herokuapp.com'
+                'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu81.gitpod.io',
+                'https://*.*.gitpod.io', 'http://127.0.0.1:8000',
+                'http://127.0.0.1:8001'
                         ]
 PAPERLESS_CSRF_TRUSTED_ORIGINS = [
                 'http://127.0.0.1:8000/',
@@ -90,6 +90,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
             ],
+            
+            'libraries':{
+                'filter': 'bag.templatetags.filter',
+            }
         },
     },
 ]
