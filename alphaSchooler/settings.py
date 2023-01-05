@@ -33,7 +33,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
-                'https://aschooler.herokuapp.com'
+                'https://aschooler.herokuapp.com',
                 'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu81.gitpod.io',
                 'https://8001-gretazas-alphaschooler-gch7k8p00z5.ws-eu81.gitpod.io',
                 'https://8002-gretazas-alphaschooler-gch7k8p00z5.ws-eu81.gitpod.io',
@@ -91,7 +91,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
-            ],       
+            ],    
             'libraries':{
                 'filter': 'bag.templatetags.filter',
             }
