@@ -22,7 +22,7 @@
         </div>
         {% else %}
         <a href="">
-            <!-- <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"> -->
+            <img class="card-img-top img-fluid" src="/media/product_img/noimage.jpg" alt="{{ product.name }}">
         </a>
         {% endif %}
         <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
