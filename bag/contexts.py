@@ -1,5 +1,7 @@
 from decimal import Decimal
 from django.conf import settings
+from django.shortcuts import get_object_or_404
+from products.models import Product
 
 
 def bag_contents(request):
@@ -12,7 +14,7 @@ def bag_contents(request):
     use_points = 0
     collected_points_total = settings.COLLECTED_POINTS
     bag = request.session.get('bag', {})
-  
+
     for item_id, item_data in bag.items():
         if isinstance(item_data, int):
             product = get_object_or_404(Product, pk=item_id)
@@ -23,22 +25,12 @@ def bag_contents(request):
                 'quantity': item_data,
                 'product': product,
             })
-        else:
-            product = get_object_or_404(Product, pk=item_id)
-            total += quantity * product.price
-            product_count += quantity
-            bag_items.append({
-                'item_id': item_id,
-                'quantity': quantity,
-                'product': product,
-            })
 
-# Delivery
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDART_DELIVERY_PERCENTAGE / 100)
-        free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD * total
+        free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
-        dekivery = 0
+        delivery = 0
         free_delivery_delta = 0
 
     grand_total = delivery + total

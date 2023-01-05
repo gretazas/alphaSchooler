@@ -38,7 +38,7 @@
                             <tr>
                                 <td class="p-3 w-25">
                                     {% if item.product.image %}
-                                    <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                    <img class="img-fluid rounded" src="/media/product_img/products({{ item.product.pk }}).jpg" alt="{{ item.product.name }}">
                                     {% else %}
                                     <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                     {% endif %}
@@ -48,10 +48,10 @@
                                     <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">${{ item.product.price }}</p>
+                                    <p class="my-0">€{{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3 w-25">
-                                    <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
+                                    <form class="form update-form" method="POST" action="#">
                                         {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group">
@@ -98,12 +98,20 @@
                         </tr>
                         <tr>
                             <td colspan="5" class="text-right">
-                                <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
+                                <div class="row m-5">
+                                    <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
+                                        <button type="button" class="m-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"
+                                            style="background-color: rgb(236, 197, 139);" id="shopping-button">
+                                            <a href="{% url 'products' %}" style="text-decoration: none;color: black;">
+                                                <stong class="font-weight-btn">Go Back To Shopping &raquo; &raquo;</stong>
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>    
+                            <td colspan="5" class="text-right">
                                 <a href="#" class="btn btn-black rounded-0 btn-lg">
                                     <span class="text-uppercase">Secure Checkout</span>
                                     <span class="icon">
@@ -120,7 +128,16 @@
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
-                    <span class="text-uppercase">Keep Shopping</span>
+                    <div class="row m-5">
+                        <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
+                            <button type="submit" class="m-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"
+                                style="background-color: rgb(236, 197, 139);" id="shopping-button">
+                                
+                                    <stong class="font-weight-btn">Go Back To Shopping &raquo; &raquo;</stong>
+                             
+                            </button>
+                        </div>
+                    </div>
                 </a>
             {% endif %}
         </div>
