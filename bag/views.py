@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.http import HttpResponse
 from products.models import Product
 from django.contrib import messages
 
@@ -50,6 +51,7 @@ def adjust_bag(request, item_id):
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
 
+    bag = request.session.get('bag', {})
     try:
         product = get_object_or_404(Product, pk=item_id)
         bag.pop(item_id)
