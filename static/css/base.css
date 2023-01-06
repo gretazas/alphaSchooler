@@ -223,6 +223,14 @@ a {
     right: 15px;
    }
 
+   /* Success toast */
+
+    /* Close button */
+
+   #success_toast_btt {
+        position:absolute;
+        right: 10px;
+   }
 
 @media only screen and (max-width: 1235px) {
     .filter1,

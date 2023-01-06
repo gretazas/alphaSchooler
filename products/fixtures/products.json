@@ -1334,7 +1334,7 @@
        "model": "products.product",
        "fields": {
           "sku": "pp5005941612",
-          "name": "Bonnie Jean Plaid Dress and Cardigan - Girls Plus",
+          "name": "Bonnie Plaid Office suplies. Pins-Plus-Set",
           "description": "Getting all dolled up is fun with this festive, twirlable dress and coordinating cardigan from Bonnie Jean. includes dress and cardigan dress: scoopneck, sleeveless, front bow cardigan: long sleeves, velvet dress: polyester/metallic cardigan: polyester/spandex machine wash, line dry imported",
           "price": 2.99,
           "category": 7,
@@ -1404,7 +1404,7 @@
        "model": "products.product",
        "fields": {
           "sku": "pp5006082011",
-          "name": "Stafford Non-Iron Cotton Oxford Dress Shirt - Big & Tall",
+          "name": "Non-Iron Cotton Oxford Kitting Set",
           "description": "Enjoy the great quality wool for your knitting project for friends, family or yourself. Color light brown. Needles are not included. ",
           "price": 2.99,
           "category": 4,
@@ -1642,10 +1642,10 @@
       "model": "products.product",
       "fields": {
          "sku": "pp5006200155",
-         "name": "Arilan Henley Pencil Case",
-         "description": "Set of pencils and craft tools. A topper and rubber are included. Ready to go pack all in one pencil case. Relax and grab this pencil case for yourself or your child to get ready for school forward full stream. ",
+         "name": "Arilan Henley Folder",
+         "description": "Great leather folder. ",
          "price": 29.99,
-         "category": 9,
+         "category": 5,
          "rating": 5,
          "image_url": "/media/product_img/products(109).jpg",
          "image": "products(109).jpg"
@@ -1698,11 +1698,11 @@
       "model": "products.product",
       "fields": {
          "sku": "pp5003950574",
-         "name": "Royal Velvet Pencil-case",
-         "description": "These pencil cases are nice to hold. Great organization for your pencils and toppers to hold. Fits up to 50 items of stationary elements.",
+         "name": "Royal-case stapler",
+         "description": "These staplers are easy to hold. Great organization for documentation.",
          "price": 21.99,
          "category": 2,
-         "rating": 9,
+         "rating": 5,
          "image_url": "/media/product_img/products(37).jpg",
          "image": "products(37).jpg"
       }

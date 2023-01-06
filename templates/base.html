@@ -43,9 +43,6 @@
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
-
     <title>alpha Schooler{% block extra_title %}{% endblock %}{{ message }}</title>
 </head>
 
@@ -340,6 +337,25 @@
         </div>
     </div>
 
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+            {% with message.level as level %}
+                {% if level == 40 %}
+                    {% include 'includes/toasts/toast_error.html' %}
+                {% elif level == 30 %}
+                    {% include 'includes/toasts/toast_warning.html' %}
+                {% elif level == 25 %}
+                    {% include 'includes/toasts/toast_success.html' %}
+                {% else %}
+                    {% include 'includes/toasts/toast_info.html' %}
+                {% endif %}
+            {% endwith %}
+        {% endfor %}
+    </div>
+{% endif %}
+
+
     {% block page_header %}
     {% endblock %}
 
@@ -349,6 +365,11 @@
 
     {% block postloadjs %}
     <script type="text/javascript" defer src="/static/script/script.js"></script>
+    {% endblock %}
+    {% block extra_js %}
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
     {% endblock %}
 
 

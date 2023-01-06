@@ -55,17 +55,18 @@
                                         {% csrf_token %}
                                         <div class="row form-group">
                                             <div class="input-group input-group-{{ item.id }}">
-                                                <button type="button" class="decrement-qty col-1 btn btn-light mx-1 decrement-qty_{{ item.id }}" data-item_id="{{ itemid }}"><i class="fas fa-minus"></i></button>
+                                                <button type="button" class="decrement-qty col-1 btn btn-light mx-1 decrement-qty_{{ item.id }}" data-item_id="{{ item.id }}"><i class="fas fa-minus"></i></button>
                                                 <button  type="button" class="col-1 col-sm-3 col-md-4 btn btn-dark d-flex justify-content-center" id="btn-qnty"
                                                     style="display:table;width:70%;">
-                                                    <input class="col-1 form-control qty_input text-center id_qty_{{ item.id }}" name="quantity" value="1" min="1" max="99"
+                                                    <input class="col-1 form-control qty_input text-center id_qty_{{ item.id }}" name="quantity" value="{{ item.quantity }}" min="1" max="99"
                                                         data-item_id="{{ item.id }}" id="id_qty_{{ item.id }}"
                                                         style="width:15px;display:table-cell;width:25%;">
                                                 </button>
                                                 <button type="submit" class="increment-qty col-1 btn btn-light p-0 increment-qty_{{ item.id }}" data-item_id="{{ item.id }}"><span class="icon"><i class="fas fa-plus"></i></button>
                                             </div>
                                         </div>
-                                    </form> <a class="update-link text-info"><small>Update</small></a>
+                                    </form> 
+                                    <a class="update-link text-info"><small>Update</small></a>
                                     <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                                 </td>
                                 <td class="py-3">

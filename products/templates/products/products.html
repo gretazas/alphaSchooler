@@ -9,15 +9,33 @@
    </div>
 {% endblock %}
 {% block content %}
-   <div class="container-fluid  px-xl-5 px-l-5">
+   <div class="container-fluid px-xl-5 px-l-5">
        <div class="row">
-           <div class="col text-center mt-3">
-               {% for c in current_categories %}
-                <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                    <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.presentable_name }}</span>
-                </a>
-               {% endfor %}
-
+           <div class="text-center mt-3">
+                <div class="row">
+                {% for c in current_categories %}
+                    <a class="category-badge text-decoration-none col-1  col-md-2 col-sm-3" href="{% url 'products' %}?category={{ c.name }}">
+                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.presentable_name }}</span>
+                    </a>
+                {% endfor %}
+                <div  class="nav-item dropdown col-1 col-md-2 col-sm-3">
+                        <a class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All categories
+                        </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                        <a href="{% url 'products' %}?category=pencil" class="dropdown-item">Pencil</a>
+                        <a href="{% url 'products' %}?category=pencils" class="dropdown-item ">Pencils</a>
+                        <a href="{% url 'products' %}?category=pencil_cases" class="dropdown-item ">Pencil cases</a>
+                        <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
+                        <a href="{% url 'products' %}?category=art_supplies" class="dropdown-item ">Art supplies</a>
+                        <a href="{% url 'products' %}?category=folders" class="dropdown-item">Folders</a>
+                        <a href="{% url 'products' %}?category=diaries_copies" class="dropdown-item ">Diaries/ copie</a>
+                        <a href="{% url 'products' %}?category=stationary" class="dropdown-item ">Stationary</a>
+                        <a href="{% url 'products' %}?category=lunch_boxes" class="dropdown-item ">Lunch boxes</a>
+                    </div>
+                </div>
+                </div>
+          
                 <ul class="navbar-nav w-auto mx-auto navbar-right flex-row-reverse">
                     <li class="nav-item dropdown">
                         <a class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,7 +57,7 @@
                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                            <div class="card h-100 border-0">
                                {% if product.image %}
-                               <a id="product_img" href="">
+                               <a id="product_img" href="{% url 'product_detail' product.id %}">
                                    <img class="card-img-top img-fluid" src="/media/product_img/products({{ product.pk }}).jpg" alt="{{ product.name }}">
                                </a>
                                {% else %}
