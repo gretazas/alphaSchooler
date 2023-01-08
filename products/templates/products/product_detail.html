@@ -41,6 +41,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Product info -->
             <div class="col-lg-4 mx-2 offset-md-4">
                 <div class="card h-100 col-10 border-0 d-flex" id="info-card">
                     <div class="card-body col-sm-6 col-md-12 col-12 pb-0 m-5">
@@ -75,11 +76,10 @@
                                     <p class="col-8 col-md-8 col-sm-12 mt-5">{{ product.description }}</p>
                                 </div>
                             </div>
-                            
+                            <!-- Add to bag and go back to shopping buttons -->
                             <div class="form-row">
                                 <button type="submit" class="btn btn-warning" style="background-color: rgb(236, 197, 139);">
                                     Add To Bag
-                                    
                                 </button>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             </div>

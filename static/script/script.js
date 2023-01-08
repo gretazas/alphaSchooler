@@ -1,4 +1,4 @@
-// Change @media screens max-width 430px
+// Change @media screens max-width 430px in index.html
 
 function handleTabletChange(mediaQuery) {
 
@@ -18,7 +18,7 @@ function handleTabletChange(mediaQuery) {
     }
 }
 
-let mediaQuery = window.matchMedia('(max-width: 430px)');
+mediaQuery = window.matchMedia('(max-width: 430px)');
 handleTabletChange(mediaQuery);
 mediaQuery.addEventListener("change", () => {
     this.handleTabletChange();
@@ -27,3 +27,22 @@ mediaQuery.addEventListener("change", () => {
 $('.btt-link').click(function(e){
     window.scrollTo(0, 0)
 })
+
+// Change @media screens max-width 992px in bag.html
+
+function handleTabletChange1(mediaQuery1) {
+
+    if (mediaQuery1.matches) {
+        document.getElementById('bag-table-responsive').innerHTML = `
+        `
+        document.getElementById('bag-price-responsive').innerHTML = `
+        `
+        
+    }
+}
+
+mediaQuery1 = window.matchMedia('(max-width: 992px)');
+handleTabletChange1(mediaQuery1);
+mediaQuery1.addEventListener("change", () => {
+    this.handleTabletChange1();
+});

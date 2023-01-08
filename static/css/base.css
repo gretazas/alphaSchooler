@@ -274,6 +274,28 @@ a {
         align-content: flex-end;
         navbar-dark bg-dark d-flex justify-content-center px-1 align-content-end 
     }*/
+
+/* Responsivness in bag page */
+
+    #bag-info-responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bag-responsive {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .qnt-btt {
+        width: 40% !important;
+    }
+
+    .logo-font-1 {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 @media only screen and (max-width: 850px) {
