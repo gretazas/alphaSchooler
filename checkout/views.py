@@ -13,14 +13,16 @@ def checkout(request):
     bag = request.session.get('bag', {})
 
     if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
-            return redirect(reverse('products'))
+        messages.error(request, "There's nothing in your bag at the moment")
+        return redirect(reverse('products'))
 
     order_form = OrderForm()
 
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
+        'stripe_public_key': 'pk_test_51MOKnEGn2B9VBfJ8LBqpyeJl7RaHR45CoYUpc9Iyv5gwQ2YxGoHoh9DZuTjfVjuXl1Uqkv06DeNgRzkgDbuBS3XD00WHNOWlIC',
+        'client_secret': 'test client sectret',
         }
     
     return render(request, template, context)

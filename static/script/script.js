@@ -33,9 +33,9 @@ $('.btt-link').click(function(e){
 function handleTabletChange1(mediaQuery1) {
 
     if (mediaQuery1.matches) {
-        document.getElementById('bag-table-responsive').innerHTML = `
+        document.getElementById('bag-table-responsive').innerHTML = ` 
         `
-        document.getElementById('bag-price-responsive').innerHTML = `
+        document.getElementById('bag-price-responsive').innerHTML = ` 
         `
         
     }
