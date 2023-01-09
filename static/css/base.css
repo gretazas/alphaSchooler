@@ -225,6 +225,12 @@ a {
 
    /* Success toast */
 
+   .bag-notification-wrapper {
+    height:100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+   }
+
     /* Close button */
 
    #success_toast_btt {
