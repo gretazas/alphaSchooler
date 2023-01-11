@@ -365,6 +365,9 @@ a {
         margin: 10px !important;
     }
 
+    .bag-responsive p {
+        width: 180px;
+    }
 }
 
 @media only screen and (max-width: 430px) {
@@ -385,6 +388,10 @@ a {
 
     .logo-font {
         margin: 0 !important;
+    }
+
+    .bag-responsive {
+        margin: 20px;
     }
 
 }

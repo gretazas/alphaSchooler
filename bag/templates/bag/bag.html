@@ -24,8 +24,8 @@
             {% if bag_items %}
                 <div class="table-responsive rounded">
                     <table class="table table-sm table-borderless">
-                        <thead class="text-black" id="bag-table-responsive">
-                            <tr>
+                        <thead class="text-black">
+                            <tr id="bag-table-responsive">
                                 <th scope="col">Product Info</th>
                                 <th scope="col"></th>
                                 <th scope="col">Price</th>
@@ -160,5 +160,26 @@
              location.reload();
          });
     })
+</script>
+<script>
+    // Change @media screens max-width 992px in bag.html
+
+        function handleTabletChange(mediaQuery1) {
+
+        if (mediaQuery1.matches) {
+            document.getElementById('bag-table-responsive').innerHTML = ` 
+            `
+            document.getElementById('bag-price-responsive').innerHTML = ` 
+            `
+            
+        }
+        }
+
+        mediaQuery1 = window.matchMedia('(max-width: 992px)');
+        handleTabletChange(mediaQuery1);
+        mediaQuery1.addEventListener("change", () => {
+        this.handleTabletChange();
+        });
+
 </script>
 {% endblock %}
