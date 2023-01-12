@@ -238,6 +238,8 @@ a {
         right: 10px;
    }
 
+/* Sytle inputs */
+
    /* Country input */
 
    #div_id_country .stripe-style-input {
@@ -248,9 +250,35 @@ a {
         box-shadow: 0 1px 3px 0 #bdc2c9;
    }
 
+   #id_saved_country {
+        margin: 10px !important;
+        padding: 0px !important;
+        color: black;
+        padding: 0px 12px !important;
+        box-shadow: 0 1px 3px 0 #bdc2c9;
+        width: 70%;
+   }
+
    #div_id_country .stripe-style-input::placeholder {
         color: #949aa1;
    }
+
+   /* The rest of inputs */
+
+   .style-inputs {
+        box-sizing: border-box;
+        height: 30px;
+        width: 70%;
+        margin: 10px;
+        padding: 10px 12px;
+        border: 1px solid black;
+        border-radius: 0px;
+        background-color: white;
+        box-shadow: 0 1px 3px 0 #bdc2c9;
+        -webkit-transition: box-shadow 150ms ease;
+        transition: box-shadow 150ms ease;
+   }
+
 
 @media only screen and (max-width: 1235px) {
     .filter1,
