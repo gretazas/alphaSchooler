@@ -238,6 +238,20 @@ a {
         right: 10px;
    }
 
+   /* Country input */
+
+   #div_id_country .stripe-style-input {
+        margin: 10px !important;
+        padding: 0px !important;
+        color: black;
+        padding: 0px 12px !important;
+        box-shadow: 0 1px 3px 0 #bdc2c9;
+   }
+
+   #div_id_country .stripe-style-input::placeholder {
+        color: #949aa1;
+   }
+
 @media only screen and (max-width: 1235px) {
     .filter1,
     .filter2,
