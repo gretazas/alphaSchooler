@@ -5,6 +5,7 @@ from django.conf import settings
 
 from .models import Order, OrderLineItem
 from products.models import Product
+from profiles.models import UserProfile
 
 import json
 import time
@@ -26,17 +27,16 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )        
+        )    
 
     def handle_event(self, event):
         """ Handle webhook events """
-        print('here')
         return HttpResponse(
             content=f'Unhandled webhook received: {event["type"]}',
             status=200)
@@ -46,6 +46,7 @@ class StripeWH_Handler:
         print('handle_payment_intent_succeeded')
         intent = event.data.object
         pid = intent.id
+        # User`s bag:
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
         stripe_charge = stripe.Charge.retrieve(intent.latest_charge)

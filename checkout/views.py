@@ -7,6 +7,7 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 
 from products.models import Product
+from profiles.models import UserProfile
 from bag.contexts import bag_contents
 import stripe
 import json
@@ -22,8 +23,10 @@ def cache_checkout_data(request):
             'save_info': request.POST.get('save_info'),
             'username': request.user,
         })
+
         return HttpResponse(status=200)
     except Exception as e:
+        print(e)
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
@@ -46,6 +49,7 @@ def checkout(request):
             'town_or_city': request.POST['town_or_city'],
             'street_address1': request.POST['street_address1'],
             'street_address2': request.POST['street_address2'],
+            'country': request.POST['country'],
             'county': request.POST['county'],
         }
         order_form = OrderForm(form_data)
@@ -73,10 +77,11 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
-
-            request.session['save_info'] = 'save-info' in request.POST
+            request.session['save_info'] = 'save_info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
+            print(order_form.cleaned_data)
+            print(order_form.errors)
             messages.error(request, 'Something went wrong with your form. \
                 Please double check your information.')
     else:
@@ -90,10 +95,6 @@ def checkout(request):
         total_user_points = settings.COLLECTED_POINTS + total
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
-        intent = stripe.PaymentIntent.create(
-                amount=stripe_total,
-                currency=settings.STRIPE_CURRENCY,
-            )
 
         if request.user.is_authenticated:
             try:
@@ -101,24 +102,32 @@ def checkout(request):
                 order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
-                    'phone_number': profile.default_phone_number,
-                    'country': profile.default_country,
-                    'postcode': profile.default_postcode,
-                    'town_or_city': profile.default_town_or_city,
-                    'street_address1': profile.default_street_address1,
-                    'street_address2': profile.default_street_address2,
-                    'county': profile.default_county,
+                    'phone_number': profile.saved_phone_number,
+                    'country': profile.saved_country,
+                    'postcode': profile.saved_postcode,
+                    'town_or_city': profile.saved_town_or_city,
+                    'street_address1': profile.saved_street_address1,
+                    'street_address2': profile.saved_street_address2,
+                    'county': profile.saved_county,
                 })
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
+    current_bag = bag_contents(request)
+    total = current_bag['grand_total']
+    # total_user_points = settings.COLLECTED_POINTS + total
+    stripe_total = round(total * 100)
+    intent = stripe.PaymentIntent.create(
+                amount=stripe_total,
+                currency=settings.STRIPE_CURRENCY,
+            )
 
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
-        'client_secret': request.POST.get('client_secret'),
+        'client_secret': intent.client_secret
         }
 
     return render(request, template, context)

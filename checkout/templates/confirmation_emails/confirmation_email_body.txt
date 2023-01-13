@@ -1,0 +1,25 @@
+Hello {{ order.full_name }}!
+
+This is a confirmation of your order at Boutique Ado.
+
+Information:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+Order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+Your saved phone number is {{ order.phone_number }}.
+
+Contact us at {{ contact_email }}, or feel free to fill feedback form(Under contact at your navigation bar).
+
+Thank you for your order!
+
+`Till we see you next time! :-)
+
+Sincerely,
+alphaScooler team

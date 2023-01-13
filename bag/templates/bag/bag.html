@@ -86,6 +86,18 @@
                                 {% endif %}
                             </td>
                         </tr>
+
+                        <tr class="bag-responsive">    
+                            <td colspan="5" class="text-right">
+                                <a href="{% url 'checkout' %}" class="btn btn-black border rounded-0 btn-lg" style="background-color: rgb(236, 197, 139);">
+                                    <span class="text-uppercase">Secure Checkout</span>
+                                    <span class="icon">
+                                        <i class="fa-regular fa-credit-card m-1"></i>
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+
                         <tr class="bag-responsive">
                             <td colspan="5" class="text-right">
                                 <div class="row m-5">
@@ -100,16 +112,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="bag-responsive">    
-                            <td colspan="5" class="text-right">
-                                <a href="{% url 'checkout' %}" class="btn btn-black border rounded-0 btn-lg">
-                                    <span class="text-uppercase">Secure Checkout</span>
-                                    <span class="icon">
-                                        <i class="fa-regular fa-credit-card m-1"></i>
-                                    </span>
-                                </a>
-                            </td>
-                        </tr>
+                        
                     </table>
                 </div>
             {% else %}
@@ -122,9 +125,7 @@
                         <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
                             <button type="submit" class="m-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"
                                 style="background-color: rgb(236, 197, 139);" id="shopping-button">
-                                
                                     <stong class="font-weight-btn">Go Back To Shopping &raquo; &raquo;</stong>
-                             
                             </button>
                         </div>
                     </div>
