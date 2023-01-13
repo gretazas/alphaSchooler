@@ -119,17 +119,17 @@
                         <span>Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
                     </p>
                     <div class="submit-button mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0 btt-color">
+						<a href="{% url 'view_bag' %}" class="btn btn-outline-black border rounded-0 btt-color">
 							<span class="icon">
 								<i class="fas fa-chevron-left"></i>
                                 <i class="fas fa-chevron-left"></i>
 							</span>
 							<span class="font-weight-bold">Adjust Bag</span>
 						</a>
-						<button id="submit-button" class="btn btn-black rounded-0 btt-color">
+						<button id="submit-button" class="btn btn-black border rounded-0 btt-color">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">
-								<i class="fas fa-lock"></i>
+								<i class="fa-regular fa-credit-card m-1"></i>
                                 <i class="fas fa-chevron-right"></i>
                                 <i class="fas fa-chevron-right"></i>
 							</span>

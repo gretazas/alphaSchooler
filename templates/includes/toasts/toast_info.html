@@ -1,13 +1,23 @@
-<div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
-    <div class="arrow-up arrow-info"></div>
-    <div class="w-100 toast-capper bg-info"></div>
-    <div class="toast-header bg-white text-dark">
-        <strong class="mr-auto">Alert!</strong>
-        <button type="button" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <div class="toast-body bg-white">
-        {{ message }}        
+<div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
+    <div style="position: absolute; top: 0; right: 0;z-index:999;">
+        <div class="toast rounded-0 border-top-0 mr-0" data-autohide="false">
+            <div class="arrow-up arrow-success"></div>
+            <div class="w-100 toast-capper bg-success"></div>
+            <div class="toast-header text-dark alert alert-success" style="background-color:rgb(126, 196, 126);" >
+                <img src="/media/Greek_lc_alpha.svg.png" class="rounded" alt="" style="height:30px;width:30px;">
+                <strong class="mr-3">Attention!</strong>
+                <button type="button" class="mr-1 close text-dark" data-dismiss="toast" id="success_toast_btt" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body bg-white" >
+                <div class="row">
+                    <div class="col" id="success_toast_container">
+                        {{ message }}
+                        <hr class="mt-3 mb-3" style="background-color:rgb(149, 187, 149);height:4px;">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
