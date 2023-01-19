@@ -34,6 +34,9 @@ ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
         'https://aschooler.herokuapp.com',
+        'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu83.gitpod.io',
+        'https://8001-gretazas-alphaschooler-gch7k8p00z5.ws-eu83.gitpod.io',
+        'https://8002-gretazas-alphaschooler-gch7k8p00z5.ws-eu83.gitpod.io',
         'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu82.gitpod.io',
         'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu81.gitpod.io',
         'https://8001-gretazas-alphaschooler-gch7k8p00z5.ws-eu81.gitpod.io',
@@ -66,6 +69,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'ratings',
 ]
 
 MIDDLEWARE = [
@@ -130,6 +134,15 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'alphaSchooler.wsgi.application'
 
+# start rating
+
+# STAR_RATINGS_RERATE = False
+# STAR_RATINGS_RERATE_SAME_DELETE = True
+# STAR_RATINGS_CLEARABLE = True
+# STAR_RATINGS_ANONYMOUS = True
+# STAR_RATINGS_OBJECT_ID_PATTERN = '[a-z0-9]{32}'
+# STAR_RATINGS_RANGE = 5
+# STAR_RATINGS_RATING_MODEL = 'products.MyRating'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases

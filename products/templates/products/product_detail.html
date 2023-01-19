@@ -60,17 +60,32 @@
                                         </a>
                                     </p>
                                     {% endif %}
-                                    {% if product.rating %}
-                                    <small class="text-muted mb-5"><i class="fas fa-star mr-1"
-                                            style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>{{ product.rating }}
-                                        / 5</small>
+                                    {% if request.user.is_authenticated %}
+                                        <small class="ml-3 row">
+                                            <a class="btn btn-black border btt-color mx-2" href="{% url 'ratings' product.id %}" style="width: 80px; background-color:rgb(236, 197, 139);">Rate</a>
+                                        </small>
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                     {% else %}
-                                    <small class="text-muted mb-5">No Rating</small>
+                                    <div></div>
+                                    {% endif %}
+                                    {% if product.rating > 0 %}
+                                    <p class="small mt-1 mb-1">
+                                        <a class="text-muted" href="">
+                                    <i class="fas fa-star mr-1"
+                                            style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>{{ product.rating }}
+                                        / 5</a></p>
+                                    {% else %}
+                                    <p class="small mt-1 mb-1">
+                                        <a class="text-muted" href="">
+                                            <i class="fas fa-star mr-1"
+                                            style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>No rating
+                                        </a>
+                                    </p>
                                     {% endif %}
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
-                                        <a href="">Edit</a> |
-                                        <a class="text-danger" href="">Delete</a>
+                                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                     </small>
                                     {% endif %}
                                     <p class="col-8 col-md-8 col-sm-12 mt-5">{{ product.description }}</p>

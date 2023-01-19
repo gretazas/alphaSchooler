@@ -89,7 +89,7 @@
 
                         <tr class="bag-responsive">    
                             <td colspan="5" class="text-right">
-                                <a href="{% url 'checkout' %}" class="btn btn-black border rounded-0 btn-lg" style="background-color: rgb(236, 197, 139);">
+                                <a href="{% url 'checkout' %}" class="btn btn-black border btn-lg" style="background-color: rgb(236, 197, 139);">
                                     <span class="text-uppercase">Secure Checkout</span>
                                     <span class="icon">
                                         <i class="fa-regular fa-credit-card m-1"></i>
@@ -117,10 +117,7 @@
                 </div>
             {% else %}
                 <p class="lead mb-5">Your bag is empty.</p>
-                <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
+                <a href="{% url 'home' %}" class="btn btn-outline-black btn-lg">
                     <div class="row m-5">
                         <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
                             <button type="submit" class="m-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"

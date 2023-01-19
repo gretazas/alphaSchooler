@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/rate.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+
+    <div class="row d-flex justify-content-center">
+        <!-- Image  -->
+        <div class="col-5 col-sm-5 col-md-6 col-lg-3 col-xl-3 ">
+            {% if product.image %}
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 img-fluid d-flex justify-content-center ml-5">
+                            <img style="width: 300px;height: 200px;" id="img" src="/media/product_img/products({{ product.pk }}).jpg" alt="{{ product.name }}">
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <img class="card-img-top img-fluid" src="/media/product_img/noimage.jpg" alt="{{ product.name }}">
+            {% endif %}
+                {% csrf_token %}
+                <!-- Product info -->
+                <div class="form-group  mx-2 text-left">
+                    <div class="card h-100 border-0 d-flex">
+                        <div class="card-body pb-0 m-3">
+                            <p>{{ product.name }}</p> 
+                        </div>
+                        <div class="pt-0 border-0">
+                            <div class="">
+                                <div class="">
+                                    <p class="lead mb-0 text-left font-weight-bold"><span
+                                            style="color:rgb(16, 138, 138);">€</span>{{ product.price }}</p>
+                                    {% if product.category %}
+                                    <p class="small mt-1 mb-1">
+                                        <a class="text-muted" href="">
+                                            <i class="fas fa-tag mr-1"
+                                                style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(9, 88, 88);"></i>{{ product.category.presentable_name }}
+                                        </a>
+                                    </p>
+                                    {% if product.rating > 0 %}
+                                    <p class="small mt-1 mb-1">
+                                        <a class="text-muted" href="">
+                                            <i class="fas fa-star mr-1"
+                                            style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>{{ product.rating }}/ 5
+                                        </a>
+                                    </p>
+                                    {% else %}
+                                    <p class="small mt-1 mb-1">
+                                        <a class="text-muted" href="">
+                                            <i class="fas fa-star mr-1"
+                                            style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>No rating
+                                        </a>
+                                    </p>
+                                        {% endif %}
+                                    {% endif %}
+                                </div>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            
+            <form action="" method="POST">
+            
+                <input type="hidden" name="product_id" value="{{ product.id }}"/>
+            
+                {% csrf_token %}  
+                <h1>Your Rating</h1>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="1" style="font-size: xx-large; cursor: pointer;">
+                    <input type="hidden" name="rate" value="1"/>
+                </span>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="2" style="font-size: xx-large; cursor: pointer;">
+                    <input type="hidden" name="rate" value="2"/>
+                </span>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="3" style="font-size: xx-large; cursor: pointer;">
+                    <input type="hidden" name="rate" value="3"/>
+                </span>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="4" style="font-size: xx-large; cursor: pointer;">
+                    <input type="hidden" name="rate" value="4"/>
+                </span>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="5" style="font-size: xx-large; cursor: pointer;">
+                    <input type="hidden" name="rate" value="5"/>
+                </span>
+                <br>
+                <button type="submit" onclick="showRating()" class="btn my-3" style="background-color: rgb(236, 197, 139);" value="rate">Rate</button> 
+                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+            
+            </form>
+        </div>
+    </div>
+
+<script>
+    let rate = "";
+    function starmark(item) {
+        let count = item.id[0];
+        rate = count
+        let subid = item.id.substring(1);
+
+        for(let i=1; i<5; i++) {
+            if (i<count) {
+                document.getElementById((i+1)+subid).style.color="orange";
+            } else {
+                document.getElementById((i+1)+subid).style.color="black";
+            }
+        }
+    }
+
+    
+</script>
+{% endblock %}

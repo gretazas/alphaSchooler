@@ -1,3 +1,5 @@
+/* Payment confirmation loading spinner */
+
 .loading-spinner {
 	display: flex;
     align-items: center;
@@ -41,15 +43,6 @@
     color: #949aa1;
 }
 
-.controls input {
-    margin: 0px !important;
-    padding: 0px !important;
-    color: black;
-    padding: 0px 12px !important;
-    box-shadow: 0 1px 3px 0 #bdc2c9;
-    width: 70%;
-   }
-
 .fieldset-label {
     position: relative;
     right: .5rem;
@@ -91,6 +84,9 @@ select option {
     margin: 0;
     height: 100%;
 }
+
+/* Max screen width 630px */
+
 @media only screen and (max-width: 630px) {
     .container-margin .row .order-lg-last {
         display: flex;
@@ -104,6 +100,8 @@ select option {
         padding-left: 0px;
     }
 }
+
+/* Max screen width 576px */
 
 @media only screen and (max-width: 576px) {
     .w-sm {
