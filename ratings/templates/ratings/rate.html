@@ -75,21 +75,17 @@
             
                 {% csrf_token %}  
                 <h1>Your Rating</h1>
-                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="1" style="font-size: xx-large; cursor: pointer;">
-                    <input type="hidden" name="rate" value="1"/>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="showRating(this)" id="1" style="font-size: xx-large; cursor: pointer;">
                 </span>
-                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="2" style="font-size: xx-large; cursor: pointer;">
-                    <input type="hidden" name="rate" value="2"/>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="showRating(this)" id="2" style="font-size: xx-large; cursor: pointer;">
                 </span>
-                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="3" style="font-size: xx-large; cursor: pointer;">
-                    <input type="hidden" name="rate" value="3"/>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="showRating(this)" id="3" style="font-size: xx-large; cursor: pointer;">
                 </span>
-                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="4" style="font-size: xx-large; cursor: pointer;">
-                    <input type="hidden" name="rate" value="4"/>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="showRating(this)" id="4" style="font-size: xx-large; cursor: pointer;">
                 </span>
-                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="starmark(this)" id="5" style="font-size: xx-large; cursor: pointer;">
-                    <input type="hidden" name="rate" value="5"/>
+                <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="showRating(this)" id="5" style="font-size: xx-large; cursor: pointer;">
                 </span>
+                <input type="hidden" id ="rating" name="rate" value="{{ rating.value }}"/>
                 <br>
                 <button type="submit" onclick="showRating()" class="btn my-3" style="background-color: rgb(236, 197, 139);" value="rate">Rate</button> 
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -111,9 +107,13 @@
             } else {
                 document.getElementById((i+1)+subid).style.color="black";
             }
+            
         }
     }
-
+    function showRating(item1) { 
+        rating = document.getElementById('rating')
+        rating.value = item1.id
+    }
     
 </script>
 {% endblock %}
