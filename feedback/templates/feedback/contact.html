@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% load filter %}
+
+{% block page_header %}
+   <div class="container header-container">
+       <div class="row">
+           <div class="col"></div>
+       </div>
+   </div>
+{% endblock %}
+{% block content %}
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font-1 logo-font mb-4">Contact Information</h2>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="row">
+        <hr class="mt-5">
+        <h5 class="logo-font-1 logo-font mb-4">Phone number</h5><p>085 49382 32323</p>
+        <p calss="small">Working hours 9pm-5pm</p>
+        <hr>
+        <h5 class="logo-font-1 logo-font mb-4">Email Addess</h5><p>alphaSchooler@gmail.com</p>
+        <hr>
+    </div>
+
+    <div class="row d-flex col-sm-12">
+        <a href="{% url 'home' %}" class="btn btn-outline-black btn-lg">
+            <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
+                <button type="submit" class="m-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"
+                    style="background-color: rgb(236, 197, 139);" id="shopping-button">
+                        <stong class="font-weight-btn">Shopping Time &raquo; &raquo;</stong>
+                </button>
+            </div>
+        </a>
+    </div>
+</div>
+
+{% endblock %}

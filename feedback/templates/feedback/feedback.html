@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% load filter %}
+
+{% block page_header %}
+   <div class="container header-container">
+       <div class="row">
+           <div class="col"></div>
+       </div>
+   </div>
+{% endblock %}
+{% block content %}
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font-1 logo-font mb-4">Feedback</h2>
+            <hr>
+        </div>
+    </div>
+    <form action="{% url 'feedback' %}" method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="m-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"
+                style="background-color: rgb(236, 197, 139);">
+            <stong class="font-weight-btn">Submit</stong>
+        </button>
+    </form>
+    <div class="row d-flex col-sm-12">
+        <div class="col">
+                <a href="{% url 'home' %}" class="btn btn-outline-black btn-lg">
+                    <div class="row m-5">
+                        <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
+                            <button type="submit" class="m-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"
+                                style="background-color: rgb(236, 197, 139);" id="shopping-button">
+                                    <stong class="font-weight-btn">Shopping Time &raquo; &raquo;</stong>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
