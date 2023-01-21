@@ -26,7 +26,7 @@ def get_rating(request, product_id):
             ratings.rate_id = product_id
             ratings.rate_amount = 0
             ratings.rate_qnt = 0
-        ratings = Rating.objects.all().filter(rate_id=product_id).first()
+        ratings = Rating.objects.all().filter(rate_id=product_id)
         # Get rate_amount and add prev saved amount
         ratings.rate_amount = int(ratings.rate_amount) + int(product_rate)
         ratings.rate_qnt = ratings.rate_qnt + 1
@@ -38,9 +38,9 @@ def get_rating(request, product_id):
 
         print(ratings.rate_qnt)
         print(ratings.rate_amount)
-        Rating(rate_id=product_id, rate_qnt=ratings.rate_qnt, rate_amount=ratings.rate_amount, member=member, date=datetime.today()).objects.create()
+        Rating.objects.create(rate_id=product_id, rate_qnt=ratings.rate_qnt, rate_amount=ratings.rate_amount, member=member, date=datetime.today())
         messages.info(request, 'Rated successfully!')
     # if request.user in ratings.member:
     #     messages.error(request, 'You can\'t review product twice')
     #     return redirect(request, 'products/product_detail.html', {'product': product})
-    return render(request, 'ratings/rate.html', {'product': product})
+    return render(request, 'ratings/rate.html', {'product': product, 'on_ratings_page': True})

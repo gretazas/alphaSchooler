@@ -10,9 +10,6 @@ def bag_contents(request):
     bag_items = []
     total = 0
     product_count = 0
-    collected_points = 0
-    use_points = 0
-    collected_points_total = settings.COLLECTED_POINTS
     bag = request.session.get('bag', {})
 
     for item_id, item_data in bag.items():
@@ -35,19 +32,6 @@ def bag_contents(request):
 
     grand_total = delivery + total
 
-# Points
-    if use_points:
-        collected_money = collected_points_total * settings.ONE_PERCENT
-        total = total - collected_money
-
-        # For unused points
-        if total < 0:
-            collected_points_total = total * 2
-        else:
-            collected_points_total = collected_points_total - total
-    else:
-        collected_points_total = collected_points_total + total
-
     context = {
         'bag_items': bag_items,
         'total': total,
@@ -56,7 +40,5 @@ def bag_contents(request):
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
-        'collected_points': collected_points,
-        'collected_points_total': settings.COLLECTED_POINTS,
     }
     return context

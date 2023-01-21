@@ -84,6 +84,8 @@
                                         You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
                                     </p>
                                 {% endif %}
+                            
+                            
                             </td>
                         </tr>
 
@@ -95,6 +97,21 @@
                                         <i class="fa-regular fa-credit-card m-1"></i>
                                     </span>
                                 </a>
+                                {% if request.user.is_authenticated %}
+                                <form action="{% url 'points' %}" method="POST" id="payment-points">
+                                    {% csrf_token %}
+                                    {% for points in collected_points %}
+                                    <p>Your savedpoints are {% if points.points %} {{ points.points }} {% else %} 0{% endif %}</p>
+                                    {% endfor %}
+                                    <button id="submit-button" class="btn btn-black border btt-color my-3" style="background-color: rgb(236, 197, 139);">
+                                        <span class="font-weight-bold w-50">Use Your Saved Points To Purchase</span>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-2x fa-piggy-bank"></i>
+                                        </span>
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    </button>
+                                </form>
+                                {% endif %}
                             </td>
                         </tr>
 

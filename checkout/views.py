@@ -58,7 +58,6 @@ def checkout(request):
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
-            order.total_user_points = settings.COLLECTED_POINTS
             order.save()
             for item_id, item_data in bag.items():
                 try:
@@ -92,7 +91,6 @@ def checkout(request):
 
         current_bag = bag_contents(request)
         total = current_bag['grand_total']
-        total_user_points = settings.COLLECTED_POINTS + total
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
 
@@ -134,9 +132,7 @@ def checkout(request):
 
 
 def checkout_success(request, order_number):
-    """
-    Handle successful checkouts
-    """
+    """ Handle successful checkouts """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
@@ -164,7 +160,7 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successful! \
         Order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
-
+    points_page = True
     if 'bag' in request.session:
         del request.session['bag']
 

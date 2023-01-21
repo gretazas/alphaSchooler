@@ -69,6 +69,30 @@
                                 <p class="text-muted">Your order history is empty</p>
                         {% endif %}
                         </tbody>
+                        <hr>
+                        <p class="text-muted">Order History</p>
+                        {% if points %}
+                        <tbody>
+                            {% for points in collected_points %}
+                                <tr>
+                                    <td>
+                                        <a href="{% url 'points' %}"
+                                        title="Saved Points">
+                                        </a>
+                                    </td>
+                                    <td>{{ points.date }}</td>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>{{ points.points }}</td>
+                                </tr>
+                            {% endfor %}
+                        {% else %}
+                                <p class="text-muted">Your points history is empty</p>
+                        {% endif %}
+                        
+                        </tbody>
+
                     </table>
                 </div>
             </div>

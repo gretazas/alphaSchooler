@@ -14,7 +14,7 @@ def feedback(request):
             return render(request, 'feedback/feedback.html')
     else:
         form = FeedbackForm()
-    return render(request, 'feedback/feedback.html', {'form': form})
+    return render(request, 'feedback/feedback.html', {'form': form, 'on_feedback_page': True})
 
 
 def contact(request):

@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     'profiles',
     'ratings',
     'feedback',
+    'points',
 ]
 
 MIDDLEWARE = [
