@@ -21,12 +21,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 img-fluid d-flex justify-content-center ml-5">
-                            <img style="width: 300px;height: 200px;" id="img" src="/media/product_img/products({{ product.pk }}).jpg" alt="{{ product.name }}">
+                            <img class="rounded" style="width: 300px;height: 200px;" id="img" src="/media/product_img/products({{ product.pk }}).jpg" alt="{{ product.name }}">
                         </div>
                     </div>
                 </div>
             {% else %}
-                <img class="card-img-top img-fluid" src="/media/product_img/noimage.jpg" alt="{{ product.name }}">
+                <img class="card-img-top img-fluid rounded" src="/media/product_img/noimage.jpg" alt="{{ product.name }}">
             {% endif %}
                 {% csrf_token %}
                 <!-- Product info -->

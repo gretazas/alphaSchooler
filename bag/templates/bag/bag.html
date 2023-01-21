@@ -38,9 +38,9 @@
                             <tr class="" id="bag-info-responsive">
                                 <td class="p-3 w-25">
                                     {% if item.product.image %}
-                                    <img class="img-fluid rounded" src="/media/product_img/products({{ item.product.pk }}).jpg" alt="{{ item.product.name }}">
+                                    <img class="img-fluid rounded-2" src="/media/product_img/products({{ item.product.pk }}).jpg" alt="{{ item.product.name }}">
                                     {% else %}
-                                    <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                    <img class="img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                     {% endif %}
                                 </td>
                                 <td class="py-3">
@@ -56,7 +56,7 @@
                                         <div class="row form-group">
                                             <div class="input-group input-group-{{ item.id }}">
                                                 <button type="button" class="decrement-qty col-1 btn btn-light mx-1 decrement-qty_{{ item.id }}" data-item_id="{{ item.id }}"><i class="fas fa-minus"></i></button>
-                                                <button  type="button" class="col-1 col-sm-3 col-md-4 btn btn-dark d-flex justify-content-center" id="btn-qnty"
+                                                <button  type="button" class="col-1 col-sm-3 col-md-4 btn btn-dark d-flex justify-content-center  rounded-2" id="btn-qnty"
                                                     style="display:table;width:70%;">
                                                     <input class="col-1 col-md-6 col-sm-8 form-control qty_input text-center id_qty_{{ item.id }}" name="quantity" value="{{ item.quantity }}" min="1" max="99"
                                                         data-item_id="{{ item.id }}" id="id_qty_{{ item.id }}"
