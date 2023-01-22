@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from bag.contexts import bag_contents
 from checkout.forms import OrderForm
 from profiles.models import UserProfile
-from checkout.models import Order
+from checkout.models import Order, OrderLineItem
 
 
 def points(request):
@@ -30,7 +30,6 @@ def points(request):
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
-        print(request.POST['full_name'],)
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -114,7 +113,6 @@ def points(request):
     template = 'points/points_checkout.html'
     context = {
         'order_form': order_form,
-        'form': form,
         'on_points_page': True
         }
     return render(request, template, context)
