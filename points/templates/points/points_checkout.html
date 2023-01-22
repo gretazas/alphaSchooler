@@ -103,23 +103,6 @@
 						</div>
                     </fieldset>
 
-                    <fieldset class="px-3">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
-                        <!-- A Stripe card element -->
-                        <div class="mb-3" #stripecardelement id="card-element"></div>
-                        <!-- Form errors -->
-                        <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
-                        <!-- Payment intent id -->
-                        <input type="hidden" value="{{ client_secret }}" name="client_secret">
-                    </fieldset>
-
-                    <p class="small text-danger my-0">
-                        <span class="icon">
-                            <i class="fas fa-exclamation-circle"></i>
-                        </span>
-                        <span>Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
-                    </p>
-
                     <div class="submit-button mt-5 mb-2">                    
 						<a href="{% url 'view_bag' %}" class="btn btn-outline-black border btt-color">
 							<span class="icon">

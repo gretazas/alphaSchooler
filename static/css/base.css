@@ -289,6 +289,12 @@ a {
 
 }
 
+/* Footer */
+
+footer {
+    bottom: 0px;
+}
+
 @media only screen and (max-width: 992px) {
 
     /* Image in detail page */
@@ -315,14 +321,6 @@ a {
     .ruler {
         top: 150px;
     }
-    /* .dark-bar {
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        padding: 2%;
-        align-content: flex-end;
-        navbar-dark bg-dark d-flex justify-content-center px-1 align-content-end 
-    }*/
 
 /* Responsivness in bag page */
 
@@ -345,6 +343,17 @@ a {
         display: flex;
         justify-content: space-around;
     }
+}
+
+/* Footer */
+
+footer {
+    position: sticky;
+    bottom: 0;
+}
+
+#mce-success-response {
+    color: rgb(9, 88, 88);
 }
 
 @media only screen and (max-width: 850px) {

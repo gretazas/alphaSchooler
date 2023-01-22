@@ -236,11 +236,16 @@ By setting your quantity to 0 user deletes the item from the order line items.
 <p align="right">(<a href="#agile">Back to Agile</a>)</p>
 
 
-### Web Marketing
-- Facebook <br>
-    <img src="./media/media/schooler_fb(1).jpg" heigth="500" width="600" />
-    <img src="./media/media/schooler_fb(2).jpg" heigth="500" width="600" />
-- Subscriptions
+# Web Marketing
+
+### Facebook <br>
+
+<img src="./media/media/schooler_fb(1).jpg" heigth="500" width="600" />
+<img src="./media/media/schooler_fb(2).jpg" heigth="500" width="600" />
+
+### Subscriptions<br>
+
+<img src="./media/mailchimp.jpg" heigth="400" width="500" />
 
 ### SEO Optimization
 
