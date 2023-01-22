@@ -1,108 +1,406 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Introduction
+Link to gitHub:
+<a href="https://github.com/gretazas/aSchooler">https://github.com/gretazas/aSchooler</a>
 
-Welcome gretazas,
+<img src="./media/media/definition_of_schooler.jpg" alt="definition of the schooler" heigth="500" width="600"/>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
+* [Project Planning](#project-planning)
+* [Agile](#agile)
+    * [User Stories](#user-stories)
+    * [Project Scope](#project-scope)
+    * [Project Dtabase Scope](#project-database-scope)
+    * [Project Setup](#project-setup)
+    * [Project Management](#project-management)
+* [Features](#features)
+    * [Products](#products)
+    * [Create An Account](#create-an-account)
+    * [Create an order](#create-an-order)
+    * [View an order](#view-an-order)
+    * [View Your order history](#view-your-order-history)
+    * [Delete Items](#delete-items)
+    * [Create Your Profile](#create-your-profile)
+    * [Edit Your Profile shipping details](#edit-your-profile-shipping-details)
+    * [Admin](#admin)
+* [Features - Features Left To Implement](#features-left-to-implement)
+* [Basic Wireframe Design](#basic-wireframe-design)
+    * [Landing Page Wireframe](./extrareadme.md)
+    * [Products Page Wireframe](./extrareadme.md)
+    * [Product Detail Page Wireframe](./extrareadme.md)
+    * [Shopping Cart Wireframe](./extrareadme.md)
+    * [Mix And Match Products Wireframe](./extrareadme.md)
+                
+* [Kanban Example](#kanban-example)
+* [Web Marketing](#web-marketing)
+* [SEO Optimization](#seo-optimization)
+* [Stripe payments](#stripe-payments)
+* [Testing](#testing)
+    * [Automated Testing](#automated-testing)
+    * [Django Coverage report](#django-coverage-report)
+    * [Manual Testing](#manual-testing)
+    * [Pep8 and Pylint Python Validators](#pep8-and-pylint-python-validators)
+    * [HTML Validation with Official W3C Validator](#html-validation-with-official-w3c-validator)
+    * [CSS Validation with Official W3C Validator](#css-validation-with-official-w3c-validator)
+    * [LightHouse testing](#lighthouse-testing)
+    * [Responsive testing](#responsive-testing)
+* [Bugs](#bugs)
+* [Existing Bugs](#existing-bugs)
+* [Deployment](#deployment)
+* [Deployment on Heroku](#deployment-on-heroku)
+* [Heroku Deployment - Setting up AWS](#heroku-deployment---setting-up-aws)
+* [MVT Architecture](#mvt-architecture)
+* [Django AdminUser](#django-adminuser)
+* [Used Technologies](#used-technologies)
+* [Frameworks and Libraries used](#frameworks-and-libraries-used)
+* [Credits](#credits)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Project Planning
 
-## Gitpod Reminders
+* Create wireframes as sketches.
+    -   Imagination realization
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* Create wireframes with figma.com
+    -   Imagination realization in digital
 
-`python3 -m http.server`
+* Create user stories
+    -   To get an idea of site usage purposes and features
 
-A blue button should appear to click: _Make Public_,
+* Create some parts of readme.md file
+    -   To get mentor's approval to start the project
 
-Another blue button should appear to click: _Open Browser_.
+* Create this project plan
+    -   Get a straight idea of what to do and when
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Create a new repository on GitHub
+    -   Use Code Institute`s  full template
 
-A blue button should appear to click: _Make Public_,
+* Start project
+    -   Initial Commit
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Use user stories creating project as guidance
+    -   Easy to organize work with and commit messages
 
-------
+* Have access to secure checkout.
+    -   Using Stripe.
 
-## Release History
+* Admin access to all products, orders, and shipping details.
+    -   Admin access allows you to view orders.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Agile
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* [Basic Wireframe Design](./extrareadme.md)
+* [Kanban Example](#kanban-example)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## User Stories
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* Viewing and navigation
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    * As a Shopper I can View a list of products so that I can Select some to purchase
+    * As a Shopper I can View individual product details so that I can Find out about the product price, product itself, rating, view image, search for right sizes
+    * As a Shopper I can Easy view the total of all purchases at all times so that I can Easy to see how close I am to the spending limit
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* Registration and User Accounts
+    * As a Site User I can Register to the Account so that I can Have a personal account i can view my profile, order history, saved shipping and billing details
+    * As a Site Member I can Easy to login or logout so that I can Access my personal account information
+    * As a Site Member  I can Easily recover  password so that I can Recover access to my account if needed 
+    * As a Site Member I can Receive an email conformation after registering so that I can have reinsurance that registration was successful
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Sorting and searching
+    * As a Shopper I can Sort the list of products so that I can Easily identify the best-rated products, and sort them by preference 
+    * As a Shopper I can Sort specific categories of product so that I can Find best priced or best-rated products
+    * As a Shopper I can Find the product by name or description so that I can Find specific product to purchase
+    * As a Shopper I can Easily see what I've searched for and how many items found
+    * As a Site Member I can access the page with the matching feature so that I can compare in-color products to match them
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Purchasing and Checkout
+    * As a Shopper I can Easily select the size and quantity of the product when purchasing it so that I can Ensure I've selected the right products
+    * As a Shopper I can Have access to secure checkout so that I can feel safe and pay with ease
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Project Scope
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<img src="./media/media/planning_scope.jpg" alt="Product/Category Model" heigth="1500" width="1400"/>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Project Database Scope
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Product/Category Model:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<img src="./media/media/category_db.jpg" alt="Product/Category Model" heigth="500" width="600"/>
 
-------
+Order/LineItems Model:
 
-## FAQ about the uptime script
+<img src="./media/media/order_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
-**Why have you added this script?**
+Feedback Model:
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+<img src="./media/media/feedback_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
-**How will this affect me?**
+Rate Product Model:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+<img src="./media/media/rate_product_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Collect Points Model:
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+<img src="./media/media/collect_points_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
-**So….?**
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+## Project Setup
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Project Management
+GitHub's KanBan board to manage my workflow. [](https://github.com/)
+* Three columns:
+    - todo
+    - in progress
+    - done
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The board allowed me to easily drag my stories through the business delivery lifecycle of: To Do -> In Progress -> Completed.
 
-**Anything more?**
+## Features
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+View different greetings on different time of the year:
+    Import:
+        - datetime
+        - pandas as pd
+            - start = datetime.datetime.strptime("01-12-2021", "%d-%m-%Y")
+            - end = datetime.datetime.strptime("07-12-2021", "%d-%m-%Y")
+            - date_generated = pd.date_range(start, end)
+                - Greatings according to season:
+                - if September f"Back to School!"
+                - elif December f"Happy Christmas!!!"
+                - elif February f"Happy Valentine`s Day!"
+                - elif March/april f"Happy Easter!"
+                - elif August f"Sale! 10% off with any purchase!"
+                - else f"delivery free with purchase of {{ FRE_DELIVERY_TRESHOLD}}€!"
 
----
 
-Happy coding!
+### Products
+- Filter products by categories 
+- View product detail
+- Rate product
+- Save product purchase history
+- Save purchased product saving points histopy
+
+### Create An Account
+- Create save account with email varification.
+
+### Create an order
+- Create and order after clicking checkout and see them in profile later.
+
+### View an order
+- View your order and collect points history in profile page
+
+### View Your order history
+Users have an ability to view their own order history.
+
+### Delete Items
+By setting your quantity to 0 user deletes the item from the order line items.
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+### Create Your Profile
+- Create account for ability to rate product
+- Save points, one point per one euro from every purchase
+- Save information for next purchase itme
+
+### Edit Your Profile shipping details
+- Easily edit profile information save from earlier
+
+### Admin
+
+
+<img src="" heigth="500" width="600" />
+
+
+
+## Features left to implement
+- Login via social media account, eg. facebook or google.
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+
+### Basic Wireframe Design
+
+* [Basic Wireframe Design](./extrareadme.md)
+
+### Kanban Example
+
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#agile">Back to Agile</a>)</p>
+
+
+### Web Marketing
+- Facebook <br>
+    <img src="./media/media/schooler_fb(1).jpg" heigth="500" width="600" />
+    <img src="./media/media/schooler_fb(2).jpg" heigth="500" width="600" />
+- Subscriptions
+
+### SEO Optimization
+
+- For Googles search engine:
+
+    - I Googled similar products fields and:
+
+    - Created meta tags with a description keywords.
+    - Made use of good semantics.
+    - Customed image names to the subject of the image using `alt` attribute.
+    - Contented of the site matches the purpose.
+    - Created `sitemap.xml` file.
+    - Created `robots.txt` file.
+
+- Keywords:
+    - School items, school products, stationary, office, company suplies, school bags, paper, folders,  organisation suplies, math set, art suplies, pencils, markers.
+    <hr>
+    <img src="./media/google_search.jpg" heigth="500" width="600" />
+## Stripe payments
+
+## Testing
+
+<img src="./media/media/add_product_test(1).jpg" heigth="500" width="600" />
+<img src="./media/media/edit_product_test.jpg" heigth="500" width="600" />
+<img src="./media/media/update_product_test.jpg" heigth="500" width="600" />
+<img src="./media/media/delete_product_test.jpg" heigth="500" width="600" />
+
+### Automated Testing
+
+* TestCase
+
+#### Django Coverage report
+
+### Manual Testing
+
+### Pep8 and Pylint Python Validators
+
+### HTML Validation with Official W3C Validator
+
+### CSS Validation with Official W3C Validator
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+### LightHouse testing
+
+### Responsive testing
+
+## Bugs
+
+- Product import in ratings app and Rating import in Product app. Circular import bug.
+    - Tried to import products.models and go around with it.
+    - Solution: imported Product in the Ratings function.
+
+## Existing Bugs
+
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+## Deployment
+
+Deployment procedure (using Heroku):
+
+### Deployment on Heroku
+
+- Create a Heroku app within Heroku.
+- Give project "alfaSchooler" name
+- Set Postgres database on Heroku.
+- Create an env.py file in your root directory and import the os library within this file.
+- Within your env.py file, create environment variables for your DATABASE_URL and SECRET_KEY.
+- Assign a values to DATABASE_URL and SECRET_KEY and within the Heroku settings tab, create corresponding Config Variables.
+- Set `ALLOWED_HOSTS` in settings.py
+- Run migrations for the new Postgres database.
+- Heroku configurations.
+- Create Procfile to tell Heroku to create a web dyno which will run gunicorn and serve our Django app.
+- Push all changes and attempted the initial deployment on Heroku.
+- Heroku builds the app, if the built is successful.
+
+### Heroku Deployment - Setting up AWS
+
+- Set Amazon Web Services S3 - cloud based storage service - for storing static and media files.
+    - Create a new bucket to store files.
+    - Make publicly accessible..
+    - New endpoint.
+    - Set access between the Heroku app and S3 bucket.
+    - Bucket policy section access policy generator to create a security policy.
+    - Copy the ARN paste into the ARN box, add the statement and generated a policy.
+    - Copy this policy into the bucket policy editor.
+    - I proceeded to the access control list section and set the list objects permission for everyone under the Public Access section.
+    - Create a group.
+    - Import pre-built policy.
+    - Attach the policy to the group.
+    - Created a user.
+    - Download the CSV file with users access key and secret access key.
+    - Create a new folder "media" for all media files.
+    - Grant public read access to these objects.
+- Install boto3 and django-storage.
+- Set settings.py with a statement: if there's an environment variable called `USE_AWS` in the environment. 
+    - Define the bucket name, the AWS region name, the access key and secret access key 
+    - Keep access key and secret access hiding in environment variables.
+    - Create a string to tell Django location of static files, containing the AWS S3 bucket name to generate the appropriate URL.
+    - Set static file storage and the location.
+    - Set imports.
+    - Set the default file storage/ media files locations.
+    - Set the URLs for static and media files using the custom domain and the new locations.
+    - Add  `AWS_S3_OBJECT_PARAMETERS`.
+    - 
+- In Heroku add the AWS keys to the configuration variables.
+    - Remove the collect static variable from config vars.
+    - Add stripe keys to the Heroku config vars.
+    - Add the URL `/checkout/WH`.
+    - Add webhooks signing secret to the Heroku config vars.
+
+- Stripe webpage.
+    - Add a new webhook endpoint.
+
+## MVT Architecture
+
+<img src="./media/media/MVT.jpg" heigth="500" width="600" />
+
+## Django AdminUser
+- Ability to view:
+    - purchased orders
+    - user info
+    - product ratings
+- Ability to change /add/edit/delete products on page and in admin panel
+
+## Used Technologies
+* HTML
+* CSS
+* Python
+* JavaScript
+
+## Frameworks and Libraries used
+* Django with;
+    * gunicorn
+    * psycopg2
+    * postgresql
+    * AllAuth
+    * Crispy Forms
+    * colorfield
+* Bootstrap
+
+
+
+## Credits
+  <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" width="90">
+
+- [temp-mail.org](https://temp-mail.org/en/)
+- [miniwebtool.com](https://miniwebtool.com/django-secret-key-generator/)
+- [XML-Sitemaps.com](https://www.xml-sitemaps.com/)
+- [Privacy Policy Generator](https://www.privacypolicygenerator.info/)
+- [CSS tricks](https://css-tricks.com/snippets/css/css-triangle/)
+
+
+![Safe](https://img.shields.io/badge/Stay-Safe-red?logo=data:image/svg%2bxml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEwIDUxMCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTAgNTEwIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnPjxnPjxwYXRoIGQ9Im0xNzQuNjEgMzAwYy0yMC41OCAwLTQwLjU2IDYuOTUtNTYuNjkgMTkuNzJsLTExMC4wOSA4NS43OTd2MTA0LjQ4M2g1My41MjlsNzYuNDcxLTY1aDEyNi44MnYtMTQ1eiIgZmlsbD0iI2ZmZGRjZSIvPjwvZz48cGF0aCBkPSJtNTAyLjE3IDI4NC43MmMwIDguOTUtMy42IDE3Ljg5LTEwLjc4IDI0LjQ2bC0xNDguNTYgMTM1LjgyaC03OC4xOHYtODVoNjguMThsMTE0LjM0LTEwMC4yMWMxMi44Mi0xMS4yMyAzMi4wNi0xMC45MiA0NC41LjczIDcgNi41NSAxMC41IDE1LjM4IDEwLjUgMjQuMnoiIGZpbGw9IiNmZmNjYmQiLz48cGF0aCBkPSJtMzMyLjgzIDM0OS42M3YxMC4zN2gtNjguMTh2LTYwaDE4LjU1YzI3LjQxIDAgNDkuNjMgMjIuMjIgNDkuNjMgNDkuNjN6IiBmaWxsPSIjZmZjY2JkIi8+PHBhdGggZD0ibTM5OS44IDc3LjN2OC4wMWMwIDIwLjY1LTguMDQgNDAuMDctMjIuNjQgNTQuNjdsLTExMi41MSAxMTIuNTF2LTIyNi42NmwzLjE4LTMuMTljMTQuNi0xNC42IDM0LjAyLTIyLjY0IDU0LjY3LTIyLjY0IDQyLjYyIDAgNzcuMyAzNC42OCA3Ny4zIDc3LjN6IiBmaWxsPSIjZDAwMDUwIi8+PHBhdGggZD0ibTI2NC42NSAyNS44M3YyMjYuNjZsLTExMi41MS0xMTIuNTFjLTE0LjYtMTQuNi0yMi42NC0zNC4wMi0yMi42NC01NC42N3YtOC4wMWMwLTQyLjYyIDM0LjY4LTc3LjMgNzcuMy03Ny4zIDIwLjY1IDAgNDAuMDYgOC4wNCA1NC42NiAyMi42NHoiIGZpbGw9IiNmZjRhNGEiLz48cGF0aCBkPSJtMjEyLjgzIDM2MC4xMnYzMGg1MS44MnYtMzB6IiBmaWxsPSIjZmZjY2JkIi8+PHBhdGggZD0ibTI2NC42NSAzNjAuMTJ2MzBoMzYuMTRsMzIuMDQtMzB6IiBmaWxsPSIjZmZiZGE5Ii8+PC9nPjwvc3ZnPg==)
+
+  <p align="right">(<a href="#top">Back to top</a>)</p>
+
+  <!-- [![GitHub Actions Status Badge](https://github.com/GoogleChrome/lighthouse/workflows/CI/badge.svg)](https://github.com/GoogleChrome/lighthouse/actions/workflows/ci.yml) 
+  [![GitHub Actions Status Badge](https://github.com/GoogleChrome/lighthouse/workflows/unit/badge.svg)](https://github.com/GoogleChrome/lighthouse/actions/workflows/unit.yml) 
+  [![GitHub Actions Status Badge](https://github.com/GoogleChrome/lighthouse/workflows/smoke/badge.svg)](https://github.com/GoogleChrome/lighthouse/actions/workflows/smoke.yml) [![Coverage Status](https://codecov.io/gh/GoogleChrome/lighthouse/branch/master/graph/badge.svg)](https://codecov.io/gh/GoogleChrome/lighthouse)
+  [![Build tracker for Lighthouse](https://img.shields.io/badge/buildtracker-ok-blue)](https://lh-build-tracker.herokuapp.com/) 
+  [![NPM lighthouse package](https://img.shields.io/npm/v/lighthouse.svg)](https://npmjs.org/package/lighthouse) -->
