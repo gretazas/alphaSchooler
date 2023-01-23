@@ -299,6 +299,7 @@ By setting your quantity to 0 user deletes the item from the order line items.
     - Tried to import products.models and go around with it.
     - Solution: imported Product in the Ratings function.
 
+- Heroku deployment failed: added- python_version<"3.9" to backports.zoneinfo==0.2.1;
 ## Existing Bugs
 
 
@@ -388,7 +389,9 @@ Deployment procedure (using Heroku):
     * colorfield
 * Bootstrap
 
+## A word from me
 
+These past two portfolios were difficult for me, but with this portfolio I learned alot. Even though there are so many things not done , I spent a lot of time debugging myself and learnt a lot of new information. Most importangly I have learnt, while debugging not to look for solution, but understand what is causing the issue. 
 
 ## Credits
   <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" width="90">
