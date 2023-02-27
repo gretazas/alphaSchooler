@@ -16,13 +16,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 img-fluid d-flex justify-content-center ml-5">
-                    <img class="rounded-2" id="img" src="/media/product_img/products({{ product.pk }}).jpg" alt="{{ product.name }}">
+                    <img class="rounded-2" id="img" src="{{ MEDIA_URL }}product_img/products({{ product.pk }}).jpg" alt="{{ product.name }}">
                 </div>
             </div>
         </div>
         {% else %}
         <a href="">
-            <img class="card-img-top img-fluid  rounded-2" src="/media/product_img/noimage.jpg" alt="{{ product.name }}">
+            <img class="card-img-top img-fluid  rounded-2" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
         </a>
         {% endif %}
         <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
