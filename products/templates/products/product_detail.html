@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 img-fluid d-flex justify-content-center ml-5">
-                    <img class="rounded-2" id="img" src="{{ MEDIA_URL }}product_img/products({{ product.pk }}).jpg" alt="{{ product.name }}">
+                    <img class="rounded-2" id="img" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </div>
             </div>
         </div>
