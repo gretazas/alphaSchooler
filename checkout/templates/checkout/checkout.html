@@ -41,7 +41,7 @@
                         <div class="col-3 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
-                                    <img class="w-100  rounded-2" src="{{ MEDIA_URL }}/product_img/products({{ item.product.pk }}).jpg" alt="{{ product.name }}">
+                                <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 {% else %}
                                     <img class="w-100  rounded-2" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 {% endif %}

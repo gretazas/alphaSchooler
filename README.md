@@ -2,7 +2,7 @@
 Link to gitHub:
 <a href="https://github.com/gretazas/aSchooler">https://github.com/gretazas/aSchooler</a>
 
-<img src=".{{ MEDIA_URL }}media/definition_of_schooler.jpg" alt="definition of the schooler" heigth="500" width="600"/>
+<img src="{{ MEDIA_URL }}media/definition_of_schooler.jpg" alt="definition of the schooler" heigth="500" width="600"/>
 
 ## Table of Contents
 * [Project Planning](#project-planning)
@@ -124,29 +124,29 @@ Link to gitHub:
 
 ## Project Scope
 
-<img src=".{{ MEDIA_URL }}media/planning_scope.jpg" alt="Product/Category Model" heigth="1500" width="1400"/>
+<img src="{{ MEDIA_URL }}media/planning_scope.jpg" alt="Product/Category Model" heigth="1500" width="1400"/>
 
 ## Project Database Scope
 
 Product/Category Model:
 
-<img src=".{{ MEDIA_URL }}media/category_db.jpg" alt="Product/Category Model" heigth="500" width="600"/>
+<img src="{{ MEDIA_URL }}media/category_db.jpg" alt="Product/Category Model" heigth="500" width="600"/>
 
 Order/LineItems Model:
 
-<img src=".{{ MEDIA_URL }}media/order_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+<img src="{{ MEDIA_URL }}media/order_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
 Feedback Model:
 
-<img src=".{{ MEDIA_URL }}media/feedback_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+<img src="{{ MEDIA_URL }}media/feedback_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
 Rate Product Model:
 
-<img src=".{{ MEDIA_URL }}media/rate_product_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+<img src="{{ MEDIA_URL }}media/rate_product_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
 Collect Points Model:
 
-<img src=".{{ MEDIA_URL }}media/collect_points_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+<img src="{{ MEDIA_URL }}media/collect_points_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
@@ -240,12 +240,12 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 ### Facebook <br>
 
-<img src=".{{ MEDIA_URL }}media/schooler_fb(1).jpg" heigth="500" width="600" />
-<img src=".{{ MEDIA_URL }}media/schooler_fb(2).jpg" heigth="500" width="600" />
+<img src="{{ MEDIA_URL }}media/schooler_fb(1).jpg" heigth="500" width="600" />
+<img src="{{ MEDIA_URL }}media/schooler_fb(2).jpg" heigth="500" width="600" />
 
 ### Subscriptions<br>
 
-<img src=".{{ MEDIA_URL }}mailchimp.jpg" heigth="400" width="500" />
+<img src="{{ MEDIA_URL }}mailchimp.jpg" heigth="400" width="500" />
 
 ### SEO Optimization
 
@@ -263,15 +263,15 @@ By setting your quantity to 0 user deletes the item from the order line items.
 - Keywords:
     - School items, school products, stationary, office, company suplies, school bags, paper, folders,  organisation suplies, math set, art suplies, pencils, markers.
     <hr>
-    <img src=".{{ MEDIA_URL }}google_search.jpg" heigth="500" width="600" />
+    <img src="{{ MEDIA_URL }}google_search.jpg" heigth="500" width="600" />
 ## Stripe payments
 
 ## Testing
 
-<img src=".{{ MEDIA_URL }}media/add_product_test(1).jpg" heigth="500" width="600" />
-<img src=".{{ MEDIA_URL }}media/edit_product_test.jpg" heigth="500" width="600" />
-<img src=".{{ MEDIA_URL }}media/update_product_test.jpg" heigth="500" width="600" />
-<img src=".{{ MEDIA_URL }}media/delete_product_test.jpg" heigth="500" width="600" />
+<img src="{{ MEDIA_URL }}media/add_product_test(1).jpg" heigth="500" width="600" />
+<img src="{{ MEDIA_URL }}media/edit_product_test.jpg" heigth="500" width="600" />
+<img src="{{ MEDIA_URL }}media/update_product_test.jpg" heigth="500" width="600" />
+<img src="{{ MEDIA_URL }}media/delete_product_test.jpg" heigth="500" width="600" />
 
 ### Automated Testing
 
@@ -364,7 +364,7 @@ Deployment procedure (using Heroku):
 
 ## MVT Architecture
 
-<img src=".{{ MEDIA_URL }}media/MVT.jpg" heigth="500" width="600" />
+<img src="{{ MEDIA_URL }}media/MVT.jpg" heigth="500" width="600" />
 
 ## Django AdminUser
 - Ability to view:

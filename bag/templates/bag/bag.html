@@ -38,7 +38,7 @@
                             <tr class="" id="bag-info-responsive">
                                 <td class="p-3 w-25">
                                     {% if item.product.image %}
-                                    <img class="img-fluid rounded-2" src="{{ MEDIA_URL }}product_img/products({{ item.product.pk }}).jpg" alt="{{ item.product.name }}">
+                                    <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     {% else %}
                                     <img class="img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                     {% endif %}

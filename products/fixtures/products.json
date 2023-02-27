@@ -9,7 +9,7 @@
           "price": 3.99,
           "category": 6,
           "rating": 4.6,
-          "image_url": "{{ MEDIA_URL }}product_img/products(1).jpg",
+          "image_url": "{{ MEDIA_URL }}products(1).jpg",
           "image": "products(1).jpg"
        }
     },
@@ -23,7 +23,7 @@
           "price": 1.99,
           "category": 7,
           "rating": 4.6,
-          "image_url": "{{ MEDIA_URL }}product_img/products(2).jpg",
+          "image_url": "{{ MEDIA_URL }}products(2).jpg",
           "image": "products(2).jpg"
        }
     },
@@ -37,7 +37,7 @@
           "price": 5.99,
           "category": 4,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(3).jpg",
+          "image_url": "{{ MEDIA_URL }}products(3).jpg",
           "image": "products(3).jpg"
        }
     },
@@ -51,7 +51,7 @@
           "price": 9.99,
           "category": 7,
           "rating": 3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(4).jpg",
+          "image_url": "{{ MEDIA_URL }}products(4).jpg",
           "image": "products(4).jpg"
        }
     },
@@ -65,7 +65,7 @@
           "price": 32.99,
           "category": 6,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(5).jpg",
+          "image_url": "{{ MEDIA_URL }}products(5).jpg",
           "image": "products(5).jpg"
        }
     },
@@ -79,7 +79,7 @@
           "price": 10.99,
           "category": 2,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(6).jpg",
+          "image_url": "{{ MEDIA_URL }}products(6).jpg",
           "image": "products(6).jpg"
        }
     },
@@ -93,7 +93,7 @@
           "price": 59,
           "category": 7,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(7).jpg",
+          "image_url": "{{ MEDIA_URL }}products(7).jpg",
           "image": "products(7).jpg"
        }
     },
@@ -107,7 +107,7 @@
           "price": 6.99,
           "category": 7,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(8).jpg",
+          "image_url": "{{ MEDIA_URL }}products(8).jpg",
           "image": "products(8).jpg"
        }
     },
@@ -121,7 +121,7 @@
           "price": 9.99,
           "category": 7,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(9).jpg",
+          "image_url": "{{ MEDIA_URL }}products(9).jpg",
           "image": "products(9).jpg"
        }
     },
@@ -135,7 +135,7 @@
           "price": 33.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(10).jpg",
+          "image_url": "{{ MEDIA_URL }}products(10).jpg",
           "image": "products(10).jpg"
        }
     },
@@ -149,7 +149,7 @@
           "price": 2.99,
           "category": 7,
           "rating": 3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(11).jpg",
+          "image_url": "{{ MEDIA_URL }}products(11).jpg",
           "image": "products(11).jpg"
        }
     },
@@ -163,7 +163,7 @@
           "price": 19.99,
           "category": 4,
           "rating": 4.6,
-          "image_url": "{{ MEDIA_URL }}product_img/products(12).jpg",
+          "image_url": "{{ MEDIA_URL }}products(12).jpg",
           "image": "products(12).jpg"
        }
     },
@@ -177,7 +177,7 @@
           "price": 2,
           "category": 7,
           "rating": 3.2,
-          "image_url": "{{ MEDIA_URL }}product_img/products(13).jpg",
+          "image_url": "{{ MEDIA_URL }}products(13).jpg",
           "image": "products(13).jpg"
        }
     },
@@ -191,7 +191,7 @@
           "price": 26.99,
           "category": 5,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(14).jpg",
+          "image_url": "{{ MEDIA_URL }}products(14).jpg",
           "image": "products(14).jpg"
        }
     },
@@ -205,7 +205,7 @@
           "price": 8.99,
           "category": 7,
           "rating": 4.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(15).jpg",
+          "image_url": "{{ MEDIA_URL }}products(15).jpg",
           "image": "products(15).jpg"
        }
     },
@@ -219,7 +219,7 @@
           "price": 5.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(16).jpg",
+          "image_url": "{{ MEDIA_URL }}products(16).jpg",
           "image": "products(16).jpg"
        }
     },
@@ -233,7 +233,7 @@
           "price": 3.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(17).jpg",
+          "image_url": "{{ MEDIA_URL }}products(17).jpg",
           "image": "products(17).jpg"
        }
     },
@@ -247,7 +247,7 @@
           "price": 59.99,
           "category": 4,
           "rating": 4.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(18).jpg",
+          "image_url": "{{ MEDIA_URL }}products(18).jpg",
           "image": "products(18).jpg"
        }
     },
@@ -261,7 +261,7 @@
           "price": 0.99,
           "category": 7,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(19).jpg",
+          "image_url": "{{ MEDIA_URL }}products(19).jpg",
           "image": "products(19).jpg"
        }
     },
@@ -275,7 +275,7 @@
           "price": 0.99,
           "category": 1,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(20).jpg",
+          "image_url": "{{ MEDIA_URL }}products(20).jpg",
           "image": "products(20).jpg"
        }
     },
@@ -289,7 +289,7 @@
           "price": 60.99,
           "category": 7,
           "rating": 4.3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(21).jpg",
+          "image_url": "{{ MEDIA_URL }}products(21).jpg",
           "image": "products(21).jpg"
        }
     },
@@ -303,7 +303,7 @@
           "price": 76.99,
           "category": 4,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(22).jpg",
+          "image_url": "{{ MEDIA_URL }}products(22).jpg",
           "image": "products(22).jpg"
        }
     },
@@ -317,7 +317,7 @@
           "price": 29.99,
           "category": 6,
           "rating": 4.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(23).jpg",
+          "image_url": "{{ MEDIA_URL }}products(23).jpg",
           "image": "products(23).jpg"
        }
     },
@@ -331,7 +331,7 @@
           "price": 82,
           "category": 2,
           "rating": 3.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(24).jpg",
+          "image_url": "{{ MEDIA_URL }}products(24).jpg",
           "image": "products(24).jpg"
        }
     },
@@ -345,7 +345,7 @@
           "price": 1.99,
           "category": 1,
           "rating": 3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(25).jpg",
+          "image_url": "{{ MEDIA_URL }}products(25).jpg",
           "image": "products(25).jpg"
        }
     },
@@ -359,7 +359,7 @@
           "price": 201.99,
           "category": 3,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(26).jpg",
+          "image_url": "{{ MEDIA_URL }}products(26).jpg",
           "image": "products(26).jpg"
        }
     },
@@ -373,7 +373,7 @@
           "price": 8.99,
           "category": 8,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(27).jpg",
+          "image_url": "{{ MEDIA_URL }}products(27).jpg",
           "image": "products(27).jpg"
        }
     },
@@ -387,7 +387,7 @@
           "price": 30.99,
           "category": 6,
           "rating": 4.3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(28).jpg",
+          "image_url": "{{ MEDIA_URL }}products(28).jpg",
           "image": "products(28).jpg"
        }
     },
@@ -401,7 +401,7 @@
           "price": 31.99,
           "category": 6,
           "rating": 4.6,
-          "image_url": "{{ MEDIA_URL }}product_img/products(29).jpg",
+          "image_url": "{{ MEDIA_URL }}products(29).jpg",
           "image": "products(29).jpg"
        }
     },
@@ -415,7 +415,7 @@
           "price": 72.99,
           "category": 7,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(30).jpg",
+          "image_url": "{{ MEDIA_URL }}products(30).jpg",
           "image": "products(30).jpg"
        }
     },
@@ -429,7 +429,7 @@
           "price": 9.99,
           "category": 7,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(31).jpg",
+          "image_url": "{{ MEDIA_URL }}products(31).jpg",
           "image": "products(31).jpg"
        }
     },
@@ -443,7 +443,7 @@
           "price": 35.99,
           "category": 7,
           "rating": 4.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(32).jpg",
+          "image_url": "{{ MEDIA_URL }}products(32).jpg",
           "image": "products(32).jpg"
        }
     },
@@ -457,7 +457,7 @@
           "price": 8.99,
           "category": 4,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(33).jpg",
+          "image_url": "{{ MEDIA_URL }}products(33).jpg",
           "image": "products(33).jpg"
        }
     },
@@ -471,7 +471,7 @@
           "price": 9.99,
           "category": 6,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(34).jpg",
+          "image_url": "{{ MEDIA_URL }}products(34).jpg",
           "image": "products(34).jpg"
        }
     },
@@ -485,7 +485,7 @@
           "price": 50.99,
           "category": 6,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(35).jpg",
+          "image_url": "{{ MEDIA_URL }}products(35).jpg",
           "image": "products(35).jpg"
        }
     },
@@ -499,7 +499,7 @@
           "price": 23.99,
           "category": 3,
           "rating": 4.6,
-          "image_url": "{{ MEDIA_URL }}product_img/products(36).jpg",
+          "image_url": "{{ MEDIA_URL }}products(36).jpg",
           "image": "products(36).jpg"
        }
     },
@@ -513,7 +513,7 @@
           "price": 21.99,
           "category": 2,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(37).jpg",
+          "image_url": "{{ MEDIA_URL }}products(37).jpg",
           "image": "products(37).jpg"
        }
     },
@@ -527,7 +527,7 @@
           "price": 6.99,
           "category": 6,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(38).jpg",
+          "image_url": "{{ MEDIA_URL }}products(38).jpg",
           "image": "products(38).jpg"
        }
     },
@@ -541,7 +541,7 @@
           "price": 201.99,
           "category": 3,
           "rating": 3.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(39).jpg",
+          "image_url": "{{ MEDIA_URL }}products(39).jpg",
           "image": "products(39).jpg"
        }
     },
@@ -555,7 +555,7 @@
           "price": 31.99,
           "category": 4,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(40).jpg",
+          "image_url": "{{ MEDIA_URL }}products(40).jpg",
           "image": "products(40).jpg"
        }
     },
@@ -569,7 +569,7 @@
           "price": 1.99,
           "category": 1,
           "rating": 3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(41).jpgp",
+          "image_url": "{{ MEDIA_URL }}products(41).jpgp",
           "image": "products(41).jpg.jpg"
        }
     },
@@ -583,7 +583,7 @@
           "price": 28.99,
           "category": 8,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(42).jpg",
+          "image_url": "{{ MEDIA_URL }}products(42).jpg",
           "image": "products(42).jpg"
        }
     },
@@ -597,7 +597,7 @@
           "price": 1.99,
           "category": 1,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(43).jpg",
+          "image_url": "{{ MEDIA_URL }}products(43).jpg",
           "image": "products(43).jpg"
        }
     },
@@ -611,7 +611,7 @@
           "price": 6.99,
           "category": 7,
           "rating": 4.9,
-          "image_url": "{{ MEDIA_URL }}product_img/products(44).jpg",
+          "image_url": "{{ MEDIA_URL }}products(44).jpg",
           "image": "products(44).jpg"
        }
     },
@@ -625,7 +625,7 @@
           "price": 41,
           "category": 4,
           "rating": 4.6,
-          "image_url": "{{ MEDIA_URL }}product_img/products(45).jpg",
+          "image_url": "{{ MEDIA_URL }}products(45).jpg",
           "image": "products(45).jpg"
        }
     },
@@ -639,7 +639,7 @@
           "price": 122.99,
           "category": 8,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(46).jpg",
+          "image_url": "{{ MEDIA_URL }}products(46).jpg",
           "image": "products(46).jpg"
        }
     },
@@ -653,7 +653,7 @@
           "price": 48.99,
           "category": 7,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(47).jpg",
+          "image_url": "{{ MEDIA_URL }}products(47).jpg",
           "image": "products(47).jpg"
        }
     },
@@ -667,7 +667,7 @@
           "price": 54.99,
           "category": 6,
           "rating": 3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(48).jpg",
+          "image_url": "{{ MEDIA_URL }}products(48).jpg",
           "image": "products(48).jpg"
        }
     },
@@ -681,7 +681,7 @@
           "price": 60.99,
           "category": 2,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(49).jpg",
+          "image_url": "{{ MEDIA_URL }}products(49).jpg",
           "image": "products(49).jpg"
        }
     },
@@ -695,7 +695,7 @@
           "price": 6.99,
           "category": 7,
           "rating": 4.6,
-          "image_url": "{{ MEDIA_URL }}product_img/products(50).jpg",
+          "image_url": "{{ MEDIA_URL }}products(50).jpg",
           "image": "products(50).jpg"
        }
     },
@@ -709,7 +709,7 @@
           "price": 19.99,
           "category": 3,
           "rating": 3.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(51).jpg",
+          "image_url": "{{ MEDIA_URL }}products(51).jpg",
           "image": "products(51).jpg"
        }
     },
@@ -723,7 +723,7 @@
           "price": 2.99,
           "category": 4,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(52).jpg",
+          "image_url": "{{ MEDIA_URL }}products(52).jpg",
           "image": "products(52).jpg"
        }
     },
@@ -737,7 +737,7 @@
           "price": 53.99,
           "category": 6,
           "rating": 3.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(53).jpg",
+          "image_url": "{{ MEDIA_URL }}products(53).jpg",
           "image": "products(53).jpg"
        }
     },
@@ -751,7 +751,7 @@
           "price": 6.99,
           "category": 7,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(54).jpg",
+          "image_url": "{{ MEDIA_URL }}products(54).jpg",
           "image": "products(54).jpg"
        }
     },
@@ -765,7 +765,7 @@
           "price": 28.99,
           "category": 6,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(55).jpg",
+          "image_url": "{{ MEDIA_URL }}products(55).jpg",
           "image": "products(55).jpg"
        }
     },
@@ -779,7 +779,7 @@
           "price": 5.99,
           "category": 7,
           "rating": 3.9,
-          "image_url": "{{ MEDIA_URL }}product_img/products(56).jpgp",
+          "image_url": "{{ MEDIA_URL }}products(56).jpgp",
           "image": "products(56).jpg"
        }
     },
@@ -793,7 +793,7 @@
           "price": 106,
           "category": 3,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(57).jpg",
+          "image_url": "{{ MEDIA_URL }}products(57).jpg",
           "image": "products(57).jpg"
        }
     },
@@ -807,7 +807,7 @@
           "price": 105,
           "category": 3,
           "rating": 3.3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(58).jpg",
+          "image_url": "{{ MEDIA_URL }}products(58).jpg",
           "image": "products(58).jpg"
        }
     },
@@ -821,7 +821,7 @@
           "price": 6.99,
           "category": 7,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(59).jpg",
+          "image_url": "{{ MEDIA_URL }}products(59).jpg",
           "image": "products(59).jpg"
        }
     },
@@ -835,7 +835,7 @@
           "price": 5.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(60).jpg",
+          "image_url": "{{ MEDIA_URL }}products(60).jpg",
           "image": "products(60).jpg"
        }
     },
@@ -849,7 +849,7 @@
           "price": 4.99,
           "category": 7,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(61).jpg",
+          "image_url": "{{ MEDIA_URL }}products(61).jpg",
           "image": "products(61).jpg"
        }
     },
@@ -863,7 +863,7 @@
           "price": 3.99,
           "category": 7,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(62).jpg",
+          "image_url": "{{ MEDIA_URL }}products(62).jpg",
           "image": "products(62).jpg"
        }
     },
@@ -877,7 +877,7 @@
           "price": 1.99,
           "category": 4,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(63).jpg",
+          "image_url": "{{ MEDIA_URL }}products(63).jpg",
           "image": "products(63).png"
        }
     },
@@ -891,7 +891,7 @@
           "price": 19.99,
           "category": 6,
           "rating": 4.9,
-          "image_url": "{{ MEDIA_URL }}product_img/products(64).jpg",
+          "image_url": "{{ MEDIA_URL }}products(64).jpg",
           "image": "products(64).jpg"
        }
     },
@@ -905,7 +905,7 @@
           "price": 9.99,
           "category": 6,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(65).jpg",
+          "image_url": "{{ MEDIA_URL }}products(65).jpg",
           "image": "products(65).jpg"
        }
     },
@@ -919,7 +919,7 @@
           "price": 0.99,
           "category": 7,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(66).jpg",
+          "image_url": "{{ MEDIA_URL }}products(66).jpg",
           "image": "products(66).jpg"
        }
     },
@@ -933,7 +933,7 @@
           "price": 72.99,
           "category": 4,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(67).jpg",
+          "image_url": "{{ MEDIA_URL }}products(67).jpg",
           "image": "products(67).jpg"
        }
     },
@@ -947,7 +947,7 @@
           "price": 50.99,
           "category": 4,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(68).jpg",
+          "image_url": "{{ MEDIA_URL }}products(68).jpg",
           "image": "products(68).jpg"
        }
     },
@@ -961,7 +961,7 @@
           "price": 102,
           "category": 3,
           "rating": 4.3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(69).jpg",
+          "image_url": "{{ MEDIA_URL }}products(69).jpg",
           "image": "products(69).jpg"
        }
     },
@@ -975,7 +975,7 @@
           "price": 108.99,
           "category": 3,
           "rating": 4.2,
-          "image_url": "htt{{ MEDIA_URL }}product_img/products(70).jpg",
+          "image_url": "htt{{ MEDIA_URL }}products(70).jpg",
           "image": "products(70).jpg"
        }
     },
@@ -989,7 +989,7 @@
           "price": 108.99,
           "category": 4,
           "rating": 4.3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(71).jpg",
+          "image_url": "{{ MEDIA_URL }}products(71).jpg",
           "image": "products(71).jpg"
        }
     },
@@ -1003,7 +1003,7 @@
           "price": 60.99,
           "category": 4,
           "rating": 4.6,
-          "image_url": "{{ MEDIA_URL }}product_img/products(72).jpg",
+          "image_url": "{{ MEDIA_URL }}products(72).jpg",
           "image": "products(72).jpg"
        }
     },
@@ -1017,7 +1017,7 @@
           "price": 106.99,
           "category": 3,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(73).jpg",
+          "image_url": "{{ MEDIA_URL }}products(73).jpg",
           "image": "products(73).jpg"
        }
     },
@@ -1031,7 +1031,7 @@
           "price": 16.99,
           "category": 7,
           "rating": 4.2,
-          "image_url": "h{{ MEDIA_URL }}product_img/products(74).jpg",
+          "image_url": "h{{ MEDIA_URL }}products(74).jpg",
           "image": "products(74).jpg"
        }
     },
@@ -1045,7 +1045,7 @@
           "price": 48.99,
           "category": 3,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(75).jpg",
+          "image_url": "{{ MEDIA_URL }}products(75).jpg",
           "image": "products(75).jpg"
        }
     },
@@ -1059,7 +1059,7 @@
           "price": 5.99,
           "category": 4,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(76).jpg",
+          "image_url": "{{ MEDIA_URL }}products(76).jpg",
           "image": "products(76).jpg"
        }
     },
@@ -1073,7 +1073,7 @@
           "price": 136.99,
           "category": 5,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(77).jpg",
+          "image_url": "{{ MEDIA_URL }}products(77).jpg",
           "image": "products(77).jpg"
        }
     },
@@ -1087,7 +1087,7 @@
           "price": 96.99,
           "category": 3,
           "rating": 4.6,
-          "image_url": "htt{{ MEDIA_URL }}product_img/products(78).jpg",
+          "image_url": "htt{{ MEDIA_URL }}products(78).jpg",
           "image": "products(78).jpg"
        }
     },
@@ -1101,7 +1101,7 @@
           "price": 6.99,
           "category": 7,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(79).jpg",
+          "image_url": "{{ MEDIA_URL }}products(79).jpg",
           "image": "products(79).jpg"
        }
     },
@@ -1115,7 +1115,7 @@
           "price": 9.1,
           "category": 2,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(80).jpg",
+          "image_url": "{{ MEDIA_URL }}products(80).jpg",
           "image": "products(80).jpg"
        }
     },
@@ -1129,7 +1129,7 @@
           "price": 76.99,
           "category": 3,
           "rating": 4.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(81).jpg",
+          "image_url": "{{ MEDIA_URL }}products(81).jpg",
           "image": "products(81).jpg"
        }
     },
@@ -1143,7 +1143,7 @@
           "price": 108.99,
           "category": 3,
           "rating": 4.9,
-          "image_url": "{{ MEDIA_URL }}product_img/products(82).jpg",
+          "image_url": "{{ MEDIA_URL }}products(82).jpg",
           "image": "products(82).jpg"
        }
     },
@@ -1157,7 +1157,7 @@
           "price": 2,
           "category": 7,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(83).jpg",
+          "image_url": "{{ MEDIA_URL }}products(83).jpg",
           "image": "products(83).jpg"
        }
     },
@@ -1171,7 +1171,7 @@
           "price": 129.99,
           "category": 3,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(84).jpg",
+          "image_url": "{{ MEDIA_URL }}products(84).jpg",
           "image": "products(84).jpg"
        }
     },
@@ -1185,7 +1185,7 @@
           "price": 8.99,
           "category": 4,
           "rating": 4.2,
-          "image_url": "{{ MEDIA_URL }}product_img/products(85).jpg",
+          "image_url": "{{ MEDIA_URL }}products(85).jpg",
           "image": "products(85).jpg"
        }
     },
@@ -1199,7 +1199,7 @@
           "price": 3.99,
           "category": 4,
           "rating": 4.1,
-          "image_url": "{{ MEDIA_URL }}product_img/products(86).jpg",
+          "image_url": "{{ MEDIA_URL }}products(86).jpg",
           "image": "products(86).jpg"
        }
     },
@@ -1213,7 +1213,7 @@
           "price": 15.99,
           "category": 4,
           "rating": 4.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(87).jpg",
+          "image_url": "{{ MEDIA_URL }}products(87).jpg",
           "image": "products(87).jpg"
        }
     },
@@ -1227,7 +1227,7 @@
           "price": 78.99,
           "category": 3,
           "rating": 4,
-          "image_url": "h{{ MEDIA_URL }}product_img/products(88).jpg",
+          "image_url": "h{{ MEDIA_URL }}products(88).jpg",
           "image": "products(88).jpg"
        }
     },
@@ -1241,7 +1241,7 @@
           "price": 82.99,
           "category": 3,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(89).jpg2",
+          "image_url": "{{ MEDIA_URL }}products(89).jpg2",
           "image": "products(89).jpg"
        }
     },
@@ -1255,7 +1255,7 @@
           "price": 14.99,
           "category": 7,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(90).jpg",
+          "image_url": "{{ MEDIA_URL }}products(90).jpg",
           "image": "products(90).jpg"
        }
     },
@@ -1269,7 +1269,7 @@
           "price": 133.99,
           "category": 3,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(91).jpg",
+          "image_url": "{{ MEDIA_URL }}products(91).jpg",
           "image": "products(91).jpg"
        }
     },
@@ -1283,7 +1283,7 @@
           "price": 5.99,
           "category": 7,
           "rating": 4.3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(92).jpg",
+          "image_url": "{{ MEDIA_URL }}products(92).jpg",
           "image": "products(92).jpg"
        }
     },
@@ -1297,7 +1297,7 @@
           "price": 7.99,
           "category": 7,
           "rating": 4.9,
-          "image_url": "{{ MEDIA_URL }}product_img/products(93).jpg",
+          "image_url": "{{ MEDIA_URL }}products(93).jpg",
           "image": "products(93).jpg"
        }
     },
@@ -1311,7 +1311,7 @@
           "price": 31.99,
           "category": 7,
           "rating": 3.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(94).jpg",
+          "image_url": "{{ MEDIA_URL }}products(94).jpg",
           "image": "products(94).jpg"
        }
     },
@@ -1325,7 +1325,7 @@
           "price": 42.99,
           "category": 3,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(95).jpg",
+          "image_url": "{{ MEDIA_URL }}products(95).jpg",
           "image": "products(95).jpg"
        }
     },
@@ -1339,7 +1339,7 @@
           "price": 2.99,
           "category": 7,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(96).jpg",
+          "image_url": "{{ MEDIA_URL }}products(96).jpg",
           "image": "products(96).jpg"
        }
     },
@@ -1353,7 +1353,7 @@
           "price": 66.99,
           "category": 3,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(97).jpg",
+          "image_url": "{{ MEDIA_URL }}products(97).jpg",
           "image": "products(97).jpg"
        }
     },
@@ -1367,7 +1367,7 @@
           "price": 58.99,
           "category": 3,
           "rating": 4.5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(99).jpg",
+          "image_url": "{{ MEDIA_URL }}products(99).jpg",
           "image": "products(98).jpg"
        }
     },
@@ -1381,7 +1381,7 @@
           "price": 9.99,
           "category": 5,
           "rating": 4.4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(99).jpg",
+          "image_url": "{{ MEDIA_URL }}products(99).jpg",
           "image": "products(99).jpg"
        }
     },
@@ -1395,7 +1395,7 @@
           "price": 33.99,
           "category": 5,
           "rating": 4.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(100).jpg",
+          "image_url": "{{ MEDIA_URL }}products(100).jpg",
           "image": "products(100).jpg"
        }
     },
@@ -1409,7 +1409,7 @@
           "price": 2.99,
           "category": 4,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(101).jpg",
+          "image_url": "{{ MEDIA_URL }}products(101).jpg",
           "image": "products(101).jpg"
        }
     },
@@ -1423,7 +1423,7 @@
           "price": 71.99,
           "category": 3,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(102).jpg",
+          "image_url": "{{ MEDIA_URL }}products(102).jpg",
           "image": "products(102).jpg"
        }
     },
@@ -1437,7 +1437,7 @@
           "price": 55,
           "category": 3,
           "rating": 4.2,
-          "image_url": "{{ MEDIA_URL }}product_img/products(103).jpg",
+          "image_url": "{{ MEDIA_URL }}products(103).jpg",
           "image": "products(103).jpg"
        }
     },
@@ -1451,7 +1451,7 @@
           "price": 52.99,
           "category": 4,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(104).jpg",
+          "image_url": "{{ MEDIA_URL }}products(104).jpg",
           "image": "products(104).jpg"
        }
     },
@@ -1465,7 +1465,7 @@
           "price": 90.99,
           "category": 6,
           "rating": 4.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(105).jpg",
+          "image_url": "{{ MEDIA_URL }}products(105).jpg",
           "image": "products(105).jpg"
        }
     },
@@ -1479,7 +1479,7 @@
           "price": 66.99,
           "category": 3,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(106).jpg",
+          "image_url": "{{ MEDIA_URL }}products(106).jpg",
           "image": "products(106).jpg"
        }
     },
@@ -1493,7 +1493,7 @@
           "price": 71.99,
           "category": 7,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(107).jpg",
+          "image_url": "{{ MEDIA_URL }}products(107).jpg",
           "image": "products(107).jpg"
        }
     },
@@ -1507,7 +1507,7 @@
           "price": 60.99,
           "category": 6,
           "rating": 3.7,
-          "image_url": "{{ MEDIA_URL }}product_img/products(108).jpg",
+          "image_url": "{{ MEDIA_URL }}products(108).jpg",
           "image": "products(108).jpg"
        }
     },
@@ -1521,7 +1521,7 @@
           "price": 29.99,
           "category": 2,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(109).jpg",
+          "image_url": "{{ MEDIA_URL }}products(109).jpg",
           "image": "products(109).jpg"
        }
     },
@@ -1535,7 +1535,7 @@
           "price": 53.99,
           "category": 3,
           "rating": 4.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(110).jpg",
+          "image_url": "{{ MEDIA_URL }}products(110).jpg",
           "image": "products(110).jpg"
        }
     },
@@ -1549,7 +1549,7 @@
           "price": 9.99,
           "category": 4,
           "rating": 1,
-          "image_url": "{{ MEDIA_URL }}product_img/products(111).jpg",
+          "image_url": "{{ MEDIA_URL }}products(111).jpg",
           "image": "products(111).jpg"
        }
     },
@@ -1563,7 +1563,7 @@
           "price": 8.99,
           "category": 4,
           "rating": 3,
-          "image_url": "{{ MEDIA_URL }}product_img/products(112).jpg",
+          "image_url": "{{ MEDIA_URL }}products(112).jpg",
           "image": "products(112).jpg"
        }
     },
@@ -1577,7 +1577,7 @@
           "price": 20.99,
           "category": 4,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(113).jpg",
+          "image_url": "{{ MEDIA_URL }}products(113).jpg",
           "image": "products(113).jpg"
        }
     },
@@ -1591,7 +1591,7 @@
           "price": 4.99,
           "category": 4,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(114).jpg",
+          "image_url": "{{ MEDIA_URL }}products(114).jpg",
           "image": "products(114).jpg"
        }
     },
@@ -1605,7 +1605,7 @@
           "price": 8.99,
           "category": 6,
           "rating": 4,
-          "image_url": "{{ MEDIA_URL }}product_img/products(115).jpg",
+          "image_url": "{{ MEDIA_URL }}products(115).jpg",
           "image": "products(115).jpg"
        }
     },
@@ -1619,7 +1619,7 @@
           "price": 41,
           "category": 3,
           "rating": 5,
-          "image_url": "{{ MEDIA_URL }}product_img/products(116).jpg",
+          "image_url": "{{ MEDIA_URL }}products(116).jpg",
           "image": "products(116)jpg"
        }
     },
@@ -1633,7 +1633,7 @@
           "price": 113.99,
           "category": 3,
           "rating": 4.8,
-          "image_url": "{{ MEDIA_URL }}product_img/products(117).jpg",
+          "image_url": "{{ MEDIA_URL }}products(117).jpg",
           "image": "products(117)jpg"
        }
     },
@@ -1647,7 +1647,7 @@
          "price": 29.99,
          "category": 5,
          "rating": 5,
-         "image_url": "{{ MEDIA_URL }}product_img/products(109).jpg",
+         "image_url": "{{ MEDIA_URL }}products(109).jpg",
          "image": "products(109).jpg"
       }
    },
@@ -1661,7 +1661,7 @@
          "price": 50.99,
          "category": 7,
          "rating": 4.7,
-         "image_url": "{{ MEDIA_URL }}product_img/products(68).jpg",
+         "image_url": "{{ MEDIA_URL }}products(68).jpg",
          "image": "products(68).jpg"
       }
    },
@@ -1675,7 +1675,7 @@
          "price": 6.99,
          "category": 3,
          "rating": 4,
-         "image_url": "{{ MEDIA_URL }}product_img/products(59).jpg",
+         "image_url": "{{ MEDIA_URL }}products(59).jpg",
          "image": "products(59).jpg"
       }
    },
@@ -1689,7 +1689,7 @@
          "price": 5.99,
          "category": 3,
          "rating": 4.7,
-         "image_url": "{{ MEDIA_URL }}product_img/products(3).jpg",
+         "image_url": "{{ MEDIA_URL }}products(3).jpg",
          "image": "products(3).jpg"
       }
    },
@@ -1703,7 +1703,7 @@
          "price": 21.99,
          "category": 7,
          "rating": 5,
-         "image_url": "{{ MEDIA_URL }}product_img/products(37).jpg",
+         "image_url": "{{ MEDIA_URL }}products(37).jpg",
          "image": "products(37).jpg"
       }
    }
