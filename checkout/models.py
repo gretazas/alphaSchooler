@@ -31,7 +31,6 @@ class Order(models.Model):
     original_bag = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(
         max_length=254, null=False, blank=False, default='')
-    total_user_points = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
     def _generate_order_number(self):
         """ Generate unique order number using UUID """

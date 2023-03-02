@@ -71,7 +71,6 @@ INSTALLED_APPS = [
     'profiles',
     'ratings',
     'feedback',
-    'points',
     'storages',
 ]
 

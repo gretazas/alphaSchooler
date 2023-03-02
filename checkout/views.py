@@ -35,13 +35,12 @@ def cache_checkout_data(request):
 def checkout(request):
     ''' Render checkout page '''
 
-    total_user_points = 0
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
-    
+
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
