@@ -373,6 +373,8 @@ footer {
 }
 
 @media only screen and (max-width: 805px) {
+    /* Index.html */
+
     .filter1,
     .filter2,
     .filter3 {
@@ -382,6 +384,8 @@ footer {
 }
 
 @media only screen and (max-width: 710px) {
+    /* Index.html */
+
     .filter1,
     .filter2,
     .filter3 {
@@ -402,6 +406,12 @@ footer {
     .qty_input  {
         padding: 1%;
     }
+}
+
+
+@media only screen and (max-width: 710px) {
+    /* Products page */
+    
 }
 
 @media only screen and (max-width: 530px) {
