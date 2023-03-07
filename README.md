@@ -32,6 +32,7 @@ Link to gitHub:
                 
 * [Kanban Example](#kanban-example)
 * [Web Marketing](#web-marketing)
+* [Business model documentation](#Business-model-documentation)
 * [SEO Optimization](#seo-optimization)
 * [Stripe payments](#stripe-payments)
 * [Testing](#testing)
@@ -247,6 +248,17 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 <img src="{{ MEDIA_URL }}mailchimp.jpg" heigth="400" width="500" />
 
+### Business model documentation
+
+- Business description:
+    The alphaSchooler site sells bags, folders, notebooks, and copies for school. Stationery for offices and schools. Get ready for school in no time with some right clicks on aSchooler website.
+- Detailed products and services:
+    The site sells copies for schools and folders for schools or offices. Stationery products. Delivery is a way to get your ordered goods.
+- Potential buyers:
+    The site would attract students, people who work in offices, and people who need stationery, notebooks, and folders.
+- Price range:
+    From 0.99€ to 201.99€. Mostly good quality bags would cost the most. Delivery cost is 10% of the purchase, unless costumer spends 50 euros or more, then delivery is free. 
+
 ### SEO Optimization
 
 - For Googles search engine:
@@ -264,6 +276,7 @@ By setting your quantity to 0 user deletes the item from the order line items.
     - School items, school products, stationary, office, company suplies, school bags, paper, folders,  organisation suplies, math set, art suplies, pencils, markers.
     <hr>
     <img src="{{ MEDIA_URL }}google_search.jpg" heigth="500" width="600" />
+
 ## Stripe payments
 
 ## Testing
