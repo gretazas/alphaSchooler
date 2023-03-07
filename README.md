@@ -279,6 +279,8 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 ## Stripe payments
 
+
+
 ## Testing
 
 <img src="media/media/add_product_test(1).jpg" heigth="500" width="600" />

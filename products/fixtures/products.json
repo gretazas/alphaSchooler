@@ -1087,7 +1087,7 @@
           "price": 96.99,
           "category": 3,
           "rating": 4.6,
-          "image_url": "htt/media/product_img/products(78).jpg",
+          "image_url": "/media/product_img/products(78).jpg",
           "image": "products(78).jpg"
        }
     },
@@ -1620,7 +1620,7 @@
           "category": 3,
           "rating": 5,
           "image_url": "/media/product_img/products(116).jpg",
-          "image": "products(116)jpg"
+          "image": "products(116).jpg"
        }
     },
     {
@@ -1634,7 +1634,7 @@
           "category": 3,
           "rating": 4.8,
           "image_url": "/media/product_img/products(117).jpg",
-          "image": "products(117)jpg"
+          "image": "products(117).jpg"
        }
     },
     {
