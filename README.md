@@ -2,7 +2,7 @@
 Link to gitHub:
 <a href="https://github.com/gretazas/aSchooler">https://github.com/gretazas/aSchooler</a>
 
-<img src="{{ MEDIA_URL }}media/definition_of_schooler.jpg" alt="definition of the schooler" heigth="500" width="600"/>
+<img src="media/media/definition_of_schooler.jpg" alt="definition of the schooler" heigth="500" width="600"/>
 
 ## Table of Contents
 * [Project Planning](#project-planning)
@@ -125,29 +125,29 @@ Link to gitHub:
 
 ## Project Scope
 
-<img src="{{ MEDIA_URL }}media/planning_scope.jpg" alt="Product/Category Model" heigth="1500" width="1400"/>
+<img src="media/media/planning_scope.jpg" alt="Product/Category Model" heigth="1500" width="1400"/>
 
 ## Project Database Scope
 
 Product/Category Model:
 
-<img src="{{ MEDIA_URL }}media/category_db.jpg" alt="Product/Category Model" heigth="500" width="600"/>
+<img src="media/media/category_db.jpg" alt="Product/Category Model" heigth="500" width="600"/>
 
 Order/LineItems Model:
 
-<img src="{{ MEDIA_URL }}media/order_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+<img src="media/media/order_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
 Feedback Model:
 
-<img src="{{ MEDIA_URL }}media/feedback_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+<img src="media/media/feedback_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
 Rate Product Model:
 
-<img src="{{ MEDIA_URL }}media/rate_product_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+<img src="media/media/rate_product_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
 Collect Points Model:
 
-<img src="{{ MEDIA_URL }}media/collect_points_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
+<img src="media/media/collect_points_db.jpg" alt="Order/LineItems Model" heigth="500" width="600"/>
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
@@ -241,12 +241,12 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 ### Facebook <br>
 
-<img src="{{ MEDIA_URL }}media/schooler_fb(1).jpg" heigth="500" width="600" />
-<img src="{{ MEDIA_URL }}media/schooler_fb(2).jpg" heigth="500" width="600" />
+<img src="media/media/schooler_fb(1).jpg" heigth="500" width="600" />
+<img src="media/media/schooler_fb(2).jpg" heigth="500" width="600" />
 
 ### Subscriptions<br>
 
-<img src="{{ MEDIA_URL }}mailchimp.jpg" heigth="400" width="500" />
+<img src="media/mailchimp.jpg" heigth="400" width="500" />
 
 ### Business model documentation
 
@@ -257,8 +257,8 @@ By setting your quantity to 0 user deletes the item from the order line items.
 - Potential buyers:
     The site would attract students, people who work in offices, and people who need stationery, notebooks, and folders.
 - Price range:
-    From 0.99€ to 201.99€. Mostly good quality bags would cost the most. Delivery cost is 10% of the purchase, unless costumer spends 50 euros or more, then delivery is free. 
 
+    From 0.99€ to 201.99€. Mostly good quality bags would cost the most. When costumer spends 50 euros or more, the delivery is free. 
 ### SEO Optimization
 
 - For Googles search engine:
@@ -275,16 +275,16 @@ By setting your quantity to 0 user deletes the item from the order line items.
 - Keywords:
     - School items, school products, stationary, office, company suplies, school bags, paper, folders,  organisation suplies, math set, art suplies, pencils, markers.
     <hr>
-    <img src="{{ MEDIA_URL }}google_search.jpg" heigth="500" width="600" />
+    <img src="media/media/google_search.jpg" heigth="500" width="600" />
 
 ## Stripe payments
 
 ## Testing
 
-<img src="{{ MEDIA_URL }}media/add_product_test(1).jpg" heigth="500" width="600" />
-<img src="{{ MEDIA_URL }}media/edit_product_test.jpg" heigth="500" width="600" />
-<img src="{{ MEDIA_URL }}media/update_product_test.jpg" heigth="500" width="600" />
-<img src="{{ MEDIA_URL }}media/delete_product_test.jpg" heigth="500" width="600" />
+<img src="media/media/add_product_test(1).jpg" heigth="500" width="600" />
+<img src="media/media/edit_product_test.jpg" heigth="500" width="600" />
+<img src="media/media/update_product_test.jpg" heigth="500" width="600" />
+<img src="media/media/delete_product_test.jpg" heigth="500" width="600" />
 
 ### Automated Testing
 
@@ -377,7 +377,7 @@ Deployment procedure (using Heroku):
 
 ## MVT Architecture
 
-<img src="{{ MEDIA_URL }}media/MVT.jpg" heigth="500" width="600" />
+<img src="media/media/MVT.jpg" heigth="500" width="600" />
 
 ## Django AdminUser
 - Ability to view:
@@ -419,9 +419,3 @@ These past two portfolios were difficult for me, but with this portfolio I learn
 ![Safe](https://img.shields.io/badge/Stay-Safe-red?logo=data:image/svg%2bxml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEwIDUxMCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTAgNTEwIiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnPjxnPjxwYXRoIGQ9Im0xNzQuNjEgMzAwYy0yMC41OCAwLTQwLjU2IDYuOTUtNTYuNjkgMTkuNzJsLTExMC4wOSA4NS43OTd2MTA0LjQ4M2g1My41MjlsNzYuNDcxLTY1aDEyNi44MnYtMTQ1eiIgZmlsbD0iI2ZmZGRjZSIvPjwvZz48cGF0aCBkPSJtNTAyLjE3IDI4NC43MmMwIDguOTUtMy42IDE3Ljg5LTEwLjc4IDI0LjQ2bC0xNDguNTYgMTM1LjgyaC03OC4xOHYtODVoNjguMThsMTE0LjM0LTEwMC4yMWMxMi44Mi0xMS4yMyAzMi4wNi0xMC45MiA0NC41LjczIDcgNi41NSAxMC41IDE1LjM4IDEwLjUgMjQuMnoiIGZpbGw9IiNmZmNjYmQiLz48cGF0aCBkPSJtMzMyLjgzIDM0OS42M3YxMC4zN2gtNjguMTh2LTYwaDE4LjU1YzI3LjQxIDAgNDkuNjMgMjIuMjIgNDkuNjMgNDkuNjN6IiBmaWxsPSIjZmZjY2JkIi8+PHBhdGggZD0ibTM5OS44IDc3LjN2OC4wMWMwIDIwLjY1LTguMDQgNDAuMDctMjIuNjQgNTQuNjdsLTExMi41MSAxMTIuNTF2LTIyNi42NmwzLjE4LTMuMTljMTQuNi0xNC42IDM0LjAyLTIyLjY0IDU0LjY3LTIyLjY0IDQyLjYyIDAgNzcuMyAzNC42OCA3Ny4zIDc3LjN6IiBmaWxsPSIjZDAwMDUwIi8+PHBhdGggZD0ibTI2NC42NSAyNS44M3YyMjYuNjZsLTExMi41MS0xMTIuNTFjLTE0LjYtMTQuNi0yMi42NC0zNC4wMi0yMi42NC01NC42N3YtOC4wMWMwLTQyLjYyIDM0LjY4LTc3LjMgNzcuMy03Ny4zIDIwLjY1IDAgNDAuMDYgOC4wNCA1NC42NiAyMi42NHoiIGZpbGw9IiNmZjRhNGEiLz48cGF0aCBkPSJtMjEyLjgzIDM2MC4xMnYzMGg1MS44MnYtMzB6IiBmaWxsPSIjZmZjY2JkIi8+PHBhdGggZD0ibTI2NC42NSAzNjAuMTJ2MzBoMzYuMTRsMzIuMDQtMzB6IiBmaWxsPSIjZmZiZGE5Ii8+PC9nPjwvc3ZnPg==)
 
   <p align="right">(<a href="#top">Back to top</a>)</p>
-
-  <!-- [![GitHub Actions Status Badge](https://github.com/GoogleChrome/lighthouse/workflows/CI/badge.svg)](https://github.com/GoogleChrome/lighthouse/actions/workflows/ci.yml) 
-  [![GitHub Actions Status Badge](https://github.com/GoogleChrome/lighthouse/workflows/unit/badge.svg)](https://github.com/GoogleChrome/lighthouse/actions/workflows/unit.yml) 
-  [![GitHub Actions Status Badge](https://github.com/GoogleChrome/lighthouse/workflows/smoke/badge.svg)](https://github.com/GoogleChrome/lighthouse/actions/workflows/smoke.yml) [![Coverage Status](https://codecov.io/gh/GoogleChrome/lighthouse/branch/master/graph/badge.svg)](https://codecov.io/gh/GoogleChrome/lighthouse)
-  [![Build tracker for Lighthouse](https://img.shields.io/badge/buildtracker-ok-blue)](https://lh-build-tracker.herokuapp.com/) 
-  [![NPM lighthouse package](https://img.shields.io/npm/v/lighthouse.svg)](https://npmjs.org/package/lighthouse) -->
