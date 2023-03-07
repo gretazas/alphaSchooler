@@ -17,7 +17,7 @@ def get_rating(request, product_id):
     member = request.user
     date = datetime.today()
     product_id = request.POST.get('product_id')
-    product_rate = int(request.POST.get('rate'))
+    product_rate = request.POST.get('rate')
     member = request.user
 
     if Rating.rate_amount:
@@ -29,20 +29,20 @@ def get_rating(request, product_id):
     print(product_rate)
     print(product_id)
     print(Rating.rate_amount)
- # Get this rate_amount and add prev saved this product rate_amount
+    # product.save()
+    # Get this rate_amount and add prev saved this product rate_amount:
     # ratings.rate_amount + product_rate
     # ratings.rate_qnt = ratings.rate_qnt + 1
-    # # Get average
+    # Get average:
     # avg_rating = ratings.rate_amount / ratings.rate_qnt
     # product.rating = avg_rating
-    # product.save() 
 
-        # if request.method == "POST":
-        # ratings.rate_amount = int(ratings.rate_amount) + int(product_rate)
-        # Product.objects.get(id=product_id)
-        # Rating.objects.create(rate_id=product_id, rate_qnt=ratings.rate_qnt, rate_amount=ratings.rate_amount, member=member, date=datetime.today())
-        # messages.info(request, 'Rated successfully!')
-        # if request.user in ratings.member:
-        #     messages.error(request, 'You can\'t review product twice')
-        #     return redirect(request, 'products/product_detail.html', {'product': product})
+    # if request.method == "POST":
+    # ratings.rate_amount = int(ratings.rate_amount) + int(product_rate)
+    # Product.objects.get(id=product_id)
+    # Rating.objects.create(rate_id=product_id, rate_qnt=ratings.rate_qnt, rate_amount=ratings.rate_amount, member=member, date=datetime.today())
+    # messages.info(request, 'Rated successfully!')
+    # if request.user in ratings.member:
+    #     messages.error(request, 'You can\'t review product twice')
+    #     return redirect(request, 'products/product_detail.html', {'product': product})
     return render(request, 'ratings/rate.html', {'product': product, 'on_ratings_page': True})
