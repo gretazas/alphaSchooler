@@ -62,7 +62,7 @@
                                     {% endif %}
                                     {% if request.user.is_authenticated %}
                                         <small class="ml-3 row">
-                                            <a class="btn btn-black border btt-color mx-2" href="{% url 'ratings' product.id %}" style="width: 80px; background-color:rgb(236, 197, 139);">Rate</a>
+                                            <a class="btn btn-black border btt-color mx-2" href="{% url 'rate' product.id %}" style="width: 80px; background-color:rgb(236, 197, 139);">Rate</a>
                                         </small>
                                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                     {% else %}

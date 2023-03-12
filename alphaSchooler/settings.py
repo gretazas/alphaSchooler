@@ -28,14 +28,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = 'DEBUG' in os.environ
+DEBUG = True
+# DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
         'https://aschooler.herokuapp.com',
-        'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu89.gitpod.io',
+        'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
+        'https://8001-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
         'https://*.*.gitpod.io', 'http://127.0.0.1:8000/',
         'http://127.0.0.1:8001/', 'http://127.0.0.1:8002/',
                         ]
@@ -64,7 +65,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-    'ratings',
+    'failure',
+    'rate',
     'feedback',
     'storages',
 ]

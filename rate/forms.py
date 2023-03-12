@@ -1,6 +1,6 @@
 from django import forms
 from products.models import Product
-from ratings.models import Rating
+from rate.models import Rating
 
 
 class RatingForm(forms.ModelForm):

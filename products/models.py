@@ -1,5 +1,5 @@
 from django.db import models
-from ratings.models import Rating
+from rate.models import Rating
 
 
 class Category(models.Model):

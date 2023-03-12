@@ -3,7 +3,7 @@
 
 
 # class RatingAdmin(admin.ModelAdmin):
-#     list_display = ('id', 'user', 'product', 'rate', 'date')
+#     list_display = ('rate_id', 'rate_qnt', 'rate_amount', 'date')
 
 
 # admin.site.register(Rating, RatingAdmin)

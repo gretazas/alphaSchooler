@@ -310,7 +310,7 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 ## Bugs
 
-- Product import in ratings app and Rating import in Product app. Circular import bug.
+- Product import in rate app and Rating import in Product app. Circular import bug.
     - Tried to import products.models and go around with it.
     - Solution: imported Product in the Ratings function.
 
