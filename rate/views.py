@@ -15,47 +15,61 @@ from datetime import datetime
 def get_rating(request, product_id):
     model = Rating
     template_name = "rate.html"
+    form = RatingForm()
+    member = request.user
     product = get_object_or_404(Product, pk=product_id)
-    member = request.user
-    date = datetime.today()
-    member = request.user
     product_id = request.POST.get('product_id')
+    ratings = Rating.objects.all().filter(rate_id=product_id)
     try:
         product_rate = int(request.POST.get(['rate'][0]))
-
         if product_rate > 0:
-            # ratings = Rating.objects.all().filter(rate_id=product_id)
-            # print('ratings:', ratings, '/')
-            # rating_total = 0
-            # if ratings:
-            # # Get this rate_amount sum and add saved this product product_rate:
-            ratings = Rating.objects.all().filter(rate_id=product_id)
-            print('ratings:', ratings, '/')
-            #     for rating in ratings:
-            #         rating_total += rating
-            # else:
-            rating_total = 0
-            rate_qnt = 0
-            print('First rate', rating_total)
-            print('Total rating:', rating_total)
-            # rating_total += product_rate
+            if ratings:
+                # Get rate_amount sum and add product_rate:
+                rate_amount_list = []
+                for rate, x in enumerate(ratings):
+                    rating = ratings[rate].rate_amount
+                    # rate_amount = int(rating)
+                    # print('Rating:', rating)
+                    rate_amount_list.append(rating)
+                    rating_total = sum(rate_amount_list)
+                print('rate_sum here:', rating_total)
+                ratings_qnt_list = []
+                # Get quantity of all rates:
+                for qnt, y in enumerate(ratings):
+                    raters = ratings[qnt].rate_qnt
+                    ratings_qnt_list.append(raters)
+                    raters_total = sum(ratings_qnt_list)
+                print('raters_total', raters_total)                 
+            else:
+                rating_total = 0
+                rate_qnt = 0
+                print('First rate', rating_total)
+                print('Total rating:', rating_total)
+                rating_total += product_rate
+                raters_total += 1
+                # Get average:
+                print('rating_total / raters_total:', rating_total, '/', raters_total)
+                avg_rating = round(rating_total / raters_total)
+                products = Product.objects.all().filter(id=product_id)
+                for product in products:
+                    product.rating = avg_rating
+                    product.save()
+                if request.method == 'POST':
+                    print('request.POST')
+                    data = {
+                            'rate_id': product_id,
+                            'rate_qnt': raters_total,
+                            'rate_amount': int(request.POST['rate'][0]),
+                            'member': request.user.id,
+                        }
+                    form = RatingForm(data)
+                    print(form.errors)
+                    if form.is_valid():
+                        print('form.is_valid:', form.is_valid)
+                        print('YES! The form.is_valid')
+                        form.save()
+                        messages.info(request, 'Rated successfully!')
+                        return render(request, 'rate/rate.html', {'product': product, 'on_ratings_page': True, 'form': form})
     except:
         pass
-    
-
-            # ratings.rate_qnt += 1
-    # product.save()
-    # Get average:
-    # avg_rating = round(rating_total / ratings.rate_qnt)
-    # product.rating = avg_rating
-  
-    # if request.method == "POST":
-    # ratings.rate_amount = int(ratings.rate_amount) + int(product_rate)
-    # Product.objects.get(id=product_id)
-    # Rating.objects.create(rate_id=product_id, rate_qnt=ratings.rate_qnt, rate_amount=ratings.rate_amount, member=member, date=datetime.today())
-    # messages.info(request, 'Rated successfully!')
-    # if request.user in ratings.member:
-    #     messages.error(request, 'You can\'t review product twice')
-    #     return redirect(request, 'products/product_detail.html', {'product': product})
-    return render(request, 'rate/rate.html', {'product': product, 'on_ratings_page': True})
-
+    return render(request, 'rate/rate.html', {'product': product, 'on_ratings_page': True, 'form':form})

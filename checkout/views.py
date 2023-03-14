@@ -52,7 +52,6 @@ def checkout(request):
             'country': request.POST['country'],
             'county': request.POST['county'],
         }
-        print(form_data)
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)

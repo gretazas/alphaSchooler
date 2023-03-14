@@ -69,11 +69,11 @@
                     </div>
                 </div>
             
-            <form action="" method="POST">
+            <form method="POST">
             
                 <input type="hidden" name="product_id" value="{{ product.id }}"/>
             
-                {% csrf_token %}  
+                {% csrf_token %}
                 <h1>Your Rating</h1>
                 <span class="fas fa-star checked" onmouseover="starmark(this)" onclick="showRating(this)" id="1" style="font-size: xx-large; cursor: pointer;">
                 </span>
@@ -89,6 +89,7 @@
                 <br>
                 <button type="submit" onclick="showRating()" class="btn my-3" style="background-color: rgb(236, 197, 139);" value="rate">Rate</button> 
                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                <input type="hidden" name="user" value="{{ request.user }}">
             
             </form>
         </div>
