@@ -33,6 +33,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost']
 
+CRISPY_TEMPLATE_PACK = 'bootstrap'
+
 CSRF_TRUSTED_ORIGINS = [
         'https://aschooler.herokuapp.com',
         'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
@@ -65,8 +67,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-    'failure',
     'rate',
+    'points',
     'feedback',
     'storages',
 ]

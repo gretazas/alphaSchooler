@@ -29,4 +29,5 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('rating/', include('rate.urls')),
     path('feedback/', include('feedback.urls')),
+    path('points/', include('points.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

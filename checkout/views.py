@@ -26,7 +26,6 @@ def cache_checkout_data(request):
 
         return HttpResponse(status=200)
     except Exception as e:
-        print(e)
         messages.error(request, 'Sorry, your payment cannot be \
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
@@ -79,8 +78,6 @@ def checkout(request):
             request.session['save_info'] = 'save_info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
-            print(order_form.cleaned_data)
-            print(order_form.errors)
             messages.error(request, 'Something went wrong with your form. \
                 Please double check your information.')
     else:
