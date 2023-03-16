@@ -130,9 +130,9 @@
        "model": "products.product",
        "fields": {
           "sku": "pp5002701115",
-          "name": "Reflections Set of 4 Microfiber Napkins",
+          "name": "Maths equipment",
           "description": "Complete the look of your pencil case by adding a great measure tool. Will set you for the great start of any great project to be. ",
-          "price": 33.99,
+          "price": 0.99,
           "category": 7,
           "rating": 4.4,
           "image_url": "/media/product_img/products(10).jpg",

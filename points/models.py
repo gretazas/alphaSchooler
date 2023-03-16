@@ -7,5 +7,3 @@ class Points(models.Model):
     points = models.IntegerField()
     date = models.DateField(auto_now_add=True)
 
-    def __str__(self):
-        return self.customer_name

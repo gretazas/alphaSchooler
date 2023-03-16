@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .forms import PointsForm
 from django.contrib import messages
 from points.models import Points
@@ -16,17 +16,12 @@ def points(request):
     ''' View that renders poits.html '''
     user = request.user
     date = datetime.today()
-    collected_points = Points.objects.filter(user=user)
+    userpoints = get_object_or_404(Points, user=user)
+    collected_points = int(userpoints.points)
     form = PointsForm()
     current_bag = bag_contents(request)
     total = current_bag['grand_total']
-
-    collected_points.points = total # Delete after test
-
-    if collected_points > total:
-        redirect_url = request.POST.get('redirect_url')
-        messages.error(request, f'Sorry, no efficient points for this transaction.')
-        return redirect(redirect_url)
+    collected_points = int(userpoints.points)
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
@@ -39,11 +34,13 @@ def points(request):
             'street_address1': request.POST['street_address1'],
             'street_address2': request.POST['street_address2'],
             'country': request.POST['country'],
-            'county': request.POST['county'],
+            'county': request.POST['county']
         }
         form = PointsForm(form_data)
         if form.is_valid():
+            userpoints.points -= total
             order = form.save(commit=False)
+            userpoints.save()
             order.original_bag = json.dumps(bag)
             order.save()
             for item_id, item_data in bag.items():
