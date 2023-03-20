@@ -6,6 +6,13 @@ a {
     cursor: pointer !important;
 }
 
+/* Base.html info-tab on top of the page */
+
+#info-tab {
+    height: 50px;
+    width: 100% !important;
+}
+
 /* In products page */
 
 /* Img */
