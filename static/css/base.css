@@ -462,6 +462,10 @@ footer {
         margin: 20px;
     }
 
+    html {
+        height: 1000px;
+    }
+
     /* subscribtion form */
      #mc-embedded-subscribe-form div div input  {
         font-size: small;
@@ -501,4 +505,8 @@ footer {
         margin: 0 !important;
     }
 
+    /* hr in header in index page */
+    header .w-100 {
+        height: 0;
+    }
 }

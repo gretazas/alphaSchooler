@@ -12,40 +12,48 @@
 
         <!-- First column of containers -->
         <div class="col-12 card-body d-flex justify-content-between">
-            <a href="{% url 'products' %}?category=diaries_copies"><div class="row filter1 d-flex align-items-center justify-content-center card w-25 mx-5" style="height:400px;box-shadow: 0px 0px 20px 10px rgb(9, 88, 88);">
+           <div class="row filter1 d-flex align-items-center justify-content-center card w-25 mx-5" style="height:400px;box-shadow: 0px 0px 20px 10px rgb(9, 88, 88);">
+            <a href="{% url 'products' %}?category=diaries_copies">
                     Copies/ Diaries 
             </a><i class="fa-solid fa-book mt-3 "></i></div>
-            
-            <a href="{% url 'products' %}?category=pencil,pencils"><div class="row filter1 d-flex align-items-center justify-content-center card w-50 mx-5" style="height:130px;box-shadow: 0px 0px 20px 10px rgb(236, 197, 139);">
-                    Pencils<i class="fa-solid fa-pencil mx-3"></i>
-            </a></div>
-
-            <a href="{% url 'products' %}?category=pencil,stationary"><div class="row filter1 d-flex align-items-center justify-content-center card w-25 mx-5 shadow" style="height:400px;top:10%;">
-                    Stationary
-            </a><img src="{{ MEDIA_URL }}stationary.png" style="height:40px; width:60px;" alt="stationary.png" ></div>
+            <div class="row filter1 d-flex align-items-center justify-content-center card w-50 mx-5" style="height:130px;box-shadow: 0px 0px 20px 10px rgb(236, 197, 139);">
+              <a href="{% url 'products' %}?category=pencil,pencils">
+                      Pencils<i class="fa-solid fa-pencil mx-3"></i>
+              </a>
+            </div>
+            <div class="row filter1 d-flex align-items-center justify-content-center card w-25 mx-5 shadow" style="height:400px;top:10%;">
+              <a href="{% url 'products' %}?category=pencil,stationary">
+                      Stationary
+              </a><img src="{{ MEDIA_URL }}stationary.png" style="height:40px; width:60px;" alt="stationary.png" >
+          </div>
         </div>
 
         <!-- Second column of containers -->
         <div class="col-12 card-body d-flex justify-content-between">
-            <a href="{% url 'products' %}?category=lunch_boxes"><div class="row filter2 d-flex align-items-center justify-content-center card w-25 mx-5" style="height:230px;box-shadow: 0px 0px 20px 10px rgb(236, 197, 139);">
+          <div class="row filter2 d-flex align-items-center justify-content-center card w-25 mx-5" style="height:230px;box-shadow: 0px 0px 20px 10px rgb(236, 197, 139);">
+            <a href="{% url 'products' %}?category=lunch_boxes">
                 Lunch Boxes
-            </a><i class="fa-solid fa-box fa-lg mt-3"></i></div>
+            </a><i class="fa-solid fa-box fa-lg mt-3"></i>
+          </div>
             
-            <div class="row filter2 d-flex align-items-center justify-content-center card w-50 mx-5 shadow" style="height:530px;top:-50%;"><a href="{% url 'products' %}?category=bags">
-                Bags</a><img src="{{ MEDIA_URL }}bag1.jpg" style="height:120px; width:140px;" alt="bag">
-            </div>
+          <div class="row filter2 d-flex align-items-center justify-content-center card w-50 mx-5 shadow" style="height:530px;top:-50%;"><a href="{% url 'products' %}?category=bags">
+              Bags</a><img src="{{ MEDIA_URL }}bag1.jpg" style="height:120px; width:140px;" alt="bag">
+          </div>
             
-            <div class="row filter2 d-flex align-items-center justify-content-center card w-25 mx-5 shadow" style="height:120px;top:15%;"><a  href="{% url 'products' %}?category=pencil_cases" style="width:105px;box-shadow: 0px 0px 10px 5px rgb(236, 197, 139);">
-                Pencil Cases</a><img src="{{ MEDIA_URL }}pencil-case.png" style="height:40px; width:60px;" alt="pencil-case">
-            </div>
+          <div class="row filter2 d-flex align-items-center justify-content-center card w-25 mx-5 shadow" style="height:120px;top:15%;">
+            <a  href="{% url 'products' %}?category=pencil_cases" style="width:105px;box-shadow: 0px 0px 10px 5px rgb(236, 197, 139);">
+              Pencil Cases</a><img src="{{ MEDIA_URL }}pencil-case.png" style="height:40px; width:60px;" alt="pencil-case">
+          </div>
         </div>
 
         <!-- Third column of containers -->
         <div class="col-12 card-body d-flex justify-content-between">
-            <a href="{% url 'products' %}?category=pencil,pencil_cases,bags,art_supplies,essentials,diaries_copies,stationary,lunch_boxes" style="text-decoration: none;color:black;">
+            
                 <div class="row filter3 d-flex align-items-center justify-content-center card w-25 mx-5 shadow" style="height:180px;top:-165%;">
+                  <a href="{% url 'products' %}?category=pencil,pencil_cases,bags,art_supplies,essentials,diaries_copies,stationary,lunch_boxes" style="text-decoration: none;color:black;">
                     All Products
-            </a><i class="fa-solid fa-bag-shopping fa-lg mt-3"></i></div>
+                  </a>
+                  <i class="fa-solid fa-bag-shopping fa-lg mt-3"></i></div>
             
             <div class="row filter3 d-flex align-items-center justify-content-center card w-50 mx-5 shadow" style="height:160px;top:-145%;"><a href="{% url 'products' %}?category=art_supplies" style="width:95px;box-shadow: 0px 0px 10px 5px rgb(236, 197, 139);">
                     Art Suplies<i class="fa-solid fa-paintbrush mx-3"></i></a>
@@ -63,7 +71,7 @@
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: Form -->
-      <section class="">
+      <div>
         <form action="https://gmail.us12.list-manage.com/subscribe/post?u=eee66aecce9025dd465e3637b&amp;id=fcc72ca324&amp;f_id=00a6bbe0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate d-flex" target="_blank" novalidate>
   
           <!--Grid row-->
@@ -80,7 +88,7 @@
             <div class="col-md-5 col-12">
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <input type="email" id="form5Example27" class="form-control required email" value="" name="EMAIL" id="mce-EMAIL" required/>
+                <input type="email" id="form5Example27" class="form-control required email" value="" name="EMAIL" required>
 	            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
               </div>
             </div>
@@ -95,7 +103,7 @@
           </div>
           <!--Grid row-->
         </form>
-      </section>
+      </div>
       <!-- Section: Form -->
     </div>
     <!-- Grid container -->
@@ -103,7 +111,7 @@
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-</form>
+
     <!-- Copyright -->
     <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright:
@@ -113,7 +121,7 @@
   </footer>
 
 <!-- Mailchimp script -->
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);
+<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);
 </script>
 
 
@@ -124,7 +132,7 @@
 
     if (mediaQuery.matches) {
         document.getElementById('responsive').innerHTML = `
-        <div class="col-sm-12 text-center card-body ml-5 mb-5">
+        <div class="col-sm-12 text-center card-body ml-5">
             <div class="row w-50 mt-5 d-flex align-items-center justify-content-center card h-25 lefty-1"><a href="{% url 'products' %}?category=diaries_copies">Copies/ Diaries<i class="fa-solid fa-book mx-3"></i></a></div>
             <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=pencil,pencils">Pencils<i class="fa-solid fa-pencil mx-3"></i></a></div>
             <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=pencil,stationary">Stationary<img src="{{ MEDIA_URL }}stationary.png" style="height:20px;width:30px;padding-left:10px;" alt="stationary"></a></div>
@@ -132,8 +140,8 @@
             <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=bags">Bags<img src="{{ MEDIA_URL }}bag1.jpg" style="height:100px; width:120px;" alt="bag" ></a></div>
             <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=pencil_cases">Pencil Cases<img src="{{ MEDIA_URL }}pencil-case.png" style="height:20px;width:30px;padding-left:10px;" alt="pencil-case" ></a></div>
             <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=pencil,pencil_cases,bags,art_supplies,essentials,diaries_copies,stationary,lunch_boxes">All Products<i class="fa-solid fa-bag-shopping fa-lg mx-3"></i></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="#">Art Suplies<i class="fa-solid fa-paintbrush mx-3"></i></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card h-25 lefty"><a href="#">Folders<img src="{{ MEDIA_URL }}folder.png" style="height:30px;width:30px;padding-left:10px;" alt="folder" ></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=art_supplies">Art Suplies<i class="fa-solid fa-paintbrush mx-3"></i></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card h-25 lefty"><a href="{% url 'products' %}?category=folders">Folders<img src="{{ MEDIA_URL }}folder.png" style="height:30px;width:30px;padding-left:10px;" alt="folder" ></a></div>
     </div>`
     }
     }
