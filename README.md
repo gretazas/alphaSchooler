@@ -315,7 +315,6 @@ By setting your quantity to 0 user deletes the item from the order line items.
     - Solution: imported Product in the Ratings function.
 
 - Heroku deployment failed: added- python_version<"3.9" to backports.zoneinfo==0.2.1;
-## Existing Bugs
 
 
 <p align="right">(<a href="#top">Back to top</a>)</p>

@@ -461,4 +461,14 @@ footer {
         margin: 20px;
     }
 
+    /* subscribtion form */
+    #mc-embedded-subscribe-form div div input  {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #mc-embedded-subscribe-form div div p  {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 }
