@@ -355,9 +355,10 @@ footer {
 /* Footer */
 
 footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
-}
+    width: 100%;
+  }
 
 #mce-success-response {
     color: rgb(9, 88, 88);
@@ -459,6 +460,45 @@ footer {
 
     .bag-responsive {
         margin: 20px;
+    }
+
+    /* subscribtion form */
+     #mc-embedded-subscribe-form div div input  {
+        font-size: small;
+        height: 25px; 
+        width: 75%;
+        margin: auto;
+        padding: 5px !important;
+    }
+
+    #mc-embedded-subscribe-form div div p  {
+        margin: 0 !important;
+        padding: 5px !important;
+    }
+
+    #mc-embedded-subscribe-form {
+        font-size: small;
+        flex-wrap: wrap;
+        margin: 10px;
+        bottom: 0;
+        
+    }        
+
+    #mc-embedded-subscribe-form div div {
+        justify-content: space-around !important;
+    }
+
+    #mc-embedded-subscribe-form div div #mc-embedded-subscribe {
+        width: 170px;
+    }
+
+    #mc_embed_signup div {
+        padding: 0 !important;
+        
+    }
+
+    #mc-embedded-subscribe-form div div #mc-embedded-subscribe {
+        margin: 0 !important;
     }
 
 }
