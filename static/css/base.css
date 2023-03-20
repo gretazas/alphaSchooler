@@ -480,6 +480,7 @@ footer {
 
     #mc-embedded-subscribe-form {
         flex-wrap: wrap;
+        flex-direction: column;
         margin: 10px;
     }
 }
