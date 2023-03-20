@@ -154,6 +154,25 @@ Collect Points Model:
 
 ## Project Setup
 
+Creating the basic idea and designing some basic structure, setting up:
+
+- Install Django
+- Create new Django project
+- Install Django Allauth
+- Create a requirements.txt file
+- Create a directory for storing all of the required and customised Django allauth templates.
+- Create the MVT Architecture(pictures provided).
+- Add Django and supporting libraries
+- Installed Django.
+- Create new Django project
+- Create new blank Django project and name it farm_fresh.
+- Migrate changes to database after creating the project
+- Django Allauth
+- Required Django Allauth settings added
+- Backend, 'allauth.account.auth_backends.AuthenticationBackend', in the setting.py .
+- Backend, 'django.contrib.auth.backends.ModelBackend'.
+- The contrib.sites app and the site _id setting I added to the setting.py.
+
 ## Project Management
 GitHub's KanBan board to manage my workflow. [](https://github.com/)
 * Three columns:
@@ -292,6 +311,45 @@ Webhooks and a webhook handler helps the users to redo the order, if somehow cos
 #### Django Coverage report
 
 ### Manual Testing
+
+- After creating the alphaSchooler project in Gitpod, I tested it buy running the application and recieved visual confirmation that the application is working successfully from Django.
+    <br>
+    - After installing Django allauth, I manually tested logging in and out of the admin site. I added settings in settings.py: <br>
+    - ACCOUNT_AUTHENTICATION_METHOD = 'username_email'<br>
+    - ACCOUNT_EMAIL_VERIFICATION = 'mandatory'<br>
+    - ACCOUNT_EMAIL_REQUIRED = True<br>
+    - ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True<br>
+    - ACCOUNT_USERNAME_MIN_LENGTH = 6<br>
+    - LOGIN_URL = '/accounts/login/'<br>
+    - LOGIN_REDIRECT_URL = '/'<br>
+
+- After finalising the Django allauth installation I manually went to the accounts login page and tested the authentication by redirecting a successfull login to a "success" url.
+
+- When template created, I would manually test that they are working and displaying as intended.
+
+- After products.html view was created I manually tested if the context, containing products and their attributes were displaying as expected, confirming that the views, URL's and and templates are all working as planned.
+
+- Creating the product detail tamplate- manually tested that all links to individual products and product images worked and that the shop now button worked as intended. All worked as expected.
+
+- Once the logic was in place for the search bar functionality, it was tested by running multiple search queries with search terms that were either in the products names or descriptions and checking the results.
+
+- The shopping cart view, it's URL's and template, links in the base.html template, run the server and all the links are working as planned.
+
+- After adding the increment and decrementing buttons to the various pages, I manually tested and adjusted their operation.
+
+- After creating the success toast, I manually added a product to the cart and tested its operation. Worked!
+
+- Checkout tested by adding items to the cart, processing a test checkout payment, checking that the form is submitted and testing that the checkout_success page was working as expected.
+
+- I did a test log in and logout and found that the standard Allauth templates did not function well and started with their customisation thereafter.
+
+- For users to update their profile with new information. All working!
+
+- Order history link with order number on the profile pages order history section I was redirected to the information of the specific order.
+
+- Webhook handler of the checkout app, to handle the form submision if for some reason the checkout view fails. The users order history also updated and got saved to the users profile.
+
+- I worked with add, edit and delete products.To make sure all code is in order.
 
 ### Pep8 and Pylint Python Validators
 
