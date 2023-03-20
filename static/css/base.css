@@ -463,12 +463,17 @@ footer {
 
     /* subscribtion form */
     #mc-embedded-subscribe-form div div input  {
+        width: 50px;
         margin: 0 !important;
         padding: 0 !important;
     }
 
     #mc-embedded-subscribe-form div div p  {
         margin: 0 !important;
-        padding: 0 !important;
+        padding: 5px !important;
+    }
+
+    #mc-embedded-subscribe-form {
+        flex-wrap: wrap;
     }
 }
