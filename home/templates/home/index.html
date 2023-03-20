@@ -22,7 +22,7 @@
 
             <a href="{% url 'products' %}?category=pencil,stationary"><div class="row filter1 d-flex align-items-center justify-content-center card w-25 mx-5 shadow" style="height:400px;top:10%;">
                     Stationary
-            </a><img src="{{ MEDIA_URL }}stationary.png" style="height:40px; width:60px;"></div>
+            </a><img src="{{ MEDIA_URL }}stationary.png" style="height:40px; width:60px;" alt="stationary.png" ></div>
         </div>
 
         <!-- Second column of containers -->
@@ -32,11 +32,11 @@
             </a><i class="fa-solid fa-box fa-lg mt-3"></i></div>
             
             <div class="row filter2 d-flex align-items-center justify-content-center card w-50 mx-5 shadow" style="height:530px;top:-50%;"><a href="{% url 'products' %}?category=bags">
-                Bags</a><img src="{{ MEDIA_URL }}bag1.jpg" style="height:120px; width:140px;">
+                Bags</a><img src="{{ MEDIA_URL }}bag1.jpg" style="height:120px; width:140px;" alt="bag">
             </div>
             
             <div class="row filter2 d-flex align-items-center justify-content-center card w-25 mx-5 shadow" style="height:120px;top:15%;"><a  href="{% url 'products' %}?category=pencil_cases" style="width:105px;box-shadow: 0px 0px 10px 5px rgb(236, 197, 139);">
-                Pencil Cases</a><img src="{{ MEDIA_URL }}pencil-case.png" style="height:40px; width:60px;">
+                Pencil Cases</a><img src="{{ MEDIA_URL }}pencil-case.png" style="height:40px; width:60px;" alt="pencil-case">
             </div>
         </div>
 
@@ -51,7 +51,7 @@
                     Art Suplies<i class="fa-solid fa-paintbrush mx-3"></i></a>
             </div>
             
-            <div class="row filter3 d-flex align-items-center justify-content-center card w-25 mx-5 shadow" style="height:180px;top:-165%;"><a href="{% url 'products' %}?category=folders"><img src="{{ MEDIA_URL }}folder.png" style="height:30px; width:30px;">
+            <div class="row filter3 d-flex align-items-center justify-content-center card w-25 mx-5 shadow" style="height:180px;top:-165%;"><a href="{% url 'products' %}?category=folders"><img src="{{ MEDIA_URL }}folder.png" style="height:30px; width:30px;" alt="folder" >
                     Folders</a>
             </div>
         
@@ -124,16 +124,16 @@
 
     if (mediaQuery.matches) {
         document.getElementById('responsive').innerHTML = `
-        <div class="col-sm-12 text-center card-body ml-5">
-            <div class="row w-50 mt-5 d-flex align-items-center justify-content-center card h-25 lefty-1"><a>Copies/ Diaries<i class="fa-solid fa-book mx-3"></i></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a>Pencils<i class="fa-solid fa-pencil mx-3"></i></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a>Stationary<img src="{{ MEDIA_URL }}stationary.png" style="height:20px;width:30px;padding-left:10px;"></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a>Lunch Boxes<i class="fa-solid fa-box mx-3"></i></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a>Bags<img src="{{ MEDIA_URL }}bag1.jpg" style="height:100px; width:120px;"></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a>Pencil Cases<img src="{{ MEDIA_URL }}pencil-case.png" style="height:20px;width:30px;padding-left:10px;"></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a>All Products<i class="fa-solid fa-bag-shopping fa-lg mx-3"></i></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a>Art Suplies<i class="fa-solid fa-paintbrush mx-3"></i></a></div>
-            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card h-25 lefty"><a>Folders<img src="{{ MEDIA_URL }}folder.png" style="height:30px;width:30px;padding-left:10px;"></a></div>
+        <div class="col-sm-12 text-center card-body ml-5 mb-5">
+            <div class="row w-50 mt-5 d-flex align-items-center justify-content-center card h-25 lefty-1"><a href="{% url 'products' %}?category=diaries_copies">Copies/ Diaries<i class="fa-solid fa-book mx-3"></i></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=pencil,pencils">Pencils<i class="fa-solid fa-pencil mx-3"></i></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=pencil,stationary">Stationary<img src="{{ MEDIA_URL }}stationary.png" style="height:20px;width:30px;padding-left:10px;" alt="stationary"></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=lunch_boxes">Lunch Boxes<i class="fa-solid fa-box mx-3"></i></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=bags">Bags<img src="{{ MEDIA_URL }}bag1.jpg" style="height:100px; width:120px;" alt="bag" ></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=pencil_cases">Pencil Cases<img src="{{ MEDIA_URL }}pencil-case.png" style="height:20px;width:30px;padding-left:10px;" alt="pencil-case" ></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="{% url 'products' %}?category=pencil,pencil_cases,bags,art_supplies,essentials,diaries_copies,stationary,lunch_boxes">All Products<i class="fa-solid fa-bag-shopping fa-lg mx-3"></i></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card lefty"><a href="#">Art Suplies<i class="fa-solid fa-paintbrush mx-3"></i></a></div>
+            <div class="row w-50 mx-5 d-flex align-items-center justify-content-center card h-25 lefty"><a href="#">Folders<img src="{{ MEDIA_URL }}folder.png" style="height:30px;width:30px;padding-left:10px;" alt="folder" ></a></div>
     </div>`
     }
     }

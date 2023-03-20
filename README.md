@@ -213,12 +213,6 @@ By setting your quantity to 0 user deletes the item from the order line items.
 ### Edit Your Profile shipping details
 - Easily edit profile information save from earlier
 
-### Admin
-
-
-<img src="" heigth="500" width="600" />
-
-
 
 ## Features left to implement
 - Login via social media account, eg. facebook or google.
@@ -241,8 +235,8 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 ### Facebook <br>
 
-<img src="media/media/schooler_fb(1).jpg" heigth="500" width="600" />
-<img src="media/media/schooler_fb(2).jpg" heigth="500" width="600" />
+<img src="media/media/schooler_fb(1).jpg" heigth="500" width="600" alt="fbook-pic"/>
+<img src="media/media/schooler_fb(2).jpg" heigth="500" width="600" alt="fbook"/>
 
 ### Subscriptions<br>
 
@@ -275,7 +269,7 @@ By setting your quantity to 0 user deletes the item from the order line items.
 - Keywords:
     - School items, school products, stationary, office, company suplies, school bags, paper, folders,  organisation suplies, math set, art suplies, pencils, markers.
     <hr>
-    <img src="media/media/google_search.jpg" heigth="500" width="600" />
+    <img src="media/media/google_search.jpg" heigth="500" width="600" alt="google_search"/>
 
 ## Stripe payments
 
@@ -283,10 +277,10 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 ## Testing
 
-<img src="media/media/add_product_test(1).jpg" heigth="500" width="600" />
-<img src="media/media/edit_product_test.jpg" heigth="500" width="600" />
-<img src="media/media/update_product_test.jpg" heigth="500" width="600" />
-<img src="media/media/delete_product_test.jpg" heigth="500" width="600" />
+<img src="media/media/add_product_test(1).jpg" heigth="500" width="600" alt="add_product_test" />
+<img src="media/media/edit_product_test.jpg" heigth="500" width="600" alt="edit_product_test" />
+<img src="media/media/update_product_test.jpg" heigth="500" width="600" alt="update_product_test"/>
+<img src="media/media/delete_product_test.jpg" heigth="500" width="600" alt="delete_product_test"/>
 
 ### Automated Testing
 
@@ -307,6 +301,8 @@ By setting your quantity to 0 user deletes the item from the order line items.
 ### LightHouse testing
 
 ### Responsive testing
+
+<img src="media/media/responsive.jpg" heigth="500" width="600" alt="responsive"/>
 
 ## Bugs
 
@@ -378,7 +374,7 @@ Deployment procedure (using Heroku):
 
 ## MVT Architecture
 
-<img src="media/media/MVT.jpg" heigth="500" width="600" />
+<img src="media/media/MVT.jpg" heigth="500" width="600" alt="MVT.jpg"/>
 
 ## Django AdminUser
 - Ability to view:
@@ -408,7 +404,7 @@ Deployment procedure (using Heroku):
 These past two portfolios were difficult for me, but with this portfolio I learned alot. Even though there are so many things not done , I spent a lot of time debugging myself and learnt a lot of new information. Most importangly I have learnt, while debugging not to look for solution, but understand what is causing the issue. 
 
 ## Credits
-  <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" width="90">
+  <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" width="90" alt="ci_logo_small"/>
 
 - [temp-mail.org](https://temp-mail.org/en/)
 - [miniwebtool.com](https://miniwebtool.com/django-secret-key-generator/)
