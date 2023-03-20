@@ -39,6 +39,7 @@ CSRF_TRUSTED_ORIGINS = [
         'https://aschooler.herokuapp.com',
         'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
         'https://8001-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
+        'https://8002-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
         'https://*.*.gitpod.io', 'http://127.0.0.1:8000/',
         'http://127.0.0.1:8001/', 'http://127.0.0.1:8002/',
                         ]

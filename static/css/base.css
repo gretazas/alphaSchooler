@@ -463,7 +463,7 @@ footer {
 
     /* subscribtion form */
     #mc-embedded-subscribe-form div div input  {
-        width: 50px;
+        width: 100px;
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -473,7 +473,13 @@ footer {
         padding: 5px !important;
     }
 
+    #mc-embedded-subscribe-form div div {
+        margin: 5px;
+        padding: 5px;
+    }
+
     #mc-embedded-subscribe-form {
         flex-wrap: wrap;
+        margin: 10px;
     }
 }
