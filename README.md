@@ -254,16 +254,20 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 - Web marketing is the process of using the Internet to market your business. It includes the use of social media, search engines, blogging, videos, and email. Promoting a business takes effort. There are a variety of ways to do it:
 
-### Facebook <br>
+## Facebook <br>
 
 <img src="media/media/schooler_fb(1).jpg" heigth="500" width="600" alt="fbook-pic"/>
 <img src="media/media/schooler_fb(2).jpg" heigth="500" width="600" alt="fbook"/>
 
-### Subscriptions <br>
+## Tiktok
+
+<img src="media/media/tiktok.jpg" heigth="500" width="500" alt="tiktok.jpg"/>
+
+## Subscriptions <br>
 
 <img src="media/media/mailchimp.jpg" heigth="400" width="500" />
 
-### Business model documentation
+## Business model documentation
 
 - Business description:
     The alphaSchooler site sells bags, folders, notebooks, and copies for school. Stationery for offices and schools. Get ready for school in no time with some right clicks on aSchooler website.
