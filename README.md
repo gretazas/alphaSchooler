@@ -312,7 +312,7 @@ Webhooks and a webhook handler helps the users to redo the order, if somehow cos
 
 #### Django Coverage report
 
-### Manual Testing
+# Manual Testing
 
 - After creating the alphaSchooler project in Gitpod, I tested it buy running the application and recieved visual confirmation that the application is working successfully from Django.
     <br>
@@ -353,26 +353,34 @@ Webhooks and a webhook handler helps the users to redo the order, if somehow cos
 
 - I worked with add, edit and delete products.To make sure all code is in order.
 
-### Pep8 and Pylint Python Validators
+## Pep8 and Pylint Python Validators
 
 <img src="media/media/PythonChecker.png" alt="PythonChecke" heigth="200" width="300"/>
 <img src="media/media/PythonChecker(1).png" alt="PythonChecke" heigth="200" width="300"/>
 <img src="media/media/PythonChecker(2).png" alt="PythonChecke" heigth="200" width="300"/>
 <img src="media/media/PythonChecker(3).png" alt="PythonChecke" heigth="200" width="300"/>
 
-### HTML Validation with Official W3C Validator
+## HTML Validation with Official W3C Validator
 
 <img src="media/media/htmlvalidator.png" alt="htmlvalidation.png" heigth="500" width="600"/>
 
-### CSS Validation with Official W3C Validator
+## CSS Validation with Official W3C Validator
 
 <img src="media/media/cssvalidation.png" alt="cssvalidation.png" heigth="500" width="600"/>
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
-### LightHouse testing
+## LightHouse testing
 
-### Responsive testing
+
+<img src="media/media/lighthouse.png" alt="lighthouse.png" heigth="500" width="600"/>
+<img src="media/media/lighthouse(1).png" alt="lighthouse1.png" heigth="500" width="600"/>
+<img src="media/media/lighthouse(2).png" alt="lighthouse2.png" heigth="500" width="600"/>
+<img src="media/media/lighthouse(3).png" alt="lighthouse3.png" heigth="500" width="600"/>
+
+- To add comment: pictures in last picture were compressed at <a href="https://tinypng.com/" target="_blank">https://tinypng.com/</a>
+
+# Responsive testing
 
 <img src="media/media/responsive.jpg" heigth="500" width="600" alt="responsive"/>
 
