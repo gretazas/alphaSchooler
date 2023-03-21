@@ -254,3 +254,22 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'postgres',
+            'USER': 'admin',
+            'PASSWORD': 'Admin12345',
+            'HOST': 'localhost',
+            'PORT': '5432',
+        }
+    }
+
+    TEST = {
+        'NAME': 'alphaSchooler_test',
+        'USER': 'admin',
+        'PASSWORD': 'Admin12345',
+        'HOST': 'localhost',
+        'PORT': '5432',
+}

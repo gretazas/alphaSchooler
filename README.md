@@ -306,11 +306,13 @@ Webhooks and a webhook handler helps the users to redo the order, if somehow cos
 <img src="media/media/update_product_test.jpg" heigth="500" width="600" alt="update_product_test"/>
 <img src="media/media/delete_product_test.jpg" heigth="500" width="600" alt="delete_product_test"/>
 
-### Automated Testing
+## Automated Testing
 
 * TestCase
 
-#### Django Coverage report
+### Django Coverage report
+
+<img src="media/media/djangocov.png" heigth="500" width="600" alt="djangocov.png"/>
 
 # Manual Testing
 
