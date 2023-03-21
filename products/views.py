@@ -33,12 +33,12 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -128,3 +128,34 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def mix_match(request):
+    products = Product.objects.all()
+
+    categories = None
+    query = None
+    if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET.getlist('category')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('products'))
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            products = products.filter(queries)
+    quantity = 1
+    bags = products.filter(category__name='bags')
+    cases = products.filter(category__name='pencil_cases')
+    template = 'products/mix_match.html'
+    context = {
+        'current_categories': categories,
+        'products': products,
+        'search_term': query,
+        'bags': bags,
+        'cases': cases,
+    }
+    return render(request, template, context)

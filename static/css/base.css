@@ -286,6 +286,23 @@ a {
         transition: box-shadow 150ms ease;
    }
 
+   /* Mix and match page */
+   
+   .content_img {
+    display: flex;
+    align-items: flex-end;
+    }
+
+    .scrollable {
+        height: 500px;
+        overflow-y: auto;
+    }
+    
+    .scrollable:hover {
+        overflow-y: scroll;
+    }
+
+    /* Media only screen and (max-width: 1235px) */
 @media only screen and (max-width: 1235px) {
     .filter1,
     .filter2,
@@ -302,6 +319,7 @@ footer {
     bottom: 0px;
 }
 
+/* Media only screen and (max-width: 992px) */
 @media only screen and (max-width: 992px) {
 
     /* Image in detail page */
@@ -364,6 +382,7 @@ footer {
     color: rgb(9, 88, 88);
 }
 
+/* Media only screen and (max-width: 850px) */
 @media only screen and (max-width: 850px) {
     .filter1,
     .filter2,
@@ -380,6 +399,7 @@ footer {
     }
 }
 
+/* Media only screen and (max-width: 805px) */
 @media only screen and (max-width: 805px) {
     /* Index.html */
 
@@ -391,6 +411,7 @@ footer {
     }
 }
 
+/* Media only screen and (max-width: 710px) */
 @media only screen and (max-width: 710px) {
     /* Index.html */
 
@@ -414,14 +435,19 @@ footer {
     .qty_input  {
         padding: 1%;
     }
+
+    html {
+        height: 1000px;
+    }
 }
 
-
+/* Media only screen and (max-width: 710px) */
 @media only screen and (max-width: 710px) {
     /* Products page */
     
 }
 
+/* Media only screen and (max-width: 530px) */
 @media only screen and (max-width: 530px) {
     /* Image in detail page */
     #img {
@@ -438,6 +464,7 @@ footer {
     }
 }
 
+/* Media only screen and (max-width: 430px) */
 @media only screen and (max-width: 430px) {
     /* Filter containers in main page */
     .filter1 {

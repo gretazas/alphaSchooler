@@ -252,14 +252,16 @@ By setting your quantity to 0 user deletes the item from the order line items.
 
 # Web Marketing
 
+- Web marketing is the process of using the Internet to market your business. It includes the use of social media, search engines, blogging, videos, and email. Promoting a business takes effort. There are a variety of ways to do it:
+
 ### Facebook <br>
 
 <img src="media/media/schooler_fb(1).jpg" heigth="500" width="600" alt="fbook-pic"/>
 <img src="media/media/schooler_fb(2).jpg" heigth="500" width="600" alt="fbook"/>
 
-### Subscriptions<br>
+### Subscriptions <br>
 
-<img src="media/mailchimp.jpg" heigth="400" width="500" />
+<img src="media/media/mailchimp.jpg" heigth="400" width="500" />
 
 ### Business model documentation
 

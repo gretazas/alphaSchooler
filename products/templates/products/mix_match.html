@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container-fluid px-xl-5 px-l-5">
+    <div class="row">
+        <!-- Button with categories -->
+        <div class="text-center mt-3">
+            <div class="row" style="justify-content: space-evenly;">
+                {% for c in current_categories %}
+                <a class="category-badge text-decoration-none col-1  col-md-2 col-sm-3"
+                    href="{% url 'products' %}?category={{ c.name }}">
+                    <span
+                        class="p-2 mt-2 badge badge-white text-black border border-dark">{{ c.presentable_name }}</span>
+                </a>
+                {% endfor %}
+                <div class="nav-item dropdown col-1 col-md-2 col-sm-3">
+                    <a class="p-2 mt-2 badge badge-white text-black border border-dark" href="#" id="all-products-link"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Go back to products
+                    </a>
+                    <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                        <a href="{% url 'products' %}?category=pencil" class="dropdown-item">Pencil</a>
+                        <a href="{% url 'products' %}?category=pencils" class="dropdown-item ">Pencils</a>
+                        <a href="{% url 'products' %}?category=pencil_cases" class="dropdown-item ">Pencil cases</a>
+                        <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
+                        <a href="{% url 'products' %}?category=art_supplies" class="dropdown-item ">Art supplies</a>
+                        <a href="{% url 'products' %}?category=folders" class="dropdown-item">Folders</a>
+                        <a href="{% url 'products' %}?category=diaries_copies" class="dropdown-item ">Diaries/ copie</a>
+                        <a href="{% url 'products' %}?category=stationary" class="dropdown-item ">Stationary</a>
+                        <a href="{% url 'products' %}?category=lunch_boxes" class="dropdown-item ">Lunch boxes</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Container with colums of products -->
+        <div class="card h-100 d-flex row m-5">
+            <div class="row">
+
+                <!-- Column one bags-->
+                <div class="col-3 col-md-3 card m-5 m-md-3 m-sm-1 scrollable">
+                    <h3>Bags category</h3>
+
+                    {% for bag in bags %}
+                    <div class="border-0">
+                        {% if bag.image %}
+                        <a id="product_img" href="{% url 'product_detail' bag.id %}">
+                            <img class="card-img-top img-fluid rounded" src="{{ bag.image.url }}" alt="{{ bag.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ bag.name }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body pb-0">
+                            <p class="mb-0">{{ bag.name }}</p>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left font-weight-bold"><span
+                                            style="color:rgb(16, 138, 138);">€</span>{{ bag.price }}</p>
+                                    {% if product.rating %}
+                                    <small class="text-muted"><i class="fas fa-star mr-1"
+                                            style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>{{ bag.rating }}
+                                        / 5</small>
+                                    {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form" action="{% url 'product_detail' bag.id %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-warning btn-sm mb-3"
+                                    style="background-color: rgb(236, 197, 139);">
+                                    Product detail
+                                </button>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            </div>
+                        </form>
+                    </div>
+                    {% endfor %}
+
+                </div>
+                <!-- Column two pencil-cases-->
+                <div class="col-3 col-md-3 card m-5 m-md-3 m-sm-1 scrollable">
+                    <h3>Pecil-cases category</h3>
+                    {% for case in cases %}
+                    <div class="border-0">
+                        {% if case.image %}
+                        <a id="product_img" href="{% url 'product_detail' case.id %}">
+                            <img class="card-img-top img-fluid rounded" src="{{ case.image.url }}"
+                                alt="{{ case.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ case.name }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body pb-0">
+                            <p class="mb-0">{{ case.name }}</p>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left font-weight-bold"><span
+                                            style="color:rgb(16, 138, 138);">€</span>{{ case.price }}</p>
+                                    {% if case.rating %}
+                                    <small class="text-muted"><i class="fas fa-star mr-1"
+                                            style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>{{ case.rating }}
+                                        / 5</small>
+                                    {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form" action="{% url 'product_detail' case.id %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-warning btn-sm  mb-3"
+                                    style="background-color: rgb(236, 197, 139);">
+                                    Product detail
+                                </button>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            </div>
+                        </form>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- Column three all products-->
+                <div class="col-3 col-md-3 card m-5 m-md-3 m-sm-1 scrollable">
+                    <h3>All Products</h3>
+                    {% for product in products %}
+                    <div class="border-0">
+                        {% if product.image %}
+                        <a id="product_img" href="{% url 'product_detail' product.id %}">
+                            <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}"
+                                alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ product.name }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body pb-0">
+                            <p class="mb-0">{{ product.name }}</p>
+                        </div>
+                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left font-weight-bold"><span
+                                            style="color:rgb(16, 138, 138);">€</span>{{ product.price }}</p>
+                                    {% if product.rating %}
+                                    <small class="text-muted"><i class="fas fa-star mr-1"
+                                            style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>{{ product.rating }}
+                                        / 5</small>
+                                    {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form" action="{% url 'product_detail' product.id %}" method="POST">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-warning btn-sm  mb-3"
+                                    style="background-color: rgb(236, 197, 139);">
+                                    Product detail
+                                </button>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            </div>
+                        </form>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="btt-button shadow-sm border border-black">
+    <a class="btt-link d-flex h-100">
+        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+    </a>
+</div>
+{% endblock %}
