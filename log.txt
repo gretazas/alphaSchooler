@@ -1,0 +1,47 @@
+----> Building on the Heroku-22 stack
+-----> Using buildpack: heroku/python
+-----> Python app detected
+-----> Using Python version specified in runtime.txt
+-----> No change in requirements detected, installing from cache
+-----> Using cached install of python-3.9.16
+-----> Installing pip 23.0.1, setuptools 63.4.3 and wheel 0.38.4
+-----> Installing SQLite3
+-----> Installing requirements with pip
+       Ignoring backports.zoneinfo: markers 'python_version < "3.9"' don't match your environment
+-----> $ python manage.py collectstatic --noinput
+       Traceback (most recent call last):
+         File "/tmp/build_19bdc304/manage.py", line 22, in <module>
+           main()
+         File "/tmp/build_19bdc304/manage.py", line 18, in main
+           execute_from_command_line(sys.argv)
+         File "/app/.heroku/python/lib/python3.9/site-packages/django/core/management/__init__.py", line 446, in execute_from_command_line
+           utility.execute()
+         File "/app/.heroku/python/lib/python3.9/site-packages/django/core/management/__init__.py", line 440, in execute
+           self.fetch_command(subcommand).run_from_argv(self.argv)
+         File "/app/.heroku/python/lib/python3.9/site-packages/django/core/management/base.py", line 402, in run_from_argv
+           self.execute(*args, **cmd_options)
+         File "/app/.heroku/python/lib/python3.9/site-packages/django/core/management/base.py", line 448, in execute
+           output = self.handle(*args, **options)
+         File "/app/.heroku/python/lib/python3.9/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 209, in handle
+           collected = self.collect()
+         File "/app/.heroku/python/lib/python3.9/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 135, in collect
+           handler(path, prefixed_path, storage)
+         File "/app/.heroku/python/lib/python3.9/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 368, in copy_file
+           if not self.delete_file(path, prefixed_path, source_storage):
+         File "/app/.heroku/python/lib/python3.9/site-packages/django/contrib/staticfiles/management/commands/collectstatic.py", line 278, in delete_file
+           if self.storage.exists(prefixed_path):
+         File "/app/.heroku/python/lib/python3.9/site-packages/storages/backends/s3boto3.py", line 463, in exists
+           self.connection.meta.client.head_object(Bucket=self.bucket_name, Key=name)
+         File "/app/.heroku/python/lib/python3.9/site-packages/botocore/client.py", line 530, in _api_call
+           return self._make_api_call(operation_name, kwargs)
+         File "/app/.heroku/python/lib/python3.9/site-packages/botocore/client.py", line 960, in _make_api_call
+           raise error_class(parsed_response, operation_name)
+       botocore.exceptions.ClientError: An error occurred (403) when calling the HeadObject operation: Forbidden
+ !     Error while running '$ python manage.py collectstatic --noinput'.
+       See traceback above for details.
+       You may need to update application code to resolve this error.
+       Or, you can disable collectstatic for this application:
+          $ heroku config:set DISABLE_COLLECTSTATIC=1
+       https://devcenter.heroku.com/articles/django-assets
+ !     Push rejected, failed to compile Python app.
+ !     Push failed
