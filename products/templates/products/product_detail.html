@@ -82,6 +82,67 @@
                                         </a>
                                     </p>
                                     {% endif %}
+                                    {% with product.folder_sizes as s %}
+                                    {% if s %}
+                                        <div class="col-12">
+                                            <p><strong>Folder size:</strong></p>
+                                            <select class="form-control rounded-0 w-50" name="product_size" id='id_folder_size'>
+                                                <option value="5 x 7">'5 x 7'</option>
+                                                <option value="6 x 9">'6 x 9'</option>
+                                                <option value="9 x 12" selected>'9 x 12'</option>
+                                            </select>
+                                        </div>
+                                    {% endif %}
+                                    {% endwith %}
+                                    {% with product.pencil_softness as p %}
+                                    {% if p %}
+                                        <div class="col-12">
+                                            <p><strong>Pencil HB:</strong></p>
+                                            <select class="form-control rounded-0 w-50" name="product_size" id='id_folder_size'>
+                                                <option value="2H">'2H'</option>
+                                                <option value="5H">'5H'</option>
+                                                <option value="HB" selected>'HB'</option>
+                                                <option value="2B">'2'</option>
+                                                <option value="6B">'6B'</option>
+                                                <option value="8B">'8B'</option>
+                                            </select>
+                                        </div>
+                                    {% endif %}
+                                    {% endwith %}
+                                    {% with product.lunch_box as z %}
+                                    {% if z %}
+                                        <div class="col-12">
+                                            <p><strong>lunch box:</strong></p>
+                                            <select class="form-control rounded-0 w-50" name="product_size" id='id_folder_size'>
+                                                <option value="lunch_box">'Lunch box only'</option>
+                                                <option value="full_set" selected>'Full set'</option>
+                                            </select>
+                                        </div>
+                                    {% endif %}
+                                    {% endwith %} 
+                                    {% with product.pencil_case as a %}
+                                    {% if a %}
+                                        <div class="col-12">
+                                            <p><strong>Pencil case:</strong></p>
+                                            <select class="form-control rounded-0 w-50" name="product_size" id='id_folder_size'>
+                                                <option value="'pencil_case">'Pencil case only'</option>
+                                                <option value="case_full" selected>'Pencil case full set'</option>
+                                            </select>
+                                        </div>
+                                    {% endif %}
+                                    {% endwith %}
+                                    {% with product.copies as v %}
+                                    {% if v %}
+                                        <div class="col-12">
+                                            <p><strong>Copy sizes:</strong></p>
+                                            <select class="form-control rounded-0 w-50" name="product_size" id='id_folder_size'>
+                                                <option value="A5">'A5'</option>
+                                                <option value="Card">'Card size'</option>
+                                                <option value="A4" selected>'A4'</option>
+                                            </select>
+                                        </div>
+                                    {% endif %}
+                                    {% endwith %}
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
                                         <a href="{% url 'edit_product' product.id %}">Edit</a> |
