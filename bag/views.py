@@ -1,13 +1,21 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.http import HttpResponse
 from products.models import Product
+from points.models import Points
 from django.contrib import messages
+from bag.contexts import bag_contents
 
 
 def view_bag(request):
     ''' View that renders bag content page '''
-
-    return render(request, 'bag/bag.html')
+    user = request.user
+    current_bag = bag_contents(request)
+    total = current_bag['grand_total']
+    userpoints = get_object_or_404(Points, user=user)
+    collected_points = int(userpoints.points)
+    if collected_points > total:
+        points = True
+    return render(request, 'bag/bag.html', {'points': points})
 
 
 def add_to_bag(request, item_id):

@@ -98,10 +98,8 @@
                                     </span>
                                 </a>
                                 {% if request.user.is_authenticated %}
+                                {% if points %}
                                     {% csrf_token %}
-                                    {% for points in collected_points %}
-                                    <p>Your savedpoints are {% if points.points %} {{ points.points }} {% else %} 0{% endif %}</p>
-                                    {% endfor %}
                                     <a href="{% url 'points' %}" class="btn btn-black border btt-color my-3" style="background-color: rgb(236, 197, 139);">
                                         <span class="font-weight-bold w-50">Use Your Saved Points To Purchase</span>
                                         <span class="icon">
@@ -109,7 +107,7 @@
                                         </span>
                                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                     </a>
-                                    
+                                {% endif %}    
                                 </form>
                                 {% endif %}
                             </td>
