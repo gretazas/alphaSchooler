@@ -10,7 +10,7 @@ def feedback(request):
 
         if form.is_valid():
             form.save()
-            messages.success(request, f'Thank you for your feedback!')
+            messages.info(request, f'Thank you for your feedback!')
             return render(request, 'feedback/feedback.html')
     else:
         form = FeedbackForm()
