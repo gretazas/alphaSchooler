@@ -188,9 +188,12 @@
             </div>
         </div>
 </div>
-{% endblock %}
+
 
 {% block postloadjs %}
 {{ block.super }}
+<script>console.log('product page')</script>
+
 {% include 'products/includes/quantity_input_script.html' %}
+{% endblock %}
 {% endblock %}
