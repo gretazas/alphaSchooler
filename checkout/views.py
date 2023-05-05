@@ -5,7 +5,7 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-
+from points.models import Points
 from products.models import Product
 from profiles.models import UserProfile
 from bag.contexts import bag_contents
@@ -109,9 +109,6 @@ def checkout(request):
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
-    current_bag = bag_contents(request)
-    total = current_bag['grand_total']
-    # total_user_points = settings.COLLECTED_POINTS + total
     stripe_total = round(total * 100)
     intent = stripe.PaymentIntent.create(
                 amount=stripe_total,
@@ -153,7 +150,16 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-
+    current_bag = bag_contents(request)
+    total = current_bag['grand_total']
+    # Add points after purchase
+    user = request.user
+    add_points = float(current_bag['grand_total']) * 0.01
+    user_points = Points.objects.filter(user=user)
+    for points in user_points:
+        points.points += add_points
+        points.save()
+        print('saved_poiints:', points.points)
     messages.success(request, f'Order successful! \
         Order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
