@@ -9,7 +9,7 @@ Link to gitHub:
 * [Agile](#agile)
     * [User Stories](#user-stories)
     * [Project Scope](#project-scope)
-    * [Project Dtabase Scope](#project-database-scope)
+    * [Project Database Scope](#project-database-scope)
     * [Project Setup](#project-setup)
     * [Project Management](#project-management)
 * [Features](#features)
@@ -95,8 +95,8 @@ Link to gitHub:
 
 ## Agile
 
-* [Basic Wireframe Design](./extrareadme.md)
-* [Kanban Example](#kanban-example)
+* [Basic Wireframe Design](./extrareadme.md). In this link you will find wireframe design.
+* [Kanban Example](#kanban-example). In this link you will find created acounts for marketing purposes.
 
 ## User Stories
 
