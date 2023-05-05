@@ -1,12 +1,11 @@
 <script type="text/javascript">
-    console.log('loading quantity')
     // Range in 1-99 
     function handleEnableDisable(itemId) {
         var currentValue = parseInt($(`.id_qty_${itemId}`).val());
         var minusDisabled = currentValue < 1;
         var plusDisabled = currentValue > 98;
 
-        if (currentValue = 0){
+        if (currentValue == 0){
             // Remove item and reload on click
             $('.remove-item').click(function(e) {
                 var csrfToken = "{{ csrf_token }}";
