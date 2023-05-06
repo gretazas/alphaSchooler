@@ -31,7 +31,6 @@ a {
 
 /* Image in detail page */
 #img {
-    max-width: 550px;
     margin: 10px;
 }
 
@@ -327,7 +326,6 @@ footer {
     #img {
         display: flex;
         align-self: center;
-        max-width: 600px;
         margin: 60px;
     }
 
@@ -392,11 +390,6 @@ footer {
         width: 250px !important;
         margin: 20px;
     }
-
-    /* Image in detail page */
-    #img {
-        max-width: 500px;
-    }
 }
 
 /* Media only screen and (max-width: 805px) */
@@ -451,7 +444,6 @@ footer {
 @media only screen and (max-width: 530px) {
     /* Image in detail page */
     #img {
-        max-width: 350px;
         margin-right: 5%;
     }
 
@@ -469,11 +461,6 @@ footer {
     /* Filter containers in main page */
     .filter1 {
         height: 250px !important;
-    }
-
-    /* Image in detail page */
-    #img {
-        max-width: 250px;
     }
 
     /* Quantitybutton */
