@@ -20,7 +20,6 @@ def get_rating(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     product_id = request.POST.get('product_id')
     ratings = Rating.objects.all().filter(rate_id=product_id)
-    # Get to the point where i get a rate as a number, not NoneType
     try:
         product_rate = int(request.POST.get(['rate'][0]))
         if product_rate > 0:
@@ -38,18 +37,12 @@ def get_rating(request, product_id):
                     raters = ratings[qnt].rate_qnt
                     ratings_qnt_list.append(raters)
                     raters_total = sum(ratings_qnt_list) 
-            # If not in database = first rate:              
+            # If not in database = first rate:
             else:
                 rating_total = 0
                 raters_total = 0
             rating_total += product_rate
             raters_total += 1
-            # Get average:
-            avg_rating = round(rating_total / raters_total)
-            products = Product.objects.all().filter(id=product_id)
-            for product in products:
-                product.rating = avg_rating
-                product.save()
             if request.method == 'POST':
                 data = {
                         'rate_id': product_id,
@@ -58,10 +51,20 @@ def get_rating(request, product_id):
                         'member': request.user.id,
                     }
                 form = RatingForm(data)
+                print(form.errors.as_data())
                 if form.is_valid():
                     form.save()
+                    # Get average and save:
+                    avg_rating = round(rating_total / raters_total)
+                    products = Product.objects.all().filter(id=product_id)
+                    for product in products:
+                        product.rating = avg_rating
+                        product.save()
                     messages.info(request, 'Rated successfully!')
                     return render(request, 'rate/rate.html', {'product': product, 'on_ratings_page': True, 'form': form})
+                else:
+                    messages.info(request, 'Sorry, something went wrong.')
+                    
     except:
         pass
     return render(request, 'rate/rate.html', {'product': product, 'on_ratings_page': True, 'form':form})
