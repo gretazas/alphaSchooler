@@ -153,13 +153,13 @@ def checkout_success(request, order_number):
     current_bag = bag_contents(request)
     total = current_bag['grand_total']
     # Add points after purchase
-    user = request.user
-    add_points = float(current_bag['grand_total']) * 0.01
-    user_points = Points.objects.filter(user=user)
-    for points in user_points:
-        points.points += add_points
-        points.save()
-        print('saved_poiints:', points.points)
+    if request.user.is_authenticated:
+        user = request.user
+        add_points = float(current_bag['grand_total']) * 0.01
+        user_points = Points.objects.filter(user=user)
+        for points in user_points:
+            points.points += add_points
+            points.save()
     messages.success(request, f'Order successful! \
         Order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
