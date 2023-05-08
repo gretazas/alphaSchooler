@@ -11,12 +11,13 @@ def view_bag(request):
     user = request.user
     current_bag = bag_contents(request)
     total = current_bag['grand_total']
-    userpoints = Points.objects.filter(user=user)
-    user_points = Points.objects.filter(user=user)
-    for points in user_points:
-        collected_points = int(points.points)
-    if collected_points > total:
-        points = True
+    if request.user.is_authenticated:
+        userpoints = Points.objects.filter(user=user)
+        user_points = Points.objects.filter(user=user)
+        for points in user_points:
+            collected_points = int(points.points)
+        if collected_points > total:
+            points = True
     return render(request, 'bag/bag.html', {'points': points})
 
 
