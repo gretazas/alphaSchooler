@@ -67,6 +67,10 @@ def get_rating(request, product_id):
                         for product in products:
                             product.rating = avg_rating
                             product.save()
+                            # Serialize updated products and save to file
+                            serialized_products = serializers.serialize('json', products)
+                            with open('products/fixtures/products.json', 'w') as f:
+                                f.write(serialized_products)
                         messages.info(request, 'Rated successfully!')
                         return render(request, 'rate/rate.html', {'product': product, 'on_ratings_page': True, 'form': form})
                     else:

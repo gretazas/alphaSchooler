@@ -95,8 +95,10 @@ Link to gitHub:
 
 ## Agile
 
-* [Basic Wireframe Design](./extrareadme.md). In this link you will find wireframe design.
-* [Kanban Example](#kanban-example). In this link you will find created acounts for marketing purposes.
+- Link below you will show wireframe design:
+    * [Basic Wireframe Design](./extrareadme.md)
+- Link below you will show kanban in git pictures:  
+    * [Kanban Example](./kanban.md)
 
 ## User Stories
 
@@ -153,6 +155,8 @@ Link to gitHub:
 
 
 ## Project Setup
+
+<img src="media/media/kanban/kanbangit (3).png" alt="kanban in git" heigth="500" width="600"/>
 
 Creating the basic idea and designing some basic structure, setting up:
 

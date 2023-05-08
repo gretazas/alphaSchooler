@@ -88,7 +88,7 @@
                                                </a>
                                            </p>
                                            {% endif %}
-                                           {% if product.rating %}
+                                           {% if product.rating > 0%}
                                                <small class="text-muted"><i class="fas fa-star mr-1" style="box-shadow: 0px 2px 0px 0px rgb(236, 197, 139);color:rgb(16, 138, 138);"></i>{{ product.rating }} / 5</small>
                                            {% else %}
                                                <small class="text-muted">No Rating</small>
