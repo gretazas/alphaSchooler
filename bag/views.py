@@ -18,7 +18,7 @@ def view_bag(request):
             collected_points = int(points.points)
         if collected_points > total:
             points = True
-            context = {'points': points}
+        context = {'points': points}
     return render(request, 'bag/bag.html', context)
 
 
