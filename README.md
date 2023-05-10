@@ -131,6 +131,8 @@ Link to gitHub:
 
 # Project Database Scope
 
+<img src="media/media/database_schema.png" alt="Product/Category Model" heigth="1500" width="1400"/>
+
 ## Product/Category Model:
 
 <img src="media/media/category_db.jpg" alt="Product/Category Model" heigth="500" width="600"/>
