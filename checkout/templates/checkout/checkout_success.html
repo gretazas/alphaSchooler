@@ -62,7 +62,12 @@
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="small mb-0 text-black font-weight-bold">
-                                {{ item.product.name }}{% if item.product_size %} - Size {{ item.product.size|upper }}{% endif %}
+                                {{ item.product.name }}
+                                {% if item.product.pencil_softness %}<p class="my-0 small">Softness: {{ item.product_size|upper }}</p>{% endif %}
+                                {% if item.product.folder_sizes %}<p class="my-0 small">Size: {{ item.product_size|upper }}</p>{% endif %}
+                                {% if item.product.lunch_box %}<p class="my-0 small">Size: {{ item.product_size|upper }}</p>{% endif %}
+                                {% if item.product.pencil_case %}<p class="my-0 small">Size: {{ item.product_size|upper }}</p>{% endif %}
+                                {% if item.product.copies %}<p class="my-0 small">Size: {{ item.product_size|upper }}</p>{% endif %}
                             </p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">

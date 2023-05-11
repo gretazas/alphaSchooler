@@ -41,7 +41,7 @@
                         <div class="col-3 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
-                                <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <img class="card-img-top img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ product.name }}">
                                 {% else %}
                                     <img class="w-100  rounded-2" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 {% endif %}
@@ -49,6 +49,11 @@
                         </div>
                         <div class="col-lg-6 col-sm-4 col-small">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                {% if item.product.pencil_softness %}<p class="my-0 small">Softness: {{ item.size|upper }}</p>{% endif %}
+                                {% if item.product.folder_sizes %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
+                                {% if item.product.lunch_box %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
+                                {% if item.product.pencil_case %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
+                                {% if item.product.copies %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right text-right1 mx-xs-0">

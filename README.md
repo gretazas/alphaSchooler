@@ -337,11 +337,25 @@ Webhooks and a webhook handler helps the users to redo the order, if somehow cos
     - LOGIN_URL = '/accounts/login/'<br>
     - LOGIN_REDIRECT_URL = '/'<br>
 
+- Log in as admin. Get success toast “Successfully signed in as admin.”
+
 - After finalising the Django allauth installation I manually went to the accounts login page and tested the authentication by redirecting a successfull login to a "success" url.
+
+- Log in and check if the greetings changed. 
 
 - When template created, I would manually test that they are working and displaying as intended.
 
+- Sort by… check diff sorting.
+
 - After products.html view was created I manually tested if the context, containing products and their attributes were displaying as expected, confirming that the views, URL's and and templates are all working as planned.
+
+- Go to the pencils category in index.html select pencil, go to product_detail.html add the product to the bag and check for success toast if softness is mentioned. 
+
+- Change softness and increase quantity, check if all are visible in the success toast. 
+
+- Go to copies/diaries and select one of the products, select the size, and again check the functionality. 
+
+- Same check-in stationery category, bags, and other categories. 
 
 - Creating the product detail tamplate- manually tested that all links to individual products and product images worked and that the shop now button worked as intended. All worked as expected.
 
@@ -357,9 +371,23 @@ Webhooks and a webhook handler helps the users to redo the order, if somehow cos
 
 - I did a test log in and logout and found that the standard Allauth templates did not function well and started with their customisation thereafter.
 
+- Rate and get success toast and rate again and get attention toast rated already.
+
+- Go to feedback through the nav bar and submit the form. Get the toast.
+
+- In the contact page press the “Go to shopping button”.
+
 - For users to update their profile with new information. All working!
 
+- Mix and match page and scroll in columns, click on diff items to check if brings me to product_detail.html. Then add to bag.  
+
 - Order history link with order number on the profile pages order history section I was redirected to the information of the specific order.
+
+- In the shopping bag change the product`s quantity and update, and get a toast message. Remove item.
+
+- Add items to the cart, and go to secure checkout.  See the points button, since it's more than grand total. Purchase with points. Fill up the checkout form.
+
+- Go to secure checkout, and fill details. 
 
 - Webhook handler of the checkout app, to handle the form submision if for some reason the checkout view fails. The users order history also updated and got saved to the users profile.
 

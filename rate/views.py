@@ -23,7 +23,6 @@ def get_rating(request, product_id):
     same_member = Rating.objects.all().filter(rate_id=product_id, member=member)
 
     if same_member:
-        print('exists')
         messages.info(request, 'You have already rated this product.')
     else:
         # Get to the point where i get a rate as a number, not NoneType
@@ -58,7 +57,6 @@ def get_rating(request, product_id):
                             'member': request.user.id,
                         }
                     form = RatingForm(data)
-                    print(form.errors.as_data())
                     if form.is_valid():
                         form.save()
                         # Get average and save:

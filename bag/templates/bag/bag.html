@@ -26,8 +26,9 @@
                     <table class="table table-sm table-borderless">
                         <thead class="text-black">
                             <tr id="bag-table-responsive">
+                                <th scope="col">image</th>
                                 <th scope="col">Product Info</th>
-                                <th scope="col"></th>
+                                {% if item.product.pencil_softness %}<th scope="col">Softness</th>{%else%}<th scope="col">Size</th>{% endif %}
                                 <th scope="col">Price</th>
                                 <th scope="col">Qty</th>
                                 <th scope="col">Subtotal</th>
@@ -38,14 +39,21 @@
                             <tr class="" id="bag-info-responsive">
                                 <td class="p-3 w-25">
                                     {% if item.product.image %}
-                                    <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    <img class="card-img-top img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                     {% else %}
-                                    <img class="img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                    <img class="img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ item.product.name }}">
                                     {% endif %}
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                     <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                </td>
+                                <td class="py-3">
+                                    {% if item.product.pencil_softness %}<p class="my-0 small">Softness: {{ item.size|upper }}</p>{% endif %}
+                                    {% if item.product.folder_sizes %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
+                                    {% if item.product.lunch_box %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
+                                    {% if item.product.pencil_case %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
+                                    {% if item.product.copies %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
                                 </td>
                                 <td class="py-3" id="bag-price-responsive">
                                     <p class="my-0">€{{ item.product.price }}</p>
