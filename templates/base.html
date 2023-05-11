@@ -83,7 +83,7 @@
                             <div id="search-item"></div>
                         </li>
               
-                    <li class="list-inline-item">
+                        <li class="list-inline-item">
 
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
@@ -95,13 +95,13 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_product' %}" class="text-center dropdown-item">Product Management</a>
                             {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'profile' %}" class="text-center dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="text-center dropdown-item">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="text-center dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="text-center dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -115,8 +115,8 @@
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                            <a href="{% url 'feedback' %}" class="dropdown-item">Feedback</a>
-                            <a href="{% url 'contact' %}" class="dropdown-item">Contact Info</a>
+                            <a href="{% url 'feedback' %}" class="dropdown-item text-center">Feedback</a>
+                            <a href="{% url 'contact' %}" class="dropdown-item text-center">Contact Info</a>
                         </div>
                     </li>
 
