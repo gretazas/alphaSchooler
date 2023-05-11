@@ -1,39 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>404 Page Not Found</title>
-	<style>
-		body {
-			background-color: rgb(9, 88, 88);
-			font-family: sans-serif;
-			color: white;
-			text-align: center;
-			padding-top: 50px;
-		}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found</title>
+    <style>
+      body {
+        background-color: rgb(9, 88, 88);
+        font-family: Arial, sans-serif;
+        color: rgb(236, 197, 139);
+      }
 
-		h1 {
-			font-size: 60px;
-			margin-top: 0;
-		}
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
 
-		p {
-			font-size: 24px;
-			margin-bottom: 30px;
-		}
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
 
-		a {
-			color: rgb(236, 197, 139);
-			text-decoration: none;
-		}
+      p {
+        font-size: 1.5rem;
+        margin-top: 0;
+      }
 
-		a:hover {
-			text-decoration: underline;
-		}
-	</style>
-</head>
-<body>
-	<h1>404</h1>
-	<p>Page not found. Sorry, the page you requested could not be found.</p>
-	<p>Please check the URL and try again, or click <a href="/">here</a> to go back to the homepage.</p>
-</body>
+      a {
+        color: rgb(236, 197, 139);
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        margin: 10px;
+        padding: 10px;
+        background-color: rgb(15, 104, 104);
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>404</h1>
+      <p>Page not found.</p>
+        <button> <a href="/">Go back to the homepage</a>
+         </button>
+    </div>
+  </body>
 </html>
