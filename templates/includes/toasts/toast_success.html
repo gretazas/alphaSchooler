@@ -31,7 +31,11 @@
                             </div>
                             <div class="col-9">
                                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                                {% if item.product.pencil_softness %}<p class="my-0 small">Softness: {{ item.product.pencil_softness|upper }}</p>{% endif %}
+                                {% if item.product.folder_sizes %}<p class="my-0 small">Sizes: {{ item.product.folder_sizes|upper }}</p>{% endif %}
+                                {% if item.product.lunch_box %}<p class="my-0 small">Softness: {{ item.product.lunch_box|upper }}</p>{% endif %}
+                                {% if item.product.pencil_case %}<p class="my-0 small">Softness: {{ item.product.pencil_case|upper }}</p>{% endif %}
+                                {% if item.product.copies %}<p class="my-0 small">Softness: {{ item.product.copies|upper }}</p>{% endif %}
                                 <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                             </div>
                         </div>
