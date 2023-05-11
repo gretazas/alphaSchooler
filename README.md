@@ -404,6 +404,11 @@ Webhooks and a webhook handler helps the users to redo the order, if somehow cos
 
 - Heroku deployment failed: added- python_version<"3.9" to backports.zoneinfo==0.2.1;
 
+* Existing bug: this specific item only.
+    TypeError at /bag/add/105/, argument of type 'int' is not iterable. 
+    /workspace/alphaSchooler/bag/views.py in add_to_bag
+        if 'items_by_size' not in bag[item_id]: 
+
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
@@ -493,7 +498,7 @@ Deployment procedure (using Heroku):
 
 ## A word from me
 
-These past two portfolios were difficult for me, but with this portfolio I learned alot. Even though there are so many things not done , I spent a lot of time debugging myself and learnt a lot of new information. Most importangly I have learnt, while debugging not to look for solution, but understand what is causing the issue. 
+These past two portfolios were difficult for me, but with this portfolio I learned a lot. Even though there are so many things not done , I spent a lot of time debugging myself and learnt a lot of new information. Most importangly I have learnt, while debugging not to look for solution, but understand what is causing the issue. 
 
 ## Credits
   <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" width="90" alt="ci_logo_small"/>
