@@ -16,7 +16,7 @@ def index(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-    current_date = date(2023, 12, 15)
+    current_date = date.today()
 
     if request.user.is_authenticated:
         username = request.user.username.capitalize()
@@ -38,7 +38,7 @@ def index(request):
     elif current_date.month == 9 and current_date.day >= 22 or current_date.month == 11 and current_date.day <= 1:
         message = f"Happy Heloween dear {username} !!!"
     else:
-        message = ""
+        message = f"Welcome to alphaSchooler dear {username} !"
 
     context = {
         'current_categories': categories,
