@@ -52,13 +52,10 @@
                             <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                         </div>
                     </li>
-                    <li class="m-1  nav-item dropdown">
-                        <a class="float-right p-2 mt-2 badge badge-white text-black border border-dark" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="d-sm-none d-md-block m-1 nav-item">
+                        <a class="float-right p-2 mt-2 badge badge-white text-black border border-dark" href="{% url 'mix' %}" id="all-products-link">
                             Mix and Match page
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                            <a href="{% url 'mix' %}" class="dropdown-item">Mix and Match</a>
-                        </div>
                     </li>
                 </ul> 
            </div>

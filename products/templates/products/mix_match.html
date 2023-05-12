@@ -57,7 +57,7 @@
                             <img class="card-img-top img-fluid rounded" src="{{ bag.image.url }}" alt="{{ bag.name }}">
                         </a>
                         {% else %}
-                        <a href="">
+                        <a href="{% url 'product_detail' bag.id %}">
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ bag.name }}">
                         </a>
                         {% endif %}
