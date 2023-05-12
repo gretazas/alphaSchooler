@@ -53,7 +53,7 @@
                     {% for bag in bags %}
                     <div class="border-0">
                         {% if bag.image %}
-                        <a id="product_img" href="{% url 'product_detail' bag.id %}">
+                        <a class="product_img" href="{% url 'product_detail' bag.id %}">
                             <img class="card-img-top img-fluid rounded" src="{{ bag.image.url }}" alt="{{ bag.name }}">
                         </a>
                         {% else %}

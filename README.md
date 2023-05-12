@@ -402,7 +402,8 @@ Webhooks and a webhook handler helps the users to redo the order, if somehow cos
 
 ## HTML Validation with Official W3C Validator
 
-<img src="media/media/htmlvalidator.png" alt="htmlvalidation.png" heigth="500" width="600"/>
+<img src="media/htmlchecker_index.png" alt="htmlvalidation.png" heigth="500" width="600"/>
+<img src="media/htmlchecker_products.png" alt="htmlvalidation.png" heigth="500" width="600"/>
 
 ## CSS Validation with Official W3C Validator
 
