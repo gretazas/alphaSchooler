@@ -99,7 +99,7 @@
                     {% for case in cases %}
                     <div class="border-0">
                         {% if case.image %}
-                        <a id="product_img" href="{% url 'product_detail' case.id %}">
+                        <a class="product_img" href="{% url 'product_detail' case.id %}">
                             <img class="card-img-top img-fluid rounded" src="{{ case.image.url }}"
                                 alt="{{ case.name }}">
                         </a>
@@ -145,7 +145,7 @@
                     {% for product in products %}
                     <div class="border-0">
                         {% if product.image %}
-                        <a id="product_img" href="{% url 'product_detail' product.id %}">
+                        <a class="product_img" href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid rounded" src="{{ product.image.url }}"
                                 alt="{{ product.name }}">
                         </a>
