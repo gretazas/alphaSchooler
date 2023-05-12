@@ -34,41 +34,33 @@ def add_to_bag(request, item_id):
         size = request.POST['product_size']
     bag = request.session.get('bag', {})
 
-    # Check if the item_id is in the bag
-    if item_id not in bag:
-        bag[item_id] = {'items_by_size': {}}
-
-    # Check if the items_by_size dictionary exists for the item_id
-    if 'items_by_size' not in bag[item_id]:
-        bag[item_id]['items_by_size'] = {}
-
-    if size is not None:
-        if size in bag[item_id]['items_by_size'].keys():
-            bag[item_id]['items_by_size'][size] += quantity
-            messages.success(request,
-                             (f'Updated size {size.upper()} '
-                              f'{product.name} quantity to '
-                              f'{bag[item_id]["items_by_size"][size]}'))
+    if size:
+        if item_id in list(bag.keys()):
+            if size in bag[item_id]['items_by_size'].keys():
+                bag[item_id]['items_by_size'][size] += quantity
+                messages.success(request,
+                                 (f'Updated size {size.upper()} '
+                                  f'{product.name} quantity to '
+                                  f'{bag[item_id]["items_by_size"][size]}'))
+            else:
+                bag[item_id]['items_by_size'][size] = quantity
+                messages.success(request,
+                                 (f'Added size {size.upper()} '
+                                  f'{product.name} to your bag'))
         else:
-            bag[item_id]['items_by_size'][size] = quantity
+            bag[item_id] = {'items_by_size': {size: quantity}}
             messages.success(request,
                              (f'Added size {size.upper()} '
                               f'{product.name} to your bag'))
     else:
-        if isinstance(bag[item_id], int):
+        if item_id in list(bag.keys()):
             bag[item_id] += quantity
             messages.success(request,
                              (f'Updated {product.name} '
                               f'quantity to {bag[item_id]}'))
         else:
-            if item_id in bag:
-                bag[item_id] += quantity
-                messages.success(request,
-                                 (f'Updated {product.name} '
-                                  f'quantity to {bag[item_id]}'))
-            else:
-                bag[item_id] = quantity
-                messages.success(request, f'Added {product.name} to your bag')
+            bag[item_id] = quantity
+            messages.success(request, f'Added {product.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
