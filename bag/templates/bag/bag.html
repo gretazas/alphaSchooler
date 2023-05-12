@@ -3,11 +3,11 @@
 {% load filter %}
 
 {% block page_header %}
-   <div class="container header-container">
-       <div class="row">
-           <div class="col"></div>
-       </div>
-   </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
 {% endblock %}
 {% block content %}
 <div class="container mb-2">
@@ -22,122 +22,135 @@
     <div class="row d-flex col-sm-12">
         <div class="col">
             {% if bag_items %}
-                <div class="table-responsive rounded">
-                    <table class="table table-sm table-borderless">
-                        <thead class="text-black">
-                            <tr id="bag-table-responsive">
-                                <th scope="col">image</th>
-                                <th scope="col">Product Info</th>
-                                {% if item.product.pencil_softness %}<th scope="col">Softness</th>{%else%}<th scope="col">Size</th>{% endif %}
-                                <th scope="col">Price</th>
-                                <th scope="col">Qty</th>
-                                <th scope="col">Subtotal</th>
-                            </tr>
-                        </thead>
-
-                        {% for item in bag_items %}
-                            <tr class="" id="bag-info-responsive">
-                                <td class="p-3 w-25">
-                                    {% if item.product.image %}
-                                    <img class="card-img-top img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                                    {% else %}
-                                    <img class="img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ item.product.name }}">
-                                    {% endif %}
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                    <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
-                                </td>
-                                <td class="py-3">
-                                    {% if item.product.pencil_softness %}<p class="my-0 small">Softness: {{ item.size|upper }}</p>{% endif %}
-                                    {% if item.product.folder_sizes %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
-                                    {% if item.product.lunch_box %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
-                                    {% if item.product.pencil_case %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
-                                    {% if item.product.copies %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
-                                </td>
-                                <td class="py-3" id="bag-price-responsive">
-                                    <p class="my-0">€{{ item.product.price }}</p>
-                                </td>
-                                <td class="py-3 w-25 qnt-btt">
-                                    {% include "bag/quantity_form.html" %}
-                                    <a class="update-link text-info"><small>Update</small></a>
-                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0"> €{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                                </td>
-                            </tr>
-                        {% endfor %}
-                        <tr class="bag-responsive">
-                            <td colspan="5" class="pt-5 text-right">
-                                <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
-                                <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
-                                <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
-                                {% if free_delivery_delta > 0 %}
-                                    <p class="mb-1 text-danger">
-                                        You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
-                                    </p>
-                                {% endif %}
-                            
-                            
-                            </td>
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
+                    <thead class="text-black">
+                        <tr id="bag-table-responsive">
+                            <th scope="col">image</th>
+                            <th scope="col">Product Info</th>
+                            {% if item.product.pencil_softness %}<th scope="col">Softness</th>{%else%}<th scope="col">
+                                Size</th>{% endif %}
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
                         </tr>
+                    </thead>
 
-                        <tr class="bag-responsive m-5">    
-                            <td colspan="5" class="text-right">
-                                <a href="{% url 'checkout' %}" class="btn btn-black border btn-lg" style="background-color: rgb(236, 197, 139);">
-                                    <span class="text-uppercase">Secure Checkout</span>
-                                    <span class="icon">
-                                        <i class="fa-regular fa-credit-card m-1"></i>
-                                    </span>
-                                </a>
-                                {% if request.user.is_authenticated %}
-                                {% if points %}
-                                    {% csrf_token %}
-                                    <a href="{% url 'points' %}" class="btn btn-black border btt-color my-3" style="background-color: rgb(236, 197, 139);">
-                                        <span class="font-weight-bold w-50">Use Your Saved Points To Purchase</span>
-                                        <span class="icon">
-                                            <i class="fa-solid fa-2x fa-piggy-bank"></i>
-                                        </span>
-                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                    </a>
-                                {% endif %}    
-                                </form>
-                                {% endif %}
-                            </td>
-                        </tr>
+                    {% for item in bag_items %}
+                    <tr class="" id="bag-info-responsive">
+                        <td class="p-3 w-25">
+                            {% if item.product.image %}
+                            <img class="card-img-top img-fluid rounded" src="{{ item.product.image.url }}"
+                                alt="{{ item.product.name }}">
+                            {% else %}
+                            <img class="img-fluid rounded-2" src="{{ MEDIA_URL }}noimage.jpg"
+                                alt="{{ item.product.name }}">
+                            {% endif %}
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                        </td>
+                        <td class="py-3">
+                            {% if item.product.pencil_softness %}<p class="my-0 small">Softness: {{ item.size|upper }}
+                            </p>{% endif %}
+                            {% if item.product.folder_sizes %}<p class="my-0 small">Size: {{ item.size|upper }}</p>
+                            {% endif %}
+                            {% if item.product.lunch_box %}<p class="my-0 small">Size: {{ item.size|upper }}</p>
+                            {% endif %}
+                            {% if item.product.pencil_case %}<p class="my-0 small">Size: {{ item.size|upper }}</p>
+                            {% endif %}
+                            {% if item.product.copies %}<p class="my-0 small">Size: {{ item.size|upper }}</p>{% endif %}
+                        </td>
+                        <td class="py-3" id="bag-price-responsive">
+                            <p class="my-0">€{{ item.product.price }}</p>
+                        </td>
+                        <td class="py-3 w-25 qnt-btt">
+                            {% include "bag/quantity_form.html" %}
+                            <a class="update-link text-info"><small>Update</small></a>
+                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
+                                data-product_size="{{ item.size }}"><small>Remove</small></a>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0"> €{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <tr class="bag-responsive">
+                        <td colspan="5" class="pt-5 text-right">
+                            <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if free_delivery_delta > 0 %}
+                            <p class="mb-1 text-danger">
+                                You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong>
+                                more!
+                            </p>
+                            {% endif %}
 
-                        <tr class="bag-responsive">
-                            <td colspan="5" class="text-right">
-                                <div class="row m-5">
-                                    <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
-                                        <button type="button" class="font-weight-btn m-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8 qnt-btt"
-                                            style="background-color: rgb(236, 197, 139);" id="shopping-button">
-                                            <a href="{% url 'products' %}" style="text-decoration: none;color: black;">
-                                                Go Back To Shopping &raquo; &raquo;
-                                            </a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        
-                    </table>
-                </div>
-            {% else %}
-                <p class="lead m-5">Your bag is empty.</p>
+
+                        </td>
+                    </tr>
+
+                    <tr class="bag-responsive m-5">
+                        <td colspan="5" class="text-right">
+                            <a href="{% url 'checkout' %}" class="btn btn-black border btn-lg"
+                                style="background-color: rgb(236, 197, 139);">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span class="icon">
+                                    <i class="fa-regular fa-credit-card m-1"></i>
+                                </span>
+                            </a>
+                            {% if request.user.is_authenticated %}
+                            {% if points %}
+                            {% csrf_token %}
+                            <a href="{% url 'points' %}" class="btn btn-black border btt-color my-3"
+                                style="background-color: rgb(236, 197, 139);">
+                                <span class="font-weight-bold w-50">Use Your Saved Points To Purchase</span>
+                                <span class="icon">
+                                    <i class="fa-solid fa-2x fa-piggy-bank"></i>
+                                </span>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            </a>
+                            {% endif %}
+                            </form>
+                            {% endif %}
+                        </td>
+                    </tr>
+
+                    <tr class="bag-responsive">
+                        <td colspan="5" class="text-right">
+                            <div class="row m-5">
+                                <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
                 
-                    <div class="row m-5">
-                        <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
-                            <button type="submit" class="m-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"
-                                style="background-color: rgb(236, 197, 139);" id="shopping-button">
-                                <a href="{% url 'home' %}" class="font-weight-btn btn btn-outline-black btn-lg">
-                                    Go Back To Shopping &raquo; &raquo;
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                </a>
+                                    <a href="{% url 'home' %}"
+                                        class="font-weight-btn btn btn-outline-black btn-lgm-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"
+                                        style="background-color: rgb(236, 197, 139);" id="shopping-button">
+                                        Go Back To Shopping &raquo; &raquo;
+                                    </a>
+                
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            {% else %}
+            <p class="lead m-5">Your bag is empty.</p>
+
+            <div class="row m-5">
+                <div class="mx-5 d-flex justify-content-lg-around justify-content-md-around">
+
+                    <a href="{% url 'home' %}"
+                        class="font-weight-btn btn btn-outline-black btn-lgm-5 btn btn-warning col-8 col-sm-8 col-md-8 col-lg-8"
+                        style="background-color: rgb(236, 197, 139);" id="shopping-button">
+                        Go Back To Shopping &raquo; &raquo;
+                    </a>
+
+                </div>
+            </div>
+
             {% endif %}
         </div>
     </div>
@@ -151,45 +164,46 @@
 <script type="text/javascript" src="{% static 'script/script.js' %}"></script>
 <script type="text/javascript">
     // Update quantity on click
-    $('.update-link').click(function(e) {
+    $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
         form.submit();
     })
 
     // Remove item and reload on click
-    $('.remove-item').click(function(e) {
+    $('.remove-item').click(function (e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken}
-       
+        var data = {
+            'csrfmiddlewaretoken': csrfToken
+        }
+
 
         $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
+            .done(function () {
+                location.reload();
+            });
     })
 </script>
 <script>
     // Change @media screens max-width 992px in bag.html
 
-        function handleTabletChange(mediaQuery1) {
+    function handleTabletChange(mediaQuery1) {
 
         if (mediaQuery1.matches) {
             document.getElementById('bag-table-responsive').innerHTML = ` 
             `
             document.getElementById('bag-price-responsive').innerHTML = ` 
             `
-            
-        }
-        }
 
-        mediaQuery1 = window.matchMedia('(max-width: 992px)');
-        handleTabletChange(mediaQuery1);
-        mediaQuery1.addEventListener("change", () => {
+        }
+    }
+
+    mediaQuery1 = window.matchMedia('(max-width: 992px)');
+    handleTabletChange(mediaQuery1);
+    mediaQuery1.addEventListener("change", () => {
         this.handleTabletChange();
-        });
-
+    });
 </script>
 {% endblock %}
 {% endblock %}
