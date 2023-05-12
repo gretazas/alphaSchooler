@@ -412,7 +412,7 @@ Webhooks and a webhook handler helps the users to redo the order, if somehow cos
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
 ## LightHouse testing
-
+<img src="media/lighthouse (2).png" alt="lighthouse.png" heigth="500" width="600"/>
 <img src="media/lighthouse.png" alt="lighthouse.png" heigth="500" width="600"/>
 <img src="media/media/lighthouse.png" alt="lighthouse.png" heigth="500" width="600"/>
 <img src="media/media/lighthouse(1).png" alt="lighthouse1.png" heigth="500" width="600"/>
