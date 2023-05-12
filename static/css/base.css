@@ -17,7 +17,7 @@ a {
 
 /* Img */
 
-#product_img {
+.product_img {
     width: 240px;
     height: auto;
 }

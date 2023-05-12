@@ -44,16 +44,16 @@
 
                 <ul class="navbar-nav w-auto mx-auto navbar-right flex-row-reverse m-3">
                     <li class="m-1  nav-item dropdown">
-                        <a class="p-2 mt-2 badge badge-white text-black border border-dark" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="p-2 mt-2 badge badge-white text-black border border-dark" href="#" id="sort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Sort Products by...
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                        <div class="dropdown-menu border-0" aria-labelledby="sort">
                             <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                             <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                         </div>
                     </li>
-                    <li class="d-sm-none d-md-block m-1 nav-item">
-                        <a class="float-right p-2 mt-2 badge badge-white text-black border border-dark" href="{% url 'mix' %}" id="all-products-link">
+                    <li class="d-none d-sm-none d-md-block d-lg-block m-1 nav-item">
+                        <a class="float-right p-2 mt-2 badge badge-white text-black border border-dark" href="{% url 'mix' %}">
                             Mix and Match page
                         </a>
                     </li>
@@ -66,7 +66,7 @@
                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                            <div class="card h-100 border-0">
                                {% if product.image %}
-                               <a id="product_img" href="{% url 'product_detail' product.id %}">
+                               <a class="product_img" href="{% url 'product_detail' product.id %}">
                                    <img style="width: 100%;
                                    height: 200px;object-fit: cover" class="card-img-top img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
                                </a>
