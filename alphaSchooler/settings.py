@@ -16,7 +16,12 @@ import os
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
+import firebase_admin
+from firebase_admin import credentials
 
+# Initialize Firebase using your service account JSON file
+firebase_cred = credentials.Certificate('./firebase_config.json')
+firebase_admin.initialize_app(firebase_cred)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,9 +34,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost', '8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu104.gitpod.io']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 
@@ -40,6 +45,7 @@ CSRF_TRUSTED_ORIGINS = [
         'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
         'https://8001-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
         'https://8001-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
+        'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu104.gitpod.io',
         'https://*.*.gitpod.io', 'http://127.0.0.1:8000/',
         'http://127.0.0.1:8001/', 'http://127.0.0.1:8002/',
                         ]
