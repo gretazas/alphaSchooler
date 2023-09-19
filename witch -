@@ -1,0 +1,24 @@
+[33mca202a6[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{0}: checkout: moving from main to ca202a6d4f20c72d452cb9f2cd42d4ad6bfc13a2
+[33mca202a6[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{1}: rebase (continue) (finish): returning to refs/heads/main
+[33mca202a6[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{2}: rebase (continue): Add localhost
+[33m0eb7c35[m HEAD@{3}: pull (start): checkout 0eb7c35228e73e0e35faee25f83050704b210d0e
+[33m9cf9637[m HEAD@{4}: commit: Add localhost
+[33m72c8ac2[m HEAD@{5}: commit: Sort button and a for html checker
+[33m09537bc[m HEAD@{6}: commit: Add lighthouse pic to readme page
+[33m6295646[m HEAD@{7}: commit: Add html checker pic to readme page
+[33meb4c62b[m HEAD@{8}: commit: Rearrange a tags and buttons in bag.html for html checker
+[33m9380b30[m HEAD@{9}: commit: Add changes to products_detail for html checker
+[33me55497d[m HEAD@{10}: commit: Change ids to classes in mix match page for html checker errors
+[33m203456f[m HEAD@{11}: commit: Sort products page for html checker errors
+[33m8ffa8e7[m HEAD@{12}: commit: Change ids to classes for Html Checker in products.html
+[33m4a681af[m HEAD@{13}: commit: Add greetings with dated message in the products page too
+[33m5f9db76[m HEAD@{14}: commit: Take out Mix and Match button from smaller screens with d-sm-none
+[33m00afdab[m HEAD@{15}: commit: Change category in categories div, so on all product categories,it would look decent
+[33md1f773d[m HEAD@{16}: commit: Get rate messages.ingo shown after successful rate
+[33m20fa24e[m HEAD@{17}: commit: Add class text-center for dropdown_items in navbar-colapse, in base.html
+[33m34689dd[m HEAD@{18}: commit: Add z-index for dropdown-menu in mix_match.html
+[33med80201[m HEAD@{19}: commit: Sort bag.html, to show image and noimage; and sizes,and softness
+[33m4208c37[m HEAD@{20}: commit: Final changes in 404.html style
+[33mbad7c46[m HEAD@{21}: commit: Add 404.html
+[33mffb8256[m HEAD@{22}: commit: Add all sizes and pencil softness functionality to contex.py and add_bag views
+[33m78f35bc[m HEAD@{23}: commit: Add sizes and pencil-softness for products in def all_products
