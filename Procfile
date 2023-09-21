@@ -1,1 +1,1 @@
-web: gunicorn alphaSchooler.wsgi
+web: gunicorn alphaSchooler.alphaSchooler.wsgi
