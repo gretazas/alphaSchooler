@@ -36,7 +36,7 @@ SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost', '8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost', '8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu104.gitpod.io', 'https://aschooler.onrender.com']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 
@@ -46,6 +46,7 @@ CSRF_TRUSTED_ORIGINS = [
         'https://8001-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
         'https://8001-gretazas-alphaschooler-gch7k8p00z5.ws-eu90.gitpod.io',
         'https://8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu104.gitpod.io',
+        'https://aschooler.onrender.com',
         'https://*.*.gitpod.io', 'http://127.0.0.1:8000/',
         'http://127.0.0.1:8001/', 'http://127.0.0.1:8002/',
                         ]
