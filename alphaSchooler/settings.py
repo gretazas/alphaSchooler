@@ -34,7 +34,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['aschooler.herokuapp.com', 'localhost', '8000-gretazas-alphaschooler-gch7k8p00z5.ws-eu104.gitpod.io', 'https://aschooler.onrender.com']
 
