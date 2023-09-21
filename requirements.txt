@@ -19,7 +19,6 @@ django-summernote==0.8.20.0
 django-widget-tweaks==1.4.12
 docutils==0.15.2
 firebase-admin==6.2.0
-Flag==0.1.1
 google-api-core==2.11.1
 google-api-python-client==2.99.0
 google-auth==2.23.0
