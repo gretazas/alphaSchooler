@@ -7,7 +7,7 @@ CacheControl==0.13.1
 cachetools==5.3.1
 chardet==3.0.4
 dj-database-url==0.5.0
-Django==4.2.5
+Django==3.2
 django-allauth==0.41.0
 django-cors-headers==4.2.0
 django-cors-middleware==1.5.0
