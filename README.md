@@ -1,6 +1,6 @@
 ## Introduction
-Link to gitHub:
-<a href="https://github.com/gretazas/aSchooler">https://github.com/gretazas/aSchooler</a>
+Link to website:
+<a href="https://aschooler.herokuapp.com/">https://aschooler.herokuapp.com</a>
 
 <img src="media/media/definition_of_schooler.jpg" alt="definition of the schooler" heigth="500" width="600"/>
 
